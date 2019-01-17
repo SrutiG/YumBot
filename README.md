@@ -13,7 +13,7 @@ Then,
 
 
         git clone https://github.com/SrutiG/flask_boilerplate.git
-#### 2. Navigate to the uw_database folder
+#### 2. Navigate to the flask_boilerplate folder
 
         cd flask_boilerplate
 #### 3. Install the necessary requirements
