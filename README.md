@@ -1,7 +1,7 @@
-# BVDBVBES
+# Flask Boilerplate
 
 ## Description
-Sruggie Danerjee Guhathakurtuo
+A starting point for new flask applications
 
 ## How to run
 First ensure that you have Python version 2.6+ installed on your machine. To confirm,
@@ -12,10 +12,10 @@ Then,
 #### 1. Clone this repository
 
 
-        git clone https://github.com/SrutiG/bvdbvbes.git
+        git clone https://github.com/SrutiG/flask_boilerplate.git
 #### 2. Navigate to the uw_database folder
 
-        cd bvdbvbes
+        cd flask_boilerplate
 #### 3. Install the necessary requirements
     
         pip install --user -r requirements.txt
