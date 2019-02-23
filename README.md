@@ -1,7 +1,7 @@
-# Flask Boilerplate
+# YumBot
 
 ## Description
-A starting point for new flask applications
+A web application providing customized recipes created by the YumBot
 
 ## How to run
 First ensure that you have Python version 2.6+ installed on your machine. To confirm,
@@ -12,10 +12,10 @@ Then,
 #### 1. Clone this repository
 
 
-        git clone https://github.com/SrutiG/flask_boilerplate.git
+        git clone https://github.com/SrutiG/YumBot.git
 #### 2. Navigate to the flask_boilerplate folder
 
-        cd flask_boilerplate
+        cd YumBot
 #### 3. Install the necessary requirements
     
         pip install --user -r requirements.txt
