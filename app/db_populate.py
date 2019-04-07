@@ -97,6 +97,20 @@ def add_steps(recipe_name, steps):
     except Exception as e:
         raise(Exception(str(e) + " [Add Steps]"))
 
+def clear_db(max_count=None):
+    try:
+        counter = 0
+        recipes = models.Recipe.query.all()
+        for recipe in recipes:
+            if max_count and counter > max_count:
+                break
+            counter += 1
+            db.session.delete(recipe)
+        db.session.commit()
+    except Exception as e:
+        print(e)
+
+
 def add_co_occur_for_recipe(ingredients):
     # TODO implement this method
     return 1
