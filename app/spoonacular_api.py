@@ -7,13 +7,16 @@ api_key = os.environ["SPOONACULAR_API_KEY"]
 require_instructions = "&instructionsRequired=1"
 headers = {"X-RapidAPI-Host":api_host,"X-RapidAPI-key":api_key}
 
-def find_random_recipes(numRecipes):
+def find_random_recipes(numRecipes, formatted=True):
     new_recipes = []
     url = api_url + "/recipes/random?number=" + str(numRecipes) + require_instructions
     try:
         response = requests.get(url, headers=headers)
         for recipe in response.json()["recipes"]:
-            new_recipes.append(format_spoonacular_recipe(recipe))
+            if formatted:
+                new_recipes.append(format_spoonacular_recipe(recipe))
+            else:
+                new_recipes.append(recipe)
     except Exception as e:
         print e
         print "[Error] error getting recipe data"

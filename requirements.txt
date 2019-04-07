@@ -1,3 +1,5 @@
 flask
 argparse
 requests
+flask_sqlalchemy
+SQLAlchemy-migrate
