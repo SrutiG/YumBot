@@ -1,0 +1,7 @@
+{% for item in search %}
+    <div class="search-tag">
+        <h5 class="search-tag-text">{{ item }}
+            <span class="glyphicon glyphicon-remove search-tag-ic" onclick="removeSearch('{{ item }}')"></span>
+        </h5>
+    </div>
+{% endfor %}

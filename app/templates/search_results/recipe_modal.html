@@ -1,0 +1,24 @@
+<!-- Modal -->
+<div class="modal fade recipe-modal" id="{{ recipe.id }}-modal" tabindex="-1" role="dialog" aria-labelledby="{{ recipe.id }}-modalLabel" aria-hidden="true">
+    <div class="modal-dialog recipe-modal-dialog" role="document">
+        <div class="modal-content recipe-modal-content">
+            <div class="modal-header recipe-modal-header">
+                <img class="recipe-modal-img" src="{{ recipe.image }}">
+            </div>
+            <div class="modal-body recipe-modal-body">
+                <h3 class="recipe-modal-title" id="{{ recipe.id }}-modalLabel">{{ recipe.name }}</h3>
+                <h4 class="thin-text">Ingredients</h4>
+                {% for ingredient in recipe.ingredients %}
+                    <h5 class="extra-thin-text">{{ ingredient }}</h5>
+                {% endfor %}
+                <h4 class="thin-text">Steps</h4>
+                {% for step in recipe.steps %}
+                <h5 class="extra-thin-text">{{ loop.index0 + 1 }}. {{ step }}</h5>
+                {% endfor %}
+            </div>
+            <div class="modal-footer recipe-modal-footer">
+                <button type="button" class="btn btn-sm" data-toggle="modal" onclick="closeRecipeModal('{{ recipe.id }}')">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

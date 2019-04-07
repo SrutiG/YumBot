@@ -7,8 +7,12 @@
     <meta name = 'description' content = "YumBot">
 
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:300|Montserrat:100,200,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     {% block extrastyle %} {% endblock %}
     <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     {% block extrascript %}{% endblock %}
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +27,9 @@
 {% endif %}
 {% endwith %}
 <body {% block class %} {%endblock %}>
-{% block content %}
-{% endblock %}
+<div class="topbar">
+    <h3 class="topbar-header">YumBot</h3>
+</div>
+    {% block content %}
+    {% endblock %}
 </body>
