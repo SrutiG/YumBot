@@ -1,0 +1,13 @@
+<div class="search-wrapper">
+    <div class="search-content">
+        <div class="search-bar-wrapper">
+            <input id="search-bar" class="search-bar input input-lg col-sm-4 col-sm-offset-4" type="text" placeholder="Enter Ingredient">
+            <span class="search-glyph glyphicon glyphicon-search" onclick="searchRecipes()"></span>
+        </div>
+        <div id="search-tags" class="text-center">
+            {% with search=search %}
+                {% include 'search_bar/search_tags.html' %}
+            {% endwith %}
+        </div>
+    </div>
+</div>

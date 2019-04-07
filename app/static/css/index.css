@@ -3,9 +3,207 @@
 /*===================================colors===================================*/
 
 :root {
-    --primary_dark: #000;
-    --primary_light: #EEE;
-    --primary: #AAA;
+    --background: #ffffff;
+    --primary_dark: #C46D5E;
+    --primary_light: #FCEADE;
+    --primary: #ACC3A6;
+    --accent: #25ced1;
+    --text: #666;
+    --recipe_height: 295px;
+    --search_height: 130px;
+    --topbar_height: 40px;
 }
 
 /*===================================general===================================*/
+
+body {
+    font-family: 'Montserrat', sans-serif ! important;
+    font-weight: 300;
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+}
+
+.thin-text {
+    font-weight: 200;
+}
+
+.extra-thin-text {
+    font-weight: 100;
+}
+
+/*===================================top-bar===================================*/
+
+.topbar {
+    height: var(--topbar_height);
+    width: 100%;
+    background-color: var(--primary_dark);
+    font-family: 'Pacifico', cursive;
+    padding: 3px 15px 0 15px;
+}
+
+.topbar-header {
+    margin: 0;
+    color: var(--primary_light);
+}
+
+/*===================================search===================================*/
+
+.search-wrapper {
+    display: table;
+    height: var(--search_height);
+    width: 100%;
+}
+
+.search-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.search-bar {
+    /*border-top: 0;*/
+    /*border-left: 0;*/
+    /*border-right: 0;*/
+    /*border-bottom: 1px solid var(--primary);*/
+    /*border-radius: 0 ! important;*/
+    border: 1px solid var(--primary);
+    border-radius: 25px ! important;
+    color: var(--accent);
+    height: 40px ! important;
+
+}
+
+.search-bar::placeholder {
+    color: var(--primary);
+}
+
+.search-glyph {
+    color: var(--accent);
+    top: 4px ! important;
+    right: 30px ! important;
+    line-height: 2.5 ! important;
+}
+
+.search-glyph:hover {
+    cursor:pointer;
+    opacity:0.7;
+}
+
+#search-tags {
+    padding-top: 10px;
+}
+
+.search-bar-wrapper {
+    border-bottom: 1px solid var(--background);
+}
+
+.search-tag {
+    background-color: var(--accent);
+    color: var(--primary_light);
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 5px;
+}
+
+.search-tag-ic {
+    font-size:0.8em;
+}
+
+.search-tag-ic:hover {
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+/*===================================search-results===================================*/
+
+.search-results {
+    height: calc(100vh - var(--search_height) - var(--topbar_height));
+    padding: 10px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.recipe-wrapper {
+    padding: 10px;
+    width: calc(25% - 5px);
+    display: inline-block;
+}
+
+.recipe-content {
+    /*border: 1px solid var(--primary);*/
+    height: var(--recipe_height);
+    overflow-y: scroll;
+    width: 100%;
+    display: table;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+}
+
+.recipe-content:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+.recipe-image {
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-height: var(--recipe_height);
+    max-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.recipe-name-background {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    background-color: var(--primary_light);
+    opacity: 0.85;
+    width: 100%;
+}
+
+.recipe-name {
+    color: var(--text);
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.recipe-modal-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 ! important;
+}
+
+.recipe-modal-header {
+    padding: 0 ! important;
+    overflow: hidden;
+}
+
+.recipe-modal-img {
+    width:100%;
+    height: auto;
+    transform: translateY(-200px);
+    margin-bottom: -200px;
+}
+
+.recipe-modal-body {
+    max-height: 400px;
+    overflow-y: scroll;
+}

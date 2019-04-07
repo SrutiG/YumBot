@@ -1,0 +1,26 @@
+<div class="search-results">
+    {% if random_search and search|length == 0 %}
+        <div class="welcome text-center col-md-8 col-md-offset-2">
+            <h2>Welcome!</h2>
+            <p class="extra-thin-text">YumBot is an intelligent bot who would be honored to serve as your personal assistant chef.
+            YumBot can create unique recipes based on ingredients available in your fridge. In addition to
+            recipes created by YumBot, we offer recipes using the Spoonacular API drawn from various sources.</p>
+        </div>
+        <h2 class="col-md-12">Random Recipes</h2>
+
+    {% elif random_search %}
+        <div class="welcome text-center col-md-8 col-md-offset-2">
+            <h2>Sorry!</h2>
+            <p class="extra-thin-text">We did not find any recipes matching this combination of ingredients.
+            Here are some random recipes from our sources.</p>
+        </div>
+        <h2 class="col-md-12">Random Recipes</h2>
+
+    {% endif %}
+    {% for recipe in recipes %}
+        {% with recipe=recipe %}
+            {% include 'search_results/recipe.html' %}
+            {% include 'search_results/recipe_modal.html' %}
+        {% endwith %}
+    {% endfor %}
+</div>
