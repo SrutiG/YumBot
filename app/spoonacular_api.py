@@ -18,8 +18,8 @@ def find_random_recipes(numRecipes, formatted=True):
             else:
                 new_recipes.append(recipe)
     except Exception as e:
-        print e
-        print "[Error] error getting recipe data"
+        print(e)
+        print("[Error] error getting recipe data")
     return new_recipes
 
 def search_recipes_by_ingredient(ingredient_list):
@@ -36,8 +36,8 @@ def search_recipes_by_ingredient(ingredient_list):
             new_recipe["used_ingredient_count"] = recipe["usedIngredientCount"]
             new_recipes.append(new_recipe)
     except Exception as e:
-        print e
-        print "[Error] error getting recipe data when searching by ingredient"
+        print(e)
+        print("[Error] error getting recipe data when searching by ingredient")
     return new_recipes
 
 def get_recipe_information(id):
@@ -47,8 +47,8 @@ def get_recipe_information(id):
         response = requests.get(url, headers=headers)
         recipe = response.json()
     except Exception as e:
-        print e
-        print "[Error] error getting recipe information"
+        print(e)
+        print("[Error] error getting recipe information")
     return recipe
 
 def format_spoonacular_recipe(recipe):
@@ -66,7 +66,7 @@ def format_spoonacular_recipe(recipe):
             new_recipe["steps"].append(step["step"])
     else:
         new_recipe["steps"] = recipe["instructions"].split("\n")
-    print new_recipe
+    print(new_recipe)
     return new_recipe
 
 
