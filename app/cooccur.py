@@ -60,5 +60,18 @@ def add_recipe_ingredients_to_matrix(ingredients):
         print('[Error] error adding recipe ingredients to matrix')
         db.session.rollback()
 
+def create_matrix():
+    keys = []
+    matrix = []
+    ingredients = models.Ingredient.query.all()
+    for i in ingredients:
+        keys.append(i.name)
+        matrix.append([0] * len(ingredients))
+    for x,i1 in enumerate(keys):
+        for y,i2 in enumerate(keys):
+            entry = models.Co_Occur_Matrix.query.get((i1, i2))
+            matrix[x][y] = entry.count
+    return matrix,keys
+
 
 
