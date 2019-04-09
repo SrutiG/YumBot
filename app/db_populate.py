@@ -1,6 +1,7 @@
 from spoonacular_api import find_random_recipes
 from app import db, models
 import unicodedata
+from cooccur import add_recipe_ingredients_to_matrix, generate_new_matrix
 
 def add_recipes_to_db(num_recipes):
     recipes = find_random_recipes(num_recipes, False)
@@ -17,6 +18,7 @@ def add_recipes_to_db(num_recipes):
             add_steps(r["title"], r["analyzedInstructions"][0]["steps"])
             db.session.add(recipe)
             db.session.commit()
+            add_recipe_ingredients_to_matrix(r["extendedIngredients"])
         except Exception as e:
             print(e)
             print("[Error] failed to add recipe " + r["title"])
@@ -97,20 +99,21 @@ def add_steps(recipe_name, steps):
     except Exception as e:
         raise(Exception(str(e) + " [Add Steps]"))
 
-def clear_db(max_count=None):
+def clear_db(max_count=None, save_matrix=True):
     try:
         counter = 0
         recipes = models.Recipe.query.all()
+        ingredients = models.Ingredient.query.all()
         for recipe in recipes:
             if max_count and counter > max_count:
                 break
             counter += 1
             db.session.delete(recipe)
+        for ingredient in ingredients:
+            if len(ingredient.recipes) == 0:
+                db.session.delete(ingredient)
+        if not save_matrix:
+            generate_new_matrix()
         db.session.commit()
     except Exception as e:
         print(e)
-
-
-def add_co_occur_for_recipe(ingredients):
-    # TODO implement this method
-    return 1
