@@ -3,3 +3,5 @@ argparse
 requests
 flask_sqlalchemy
 SQLAlchemy-migrate
+pandas
+sklearn

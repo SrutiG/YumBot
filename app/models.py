@@ -29,6 +29,7 @@ class Ingredient(db.Model):
     name = db.Column(db.String(128), index=True, primary_key=True)
     image_url = db.Column(db.String(256))
     recipes = db.relationship("Recipe_Ingredient", cascade="all", backref="ingredient", passive_updates=False)
+    pca_coordinates = db.relationship("PCA_Coordinate", cascade="all", backref="ingredient", passive_updates=False)
 
 class Recipe_Ingredient(db.Model):
     __tablename__ = 'recipe_ingredient'
@@ -71,6 +72,15 @@ class Co_Occur_Matrix(db.Model):
     x_coord = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
     y_coord = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
     count = db.Column(db.Integer)
+
+'''
+PCA coordinates for an ingredient
+'''
+class PCA_Coordinate(db.Model):
+    __tablename__ = 'pca_coordinate'
+    ingredient_name = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
+    column_name = db.Column(db.String(8), primary_key=True)
+    value = db.Column(db.Float)
 
 
 
