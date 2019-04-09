@@ -29,7 +29,6 @@ class Ingredient(db.Model):
     name = db.Column(db.String(128), index=True, primary_key=True)
     image_url = db.Column(db.String(256))
     recipes = db.relationship("Recipe_Ingredient", cascade="all", backref="ingredient", passive_updates=False)
-    id = db.Column(db.Integer, unique=True, autoincrement=True)
 
 class Recipe_Ingredient(db.Model):
     __tablename__ = 'recipe_ingredient'
@@ -69,8 +68,8 @@ Co-occurrence matrix for ingredients
 '''
 class Co_Occur_Matrix(db.Model):
     __tablename__= 'co_occur_matrix'
-    x_coord = db.Column(db.Integer, db.ForeignKey('ingredient.id'), primary_key=True)
-    y_coord = db.Column(db.Integer, db.ForeignKey('ingredient.id'), primary_key=True)
+    x_coord = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
+    y_coord = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
     count = db.Column(db.Integer)
 
 
