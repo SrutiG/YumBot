@@ -10,8 +10,12 @@ if __name__ == "__main__":
     parser.add_argument('--numrecipes', default=10, type=int,
                         help='Num recipes to add or remove. Default is 10')
     parser.add_argument('--action', default='add', type=str,
-                        help='--action add, remove, matrix, or pca. Set numrecipes to 0 to remove all recipes. matrix regenerates co-occurrence matrix. pca does the principal component analysis algorithm and yields the pca matrix. numrecipes flag is ignored for matrix and pca.')
-    parser.add_argument('--components', default=4, type=int, help='number of pca components. default is 4.')
+                        help='--action add, remove, matrix, pca, addpca. '
+                             'Set numrecipes to 0 to remove all recipes. matrix regenerates co-occurrence matrix. '
+                             'pca does the principal component analysis algorithm and yields the pca matrix. '
+                             'numrecipes flag is ignored for matrix and pca. addpca both adds recipes to the database '
+                             'and calculates pca coordinates')
+    parser.add_argument('--components', default=10, type=int, help='number of pca components. default is 4.')
     args = parser.parse_args()
     if args.numrecipes < 0:
         raise(Exception("[Error] Must enter a positive number of recipes"))
@@ -25,4 +29,7 @@ if __name__ == "__main__":
     elif args.action == 'matrix':
         cooccur.generate_new_matrix()
     elif args.action == 'pca':
+        pca.add_pca_coordinates_to_db(args.components)
+    elif args.action == 'addpca':
+        db_populate.add_recipes_to_db(args.numrecipes)
         pca.add_pca_coordinates_to_db(args.components)

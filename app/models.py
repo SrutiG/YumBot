@@ -28,8 +28,18 @@ class Ingredient(db.Model):
     __tablename__ = 'ingredient'
     name = db.Column(db.String(128), index=True, primary_key=True)
     image_url = db.Column(db.String(256))
+    cluster_number = db.Column(db.Integer, db.ForeignKey('kmeans_cluster.cluster_number'))
     recipes = db.relationship("Recipe_Ingredient", cascade="all", backref="ingredient", passive_updates=False)
     pca_coordinates = db.relationship("PCA_Coordinate", cascade="all", backref="ingredient", passive_updates=False)
+
+    def get_coordinates(self):
+        return tuple(self.get_coordinates_list())
+
+    def get_coordinates_list(self):
+        coordinates_list = [None] * len(self.pca_coordinates)
+        for coordinate in self.pca_coordinates:
+            coordinates_list[ord(coordinate.column_name) - 97] = coordinate.value
+        return coordinates_list
 
 class Recipe_Ingredient(db.Model):
     __tablename__ = 'recipe_ingredient'
@@ -79,6 +89,35 @@ PCA coordinates for an ingredient
 class PCA_Coordinate(db.Model):
     __tablename__ = 'pca_coordinate'
     ingredient_name = db.Column(db.String(128), db.ForeignKey('ingredient.name'), primary_key=True)
+    column_name = db.Column(db.String(8), primary_key=True)
+    value = db.Column(db.Float)
+
+'''
+A Kmeans cluster containing a set of ingredients
+which go well together
+'''
+class Kmeans_Cluster(db.Model):
+    __tablename__ = 'kmeans_cluster'
+    cluster_number = db.Column(db.Integer, primary_key=True)
+    ingredients = db.relationship("Ingredient", cascade="none", backref="kmeans_cluster", passive_updates=True)
+    coordinates = db.relationship("Kmeans_Cluster_Coordinate", cascade="all", backref="kmeans_cluster", passive_updates=False)
+
+    def get_coordinates(self):
+        return tuple(self.get_coordinates_list())
+
+    def get_coordinates_list(self):
+        coordinates = [None] * len(self.coordinates)
+        for coord in self.coordinates:
+            coordinates[ord(coord.column_name) - 97] = coord.value
+        return coordinates
+
+
+'''
+A coordinate for the center of the Kmeans cluster
+'''
+class Kmeans_Cluster_Coordinate(db.Model):
+    __tablename__ = 'kmeans_cluster_coordinate'
+    cluster_number = db.Column(db.Integer, db.ForeignKey("kmeans_cluster.cluster_number"), primary_key=True)
     column_name = db.Column(db.String(8), primary_key=True)
     value = db.Column(db.Float)
 

@@ -1,0 +1,55 @@
+cluster 0: ground cinnamon,light brown sugar,chocolate,vanilla,cream of tartar,dark brown sugar,unsweetened cocoa powder,heavy cream,powdered sugar,white chocolate chips,white sugar,cinnamon,peaches,unbleached flour,almond milk,coconut oil,semi sweet chocolate chips,walnuts,cream cheese,heavy whipping cream,pecans,strawberries,maple syrup,whole wheat flour,chocolate chips,peanut butter,rolled oats,bananas,salted butter,sea salt,white whole wheat flour,buttermilk,shortening,creamy peanut butter,ground cloves,pumpkin puree,nutmeg,apples,confectioners' sugar,ground nutmeg,raisins,coconut,sweetened condensed milk,whipped topping,blueberries,all purpose flour,chia seeds,cocoa powder,raspberries,whipped cream,ground ginger,unsweetened shredded coconut,oil,greek yogurt,egg yolk,dark chocolate,graham crackers,marshmallows,almond extract,orange zest,egg whites,egg yolks,vanilla bean,semisweet chocolate chips,whole wheat pastry flour,rhubarb,brown rice,molasses,bittersweet chocolate,unsweetened chocolate,corn syrup,banana,egg white,active yeast,turbinado sugar,whole milk
+cluster 1: sugar,water,brown sugar
+cluster 2: bbq sauce,bacon,cream,potatoes,sharp cheddar cheese,broccoli florets,cherry tomatoes,cucumber,fresh mushrooms,kale,red potatoes,apple,shredded cheddar cheese,bread crumbs,dried basil,green bell pepper,jalapeno pepper,zucchini,apple cider vinegar,avocado,dijon mustard,radishes,skinless boneless chicken thighs,sea-salt,cheddar cheese,chickpeas,pineapple,lemon zest,beef broth,dried thyme,dried cranberries,garlic salt,part-skim mozzarella cheese,pizza sauce,tomato,russet potatoes,fresh thyme leaves,parmesan,ground beef,pasta,salsa,baby arugula,pine nuts,chicken breasts,frozen corn,jalapeno peppers,quinoa,jalapeno,onion powder,green beans,skinless boneless chicken breasts,dry white wine,goat cheese,fresh parsley,shredded chicken,tomato paste,rosemary,corn kernels,cornmeal,fresh basil leaves,tomatoes,low sodium chicken broth,mayonnaise,fresh basil,shallots,lime zest,carrot,half and half,chicken stock,curry powder,bread,mango,vegetable broth,leeks,shredded mozzarella cheese,butternut squash,fresh cilantro leaves,plain greek yogurt,double cream,bay leaves,chicken breast,shrimp,worcestershire sauce,ground coriander,flour tortillas,spinach,fresh dill,lemon,mushrooms,baby spinach,balsamic vinegar,kalamata olives,shallot,tahini,cheese,white vinegar,garlic clove,lime wedges,marinara sauce,scallions,button mushrooms,dill,portobello mushrooms,red wine vinegar,beer,coriander,almonds,cider vinegar,vodka,green onion,yellow bell pepper,puff pastry,evaporated milk,corn starch,thyme leaves,white wine,chili sauce
+cluster 3: garlic,onion
+cluster 4: salt
+cluster 5: salt and pepper,kosher salt,sour cream,red onion,canned tomatoes,celery,chicken broth,onions,Salt & Pepper,smoked paprika,ground pepper,juice of lime,extra virgin olive oil,garlic cloves,pepper,black pepper,ground cumin,lemon juice,parsley,parmesan cheese,fresh cilantro,juice of lemon,bell pepper,canned black beans,chili powder,cumin,garlic powder,oregano,carrots,yellow onion,cayenne pepper,paprika
+cluster 6: olive oil
+cluster 7: egg,baking powder,granulated sugar,unsalted butter,vanilla extract,baking soda,milk,eggs
+cluster 8: flour,butter
+cluster 9: ginger,ketchup,rice vinegar,soy sauce,canola oil,cornstarch,green onions,honey,red pepper flakes,fresh ginger,sesame oil,vegetable oil,cilantro leaves,red bell pepper,sesame seeds,low sodium soy sauce,lime juice,orange juice,cilantro,cashews
+Cluster distance (5, 9): 10.3280491815
+Cluster distance (4, 7): 58.7395350893
+Cluster distance (1, 3): 33.7349260959
+Cluster distance (4, 8): 53.1388958853
+Cluster distance (5, 6): 44.4322704547
+Cluster distance (2, 8): 37.2710865749
+Cluster distance (6, 9): 50.220004243
+Cluster distance (0, 7): 20.2844403972
+Cluster distance (8, 9): 36.7413046076
+Cluster distance (1, 6): 46.9333573823
+Cluster distance (3, 7): 38.7024424549
+Cluster distance (2, 5): 7.96656184635
+Cluster distance (0, 3): 37.9411562057
+Cluster distance (5, 8): 35.3679317847
+Cluster distance (1, 2): 24.4448870518
+Cluster distance (4, 9): 69.8864641078
+Cluster distance (2, 9): 7.81291720122
+Cluster distance (1, 5): 22.3853905465
+Cluster distance (3, 6): 28.4208344929
+Cluster distance (0, 4): 71.418739525
+Cluster distance (7, 9): 23.09171417
+Cluster distance (2, 7): 23.3414316984
+Cluster distance (2, 6): 50.4958998574
+Cluster distance (4, 5): 66.4203706166
+Cluster distance (1, 4): 54.9234760921
+Cluster distance (3, 9): 33.6373373881
+Cluster distance (2, 3): 35.8259924558
+Cluster distance (1, 9): 22.4874591196
+Cluster distance (6, 8): 53.9991929686
+Cluster distance (6, 7): 53.4532519839
+Cluster distance (0, 8): 35.4700690375
+Cluster distance (3, 5): 29.8208062429
+Cluster distance (0, 1): 22.5113281092
+Cluster distance (4, 6): 55.0386063471
+Cluster distance (7, 8): 23.4277377475
+Cluster distance (5, 7): 23.4803211424
+Cluster distance (0, 2): 4.40653708732
+Cluster distance (3, 8): 39.7231854059
+Cluster distance (0, 6): 52.8172442987
+Cluster distance (1, 8): 23.4064885347
+Cluster distance (1, 7): 14.4994747207
+Cluster distance (0, 9): 8.49964204899
+Cluster distance (0, 5): 10.64827414
+Cluster distance (3, 4): 54.7786001538
+Cluster distance (2, 4): 71.8483393566

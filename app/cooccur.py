@@ -65,8 +65,13 @@ def create_matrix():
     matrix = []
     ingredients = models.Ingredient.query.all()
     for i in ingredients:
-        keys.append(i.name)
-        matrix.append([0] * len(ingredients))
+        # only add ingredients which occur in more than 1 recipe for co occurrence matrix
+        num_occurrences = models.Recipe_Ingredient.query.filter_by(ingredient_name=i.name).all()
+        # to avoid outliers skewing the data, only include ingredients
+        # found in more than 1 recipe
+        if len(num_occurrences) > 3:
+            keys.append(i.name)
+            matrix.append([0] * len(ingredients))
     for x,i1 in enumerate(keys):
         for y,i2 in enumerate(keys):
             entry = models.Co_Occur_Matrix.query.get((i1, i2))

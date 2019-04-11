@@ -7,14 +7,30 @@
             </div>
             <div class="modal-body recipe-modal-body">
                 <h3 class="recipe-modal-title" id="{{ recipe.id }}-modalLabel">{{ recipe.name }}</h3>
-                <h4 class="thin-text">Ingredients</h4>
-                {% for ingredient in recipe.ingredients %}
-                    <h5 class="extra-thin-text">{{ ingredient }}</h5>
-                {% endfor %}
-                <h4 class="thin-text">Steps</h4>
-                {% for step in recipe.steps %}
-                <h5 class="extra-thin-text">{{ loop.index0 + 1 }}. {{ step }}</h5>
-                {% endfor %}
+                {% if 'prep_time' in recipe %}
+                    <div class="prep-time recipe-component">
+                        <h4 class="thin-text">Prep Time</h4>
+                        <h5 class="extra-thin-text">{{ recipe.prep_time }}</h5>
+                    </div>
+                {% endif %}
+                {% if 'servings' in recipe %}
+                    <div class="servings recipe-component">
+                        <h4 class="thin-text">Servings</h4>
+                        <h5 class="extra-thin-text">{{ recipe.servings }}</h5>
+                    </div>
+                {% endif %}
+                <div class="ingredients recipe-component">
+                    <h4 class="thin-text">Ingredients</h4>
+                    {% for ingredient in recipe.ingredients %}
+                        <h5 class="extra-thin-text">{{ ingredient }}</h5>
+                    {% endfor %}
+                </div>
+                <div class="steps recipe-component">
+                    <h4 class="thin-text">Steps</h4>
+                    {% for step in recipe.steps %}
+                        <h5 class="extra-thin-text">{{ loop.index0 + 1 }}. {{ step }}</h5>
+                    {% endfor %}
+                </div>
             </div>
             <div class="modal-footer recipe-modal-footer">
                 <button type="button" class="btn btn-sm" data-toggle="modal" onclick="closeRecipeModal('{{ recipe.id }}')">Close</button>

@@ -1,0 +1,4 @@
+Minimum distance between ingredients: 2.07848718281 (confectioners' sugar, baking powder)
+Maximum distance between ingredients: 19.624077962 (olive oil, sugar)
+Avg distance between ingredients: 8.64080529178
+Total number of ingredients: 473

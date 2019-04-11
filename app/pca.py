@@ -1,19 +1,18 @@
-import pandas as pd
+from cooccur import create_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-from cooccur import create_matrix
-from app import db, models
+import pandas as pd
+from utils import *
+from db_accessor import delete_pca_data, add_pca_coordinate
 
 
 def implement_pca_on_matrix(components=4):
     if components > 25:
         raise(Exception('[Error] must reduce to less than 25 components'))
-    columns = ['a','b','c','d','e','f',
-               'g','h','i','j','k','l',
-               'm','n','o','p','q','r',
-               's','t','u','v','w','x',
-               'y','z'][:components]
+    columns = get_alphabet_columns()[:components]
     initial_matrix, keys = create_matrix()
+    if initial_matrix == []:
+        return []
     new_matrix = StandardScaler().fit_transform(initial_matrix)
     pca = PCA(n_components = components)
     keys_dataframe = pd.DataFrame(keys)
@@ -30,32 +29,22 @@ def implement_pca_on_matrix(components=4):
 
 def add_pca_coordinates_to_db(components=4):
     try:
-        old_entries = models.PCA_Coordinate.query.all()
-        for old_entry in old_entries:
-            db.session.delete(old_entry)
-        columns = ['a','b','c','d','e','f',
-                   'g','h','i','j','k','l',
-                   'm','n','o','p','q','r',
-                   's','t','u','v','w','x',
-                   'y','z'][:components]
+        delete_pca_data()
+        columns = get_alphabet_columns()[:components]
         pca_matrix = implement_pca_on_matrix(components)
+        if pca_matrix == []:
+            return
         for entry in pca_matrix:
             ingredient = entry[components]
             for x in range(components):
-                new_coordinate = models.PCA_Coordinate(
-                    ingredient_name=ingredient,
-                    column_name=columns[x],
-                    value=entry[x]
-                )
-                db.session.add(new_coordinate)
-        db.session.commit()
+                add_pca_coordinate(ingredient, columns[x], entry[x])
     except Exception as e:
         print(e)
         print("[Error] Error adding pca coordinates to db")
-        db.session.rollback()
 
 
 
-def find_farthest_ingredients():
-    finalDfArr = implement_pca_on_matrix()
-    max_dist = 0
+
+
+
+

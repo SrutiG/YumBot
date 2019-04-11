@@ -24,10 +24,10 @@ def find_random_recipes(numRecipes, formatted=True):
 
 def search_recipes_by_ingredient(ingredient_list):
     new_recipes = []
-    num_recipes = "8"
+    num_recipes = "7"
     ingredients = ",".join(ingredient_list)
     url = api_url + "/recipes/findByIngredients?number=" \
-          + num_recipes + "&ingredients=" + ingredients
+          + num_recipes + "&ingredients=" + ingredients + "&ranking=2"
     try:
         response = requests.get(url, headers=headers)
         for recipe in response.json():
@@ -57,6 +57,8 @@ def format_spoonacular_recipe(recipe):
     new_recipe["id"] = recipe["id"]
     if "ready_in_minutes" in recipe:
         new_recipe["prep_time"] = recipe["ready_in_minutes"]
+    if "servings" in recipe:
+        new_recipe["servings"] = recipe["servings"]
     if "image" in recipe:
         new_recipe["image"] = recipe["image"]
     for ing in recipe["extendedIngredients"]:
@@ -66,7 +68,6 @@ def format_spoonacular_recipe(recipe):
             new_recipe["steps"].append(step["step"])
     else:
         new_recipe["steps"] = recipe["instructions"].split("\n")
-    print(new_recipe)
     return new_recipe
 
 
