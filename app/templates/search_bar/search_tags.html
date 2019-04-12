@@ -5,3 +5,8 @@
         </h5>
     </div>
 {% endfor %}
+{% if search|length > 0 %}
+    <div class="clear-search">
+        <h5><a href="{{ url_for('clear_search') }}">Clear Search</a></h5>
+    </div>
+{% endif %}

@@ -1,3 +1,6 @@
+'''
+
+'''
 import requests
 import os
 
@@ -8,6 +11,12 @@ require_instructions = "&instructionsRequired=1"
 headers = {"X-RapidAPI-Host":api_host,"X-RapidAPI-key":api_key}
 
 def find_random_recipes(numRecipes, formatted=True):
+    '''
+
+    :param numRecipes:
+    :param formatted:
+    :return:
+    '''
     new_recipes = []
     url = api_url + "/recipes/random?number=" + str(numRecipes) + require_instructions
     try:
@@ -23,24 +32,40 @@ def find_random_recipes(numRecipes, formatted=True):
     return new_recipes
 
 def search_recipes_by_ingredient(ingredient_list):
+    '''
+
+    :param ingredient_list:
+    :return:
+    '''
     new_recipes = []
-    num_recipes = "7"
+    num_recipes = "4"
     ingredients = ",".join(ingredient_list)
     url = api_url + "/recipes/findByIngredients?number=" \
-          + num_recipes + "&ingredients=" + ingredients + "&ranking=2"
+          + num_recipes + "&ingredients=" + ingredients \
+          + "&ranking=2&ignorePantry=false"
     try:
         response = requests.get(url, headers=headers)
+        recipe_names = set()
         for recipe in response.json():
+            if recipe["title"] in recipe_names:
+                continue;
             recipe_information = get_recipe_information(recipe["id"])
             new_recipe = format_spoonacular_recipe(recipe_information)
             new_recipe["used_ingredient_count"] = recipe["usedIngredientCount"]
+            new_recipe["missed_ingredient_count"] = recipe["missedIngredientCount"]
             new_recipes.append(new_recipe)
+            recipe_names.add(new_recipe["name"])
     except Exception as e:
         print(e)
         print("[Error] error getting recipe data when searching by ingredient")
     return new_recipes
 
 def get_recipe_information(id):
+    '''
+
+    :param id:
+    :return:
+    '''
     url = api_url + "/recipes/" + str(id) + "/information"
     recipe = ""
     try:
@@ -52,9 +77,15 @@ def get_recipe_information(id):
     return recipe
 
 def format_spoonacular_recipe(recipe):
+    '''
+
+    :param recipe:
+    :return:
+    '''
     new_recipe = {"ingredients":[], "steps":[]}
     new_recipe["name"] = recipe["title"]
     new_recipe["id"] = recipe["id"]
+    new_recipe["yumbot"] = False
     if "ready_in_minutes" in recipe:
         new_recipe["prep_time"] = recipe["ready_in_minutes"]
     if "servings" in recipe:

@@ -1,4 +1,3 @@
-
 '''
 Title
 -----
@@ -9,6 +8,9 @@ Database schema
 '''
 from app import db
 
+'''
+
+'''
 class Recipe(db.Model):
     __tablename__ = 'recipe'
     name = db.Column(db.String(128), index=True, primary_key=True)
@@ -24,6 +26,9 @@ class Recipe(db.Model):
     ingredients = db.relationship("Recipe_Ingredient", cascade="all", backref="recipe", passive_updates=False)
     steps = db.relationship("Recipe_Step", cascade="all", backref="recipe", passive_updates=False)
 
+'''
+
+'''
 class Ingredient(db.Model):
     __tablename__ = 'ingredient'
     name = db.Column(db.String(128), index=True, primary_key=True)
@@ -32,15 +37,33 @@ class Ingredient(db.Model):
     recipes = db.relationship("Recipe_Ingredient", cascade="all", backref="ingredient", passive_updates=False)
     pca_coordinates = db.relationship("PCA_Coordinate", cascade="all", backref="ingredient", passive_updates=False)
 
+    def __str__(self):
+        '''
+
+        :return:
+        '''
+        return self.name
+
     def get_coordinates(self):
+        '''
+
+        :return:
+        '''
         return tuple(self.get_coordinates_list())
 
     def get_coordinates_list(self):
+        '''
+
+        :return:
+        '''
         coordinates_list = [None] * len(self.pca_coordinates)
         for coordinate in self.pca_coordinates:
             coordinates_list[ord(coordinate.column_name) - 97] = coordinate.value
         return coordinates_list
 
+'''
+
+'''
 class Recipe_Ingredient(db.Model):
     __tablename__ = 'recipe_ingredient'
     recipe_name = db.Column(db.String(128), db.ForeignKey('recipe.name'), primary_key=True)
@@ -54,6 +77,9 @@ class Recipe_Ingredient(db.Model):
     metric_unit = db.Column(db.String(64))
     standard_amount = db.Column(db.Integer)
 
+'''
+
+'''
 class Recipe_Step(db.Model):
     __tablename__ = 'recipe_step'
     recipe_name = db.Column(db.String(128), db.ForeignKey('recipe.name'), primary_key=True)
@@ -61,6 +87,9 @@ class Recipe_Step(db.Model):
     step_number = db.Column(db.Integer)
     ingredients = db.relationship("Recipe_Step_Ingredient", cascade="all", backref="recipe_step", passive_updates=False)
 
+'''
+
+'''
 class Recipe_Step_Ingredient(db.Model):
     __tablename__= 'recipe_step_ingredient'
     recipe_name = db.Column(db.String(128), primary_key=True)
@@ -110,6 +139,12 @@ class Kmeans_Cluster(db.Model):
         for coord in self.coordinates:
             coordinates[ord(coord.column_name) - 97] = coord.value
         return coordinates
+
+    def get_ingredient_strings(self):
+        ingredients_str = []
+        for ingredient in self.ingredients:
+            ingredients_str.append(str(ingredient))
+        return ingredients_str
 
 
 '''

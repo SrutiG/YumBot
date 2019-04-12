@@ -1,3 +1,6 @@
+'''
+
+'''
 from cooccur import create_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
@@ -7,6 +10,11 @@ from db_accessor import delete_pca_data, add_pca_coordinate
 
 
 def implement_pca_on_matrix(components=4):
+    '''
+
+    :param components:
+    :return:
+    '''
     if components > 25:
         raise(Exception('[Error] must reduce to less than 25 components'))
     columns = get_alphabet_columns()[:components]
@@ -28,6 +36,11 @@ def implement_pca_on_matrix(components=4):
     return finalDfArr
 
 def add_pca_coordinates_to_db(components=4):
+    '''
+
+    :param components:
+    :return:
+    '''
     try:
         delete_pca_data()
         columns = get_alphabet_columns()[:components]
@@ -38,6 +51,8 @@ def add_pca_coordinates_to_db(components=4):
             ingredient = entry[components]
             for x in range(components):
                 add_pca_coordinate(ingredient, columns[x], entry[x])
+        # TODO add error handling
+        print("[Info] Successfully added pca coordinates to db")
     except Exception as e:
         print(e)
         print("[Error] Error adding pca coordinates to db")

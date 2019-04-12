@@ -1,16 +1,29 @@
+'''
+
+'''
 from spoonacular_api import find_random_recipes
 from app import db, models
 import unicodedata
 from cooccur import add_recipe_ingredients_to_matrix, generate_new_matrix
+from db_accessor import delete_pca_data, delete_kmeans_clusters
 
 def add_recipes_to_db(num_recipes):
+    '''
+
+    :param num_recipes:
+    :return:
+    '''
     recipes = find_random_recipes(num_recipes, False)
+    successful_adds = 0
+    num_existing = 0
+    num_error = 0
     for r in recipes:
         if "title" not in r:
             continue
         try:
             has_recipe = models.Recipe.query.get(r["title"])
             if has_recipe:
+                num_existing += 1
                 continue
             recipe = models.Recipe(name=r["title"])
             add_general(recipe, r)
@@ -19,12 +32,26 @@ def add_recipes_to_db(num_recipes):
             db.session.add(recipe)
             db.session.commit()
             add_recipe_ingredients_to_matrix(r["extendedIngredients"])
+            successful_adds += 1
         except Exception as e:
             print(e)
             print("[Error] failed to add recipe " + r["title"])
+            num_error += 1
             db.session.rollback()
+    print("[Info] Successfully added "
+          + str(successful_adds)
+          + " recipes to database")
+    print("[Info] " + str(num_existing) + " recipes were not added "
+                                          "because they already exist")
+    print("[Info] error adding " + str(num_error) + " recipes")
 
 def add_general(recipe_object, recipe_info):
+    '''
+
+    :param recipe_object:
+    :param recipe_info:
+    :return:
+    '''
     try:
         if "sourceName" in recipe_info:
             recipe_object.source = recipe_info["sourceName"]
@@ -48,6 +75,12 @@ def add_general(recipe_object, recipe_info):
         raise(Exception(str(e) + " [Add General]"))
 
 def add_ingredients(recipe_name, ingredients):
+    '''
+
+    :param recipe_name:
+    :param ingredients:
+    :return:
+    '''
     try:
         for i in ingredients:
             has_ingredient = models.Ingredient.query.get(i["name"])
@@ -82,6 +115,12 @@ def add_ingredients(recipe_name, ingredients):
         raise(Exception(str(e) + " [Add Ingredients]"))
 
 def add_steps(recipe_name, steps):
+    '''
+
+    :param recipe_name:
+    :param steps:
+    :return:
+    '''
     try:
         for s in steps:
             s["step"] = unicodedata.normalize('NFKD', s["step"]).encode('ascii','ignore')
@@ -99,7 +138,15 @@ def add_steps(recipe_name, steps):
     except Exception as e:
         raise(Exception(str(e) + " [Add Steps]"))
 
-def clear_db(max_count=None, save_matrix=True):
+def clear_db(max_count=None, save_comp=True):
+    '''
+
+    :param max_count:
+    :param save_comp:
+    :return:
+    '''
+    if max_count != None and type(max_count) != int:
+        raise(Exception("[Error] Max count must be an integer or None"))
     try:
         counter = 0
         recipes = models.Recipe.query.all()
@@ -112,8 +159,16 @@ def clear_db(max_count=None, save_matrix=True):
         for ingredient in ingredients:
             if len(ingredient.recipes) == 0:
                 db.session.delete(ingredient)
-        if not save_matrix:
-            generate_new_matrix()
+        generate_new_matrix()
+        if not save_comp:
+            delete_pca = delete_pca_data()
+            delete_kmeans = delete_kmeans_clusters()
+            if delete_pca["error"] == None and delete_kmeans["error"] == None:
+                print("[Info] Successfully removed pca and kmeans data")
         db.session.commit()
+        if max_count != None:
+            print("[Info] Successfully removed " + str(max_count) + " recipes from db")
+        else:
+            print("[Info] Successfully removed recipes from database")
     except Exception as e:
         print(e)

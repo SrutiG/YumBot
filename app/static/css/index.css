@@ -12,6 +12,7 @@
     --recipe_height: 295px;
     --search_height: 130px;
     --topbar_height: 40px;
+    --yumbot_font: 'Pacifico', cursive;
 }
 
 /*===================================general===================================*/
@@ -41,7 +42,7 @@ body {
     height: var(--topbar_height);
     width: 100%;
     background-color: var(--primary_dark);
-    font-family: 'Pacifico', cursive;
+    font-family: var(--yumbot_font);
     padding: 3px 15px 0 15px;
 }
 
@@ -72,7 +73,7 @@ body {
     /*border-radius: 0 ! important;*/
     border: 1px solid var(--primary);
     border-radius: 25px ! important;
-    color: var(--accent);
+    color: var(--primary);
     height: 40px ! important;
 
 }
@@ -82,7 +83,7 @@ body {
 }
 
 .search-glyph {
-    color: var(--accent);
+    color: var(--primary);
     top: 4px ! important;
     right: 30px ! important;
     line-height: 2.5 ! important;
@@ -110,6 +111,16 @@ body {
     display: inline-block;
     padding: 0 5px;
     margin: 5px;
+}
+
+.clear-search {
+    display: inline-block;
+    margin: 5px;
+}
+
+.clear-search h5 a {
+    color: var(--primary);
+    text-decoration: underline;
 }
 
 .search-tag-ic {
@@ -161,6 +172,44 @@ body {
     left: 0;
 }
 
+.yumbot-recipe {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    top: 5px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: var(--primary_light)
+}
+
+.yumbot-recipe-text {
+    font-family: var(--yumbot_font);
+}
+
+.recipe-missing-ingredients {
+    position: absolute;
+    display: table;
+    z-index: 3;
+    top: 5px;
+    right: 5px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    color: var(--primary_light);
+}
+
+.recipe-missing-ingredients-text {
+    font-weight: 300;
+}
+
+.elevated-elem {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
 .recipe-name-background {
     position: absolute;
     z-index: 3;
@@ -201,6 +250,7 @@ body {
     height: auto;
     transform: translateY(-200px);
     margin-bottom: -200px;
+    position: relative;
 }
 
 .recipe-modal-body {
@@ -210,4 +260,9 @@ body {
 
 .recipe-component {
     margin: 20px 0;
+}
+
+.yumbot-header {
+    color: var(--accent);
+    font-family: var(--yumbot_font);
 }

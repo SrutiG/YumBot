@@ -1,4 +1,4 @@
-Minimum distance between ingredients: 2.07848718281 (confectioners' sugar, baking powder)
-Maximum distance between ingredients: 19.624077962 (olive oil, sugar)
-Avg distance between ingredients: 8.64080529178
-Total number of ingredients: 473
+Minimum distance between ingredients: 1.22322844711 (semisweet chocolate chips, corn syrup)
+Maximum distance between ingredients: 38.6310857075 (salt, ground beef)
+Avg distance between ingredients: 10.6082507049
+Total number of ingredients: 717

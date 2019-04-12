@@ -4,8 +4,16 @@
         <div class="modal-content recipe-modal-content">
             <div class="modal-header recipe-modal-header">
                 <img class="recipe-modal-img" src="{{ recipe.image }}">
+                {% if recipe.yumbot %}
+                    <div class="yumbot-recipe text-center">
+                        <h2 class="yumbot-recipe-text">YB</h2>
+                    </div>
+                {% endif %}
             </div>
             <div class="modal-body recipe-modal-body">
+                {% if recipe.yumbot %}
+                    <h2 class="yumbot-header">YumBot</h2>
+                {% endif %}
                 <h3 class="recipe-modal-title" id="{{ recipe.id }}-modalLabel">{{ recipe.name }}</h3>
                 {% if 'prep_time' in recipe %}
                     <div class="prep-time recipe-component">

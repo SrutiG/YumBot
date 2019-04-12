@@ -1,10 +1,17 @@
 import sys
 import csv
 import os
-from utils import find_distance_between_ingredients, filter_existing_ingredients
-from db_accessor import get_ingredients
+from utils import find_distance_between_ingredients, \
+    filter_existing_ingredients, find_stats
+from db_accessor import get_ingredients, get_kmeans_clusters
+from kmeans import get_all_kmeans_cluster_distances
 
 def test_pca(ingredients_list):
+    '''
+
+    :param ingredients_list:
+    :return:
+    '''
     ingredients_list = filter_existing_ingredients(ingredients_list)
     print(ingredients_list)
     if len(ingredients_list) > 1:
@@ -16,7 +23,55 @@ def test_pca(ingredients_list):
         print("Sorry an ingredient isn't in the database")
     return []
 
+def kmeans_test():
+    '''
+
+    :return:
+    '''
+
+    clusters_request = get_kmeans_clusters()
+    if clusters_request["error"] != None:
+        raise(clusters_request["error"])
+    clusters = clusters_request["data"]
+    cluster_distances = get_all_kmeans_cluster_distances()
+    cluster_lengths = [len(cluster.ingredients) for cluster in clusters]
+    kmeans_stats = find_stats(cluster_lengths)
+    with open(os.getcwd() + '/app/test/kmeans_clusters.txt', 'w') as textfile:
+        textfile.write("Size stats\n")
+        textfile.write("-------------------------\n")
+        textfile.write("Mean: " + str(kmeans_stats["mean"]))
+        textfile.write("\n")
+        textfile.write("Median: " + str(kmeans_stats["median"]))
+        textfile.write("\n")
+        textfile.write("St Dev: " + str(kmeans_stats["stdev"]))
+        textfile.write("\n")
+        textfile.write("Quartile 1: " + str(kmeans_stats["qt1"]))
+        textfile.write("\n")
+        textfile.write("Quartile 2: " + str(kmeans_stats["qt2"]))
+        textfile.write("\n")
+        textfile.write("-------------------------\n")
+        textfile.write("\n")
+        for x, cluster in enumerate(clusters):
+            textfile.write("Cluster " + str(x) + "\n")
+            textfile.write("-------------------------\n")
+            textfile.write("Cluster size: " + str(len(cluster.ingredients)) + "\n")
+            textfile.write(",".join(cluster.get_ingredient_strings()) + "\n")
+            textfile.write("-------------------------\n")
+            textfile.write("\n")
+        textfile.write("\n")
+        for i, entry in enumerate(cluster_distances):
+            textfile.write("Distances from Cluster " + str(i) + "\n")
+            textfile.write("-------------------------\n")
+            for j, dist in enumerate(entry):
+                textfile.write("Cluster " + str(j) + ": " + str(dist) + "\n")
+            textfile.write("-------------------------\n")
+            textfile.write("\n")
+
 def create_database_snapshot():
+    '''
+
+    :return:
+    '''
     min_distance_ingredient1 = ''
     min_distance_ingredient2 = ''
     max_distance_ingredient1 = ''
@@ -25,7 +80,10 @@ def create_database_snapshot():
     max_distance = 0
     total_distance = 0
     counter = 0
-    ingredients = get_ingredients()
+    get_ingredients_request = get_ingredients()
+    if get_ingredients_request["error"] != None:
+        raise(get_ingredients_request["error"])
+    ingredients = get_ingredients_request["data"]
     if ingredients == None:
         return
     pca_matrix_keys = ['']
