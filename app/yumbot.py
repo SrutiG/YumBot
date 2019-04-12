@@ -5,7 +5,8 @@ import random
 from db_accessor import get_kmeans_clusters, get_ingredient
 from utils import get_recipe_format, filter_existing_ingredients,\
     get_random_string
-from kmeans import cluster_size_upper_threshold, find_closest_cluster
+from kmeans import cluster_size_upper_threshold, find_closest_cluster,\
+    find_closest_clusters_under_threshold
 
 class YumBot:
 
@@ -25,17 +26,13 @@ class YumBot:
         :return:
         '''
         clusters = self.clusters
-        found_cluster = False
         count = 0
-        cluster = 0
-        while found_cluster == False and count < len(clusters):
-            cluster = random.randint(0, len(clusters) - 1)
-            if len(clusters[cluster].ingredients) < 2:
-                count += 1
-                continue
-            found_cluster = True
-        if not found_cluster:
-            return None
+        ingredients = []
+        cluster = random.randint(0, len(clusters) - 1)
+        while len(ingredients) < 4 and count < len(self.clusters):
+            ingredients += self.clusters[cluster].ingredients
+            count += 1
+            cluster = find_closest_cluster(cluster)
         return clusters[cluster].ingredients
 
 
@@ -48,7 +45,7 @@ class YumBot:
         recipe_name = []
         try:
             ingredients = self.find_random_valid_cluster_ingredients()
-            num_ingredients = random.randint(2, min(len(ingredients), 10))
+            num_ingredients = random.randint(2, min(len(ingredients), 15))
             used_ingredients = set()
             for x in range(num_ingredients):
                 found_ingredient = False
@@ -102,15 +99,17 @@ class YumBot:
                     if size_cluster_1 > threshold and size_cluster_2 > threshold:
                         return False
                     elif size_cluster_1 > threshold and size_cluster_2 < threshold:
-                        closest_cluster = find_closest_cluster(compare_ing.cluster_number)
-                        if closest_cluster != ingredient.cluster_number:
+                        closest_clusters = find_closest_clusters_under_threshold(compare_ing.cluster_number)
+                        if ingredient.cluster_number not in closest_clusters:
                             return False
                     elif size_cluster_1 < threshold and size_cluster_2 > threshold:
-                        closest_cluster = find_closest_cluster(ingredient.cluster_number)
-                        if closest_cluster != compare_ing.cluster_number:
+                        closest_clusters = find_closest_clusters_under_threshold(ingredient.cluster_number)
+                        if compare_ing.cluster_number not in closest_clusters:
                             return False
                     else:
-                        return False
+                        closest_clusters = find_closest_clusters_under_threshold(ingredient.cluster_number)
+                        if compare_ing.cluster_number not in closest_clusters:
+                            return False
             return True
         except Exception as e:
             print("[Error] Error checking if ingredients are compatible")

@@ -36,7 +36,7 @@ def distance_between_coordinates(coord1, coord2):
     distance = math.sqrt(accum)
     return distance
 
-def find_distance_between_ingredients(ingredient_1, ingredient_2):
+def find_distance_between_ingredients(ingredient_1, ingredient_2, print_values=False):
     '''
 
     :param ingredient_1:
@@ -54,7 +54,8 @@ def find_distance_between_ingredients(ingredient_1, ingredient_2):
     coord1 = i1_obj.get_coordinates()
     coord2 = i2_obj.get_coordinates()
     distance = distance_between_coordinates(coord1, coord2)
-    # print(ingredient_1 + "-" + ingredient_2 + " distance: " + str(distance))
+    if print_values:
+        print(ingredient_1 + "-" + ingredient_2 + " distance: " + str(distance))
     return distance
 
 def filter_existing_ingredients(ingredients_list):

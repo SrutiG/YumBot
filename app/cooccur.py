@@ -69,7 +69,7 @@ def create_matrix():
         num_occurrences = models.Recipe_Ingredient.query.filter_by(ingredient_name=i.name).all()
         # to avoid outliers skewing the data, only include ingredients
         # found in more than 1 recipe
-        if len(num_occurrences) > 3:
+        if len(num_occurrences) > 5:
             keys.append(i.name)
             matrix.append([0] * len(ingredients))
     for x,i1 in enumerate(keys):

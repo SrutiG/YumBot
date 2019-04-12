@@ -32,6 +32,47 @@ def get_all_kmeans_cluster_distances():
         cluster_distances[c1.cluster_number] = distances
     return cluster_distances
 
+def get_sorted_distances_from_cluster(cluster_number):
+    '''
+
+    :param cluster_number:
+    :return:
+    '''
+    kmeans_clusters_request = get_kmeans_clusters()
+    if kmeans_clusters_request["error"]:
+        print(kmeans_clusters_request["error"])
+        return None
+    kmeans_clusters = kmeans_clusters_request["data"]
+    cluster = None
+    distances = {}
+    sorted_distances = []
+    for c in kmeans_clusters:
+        if c.cluster_number == cluster_number:
+            cluster = c
+    if cluster == None:
+        return {}
+    for other_cluster in kmeans_clusters:
+        if other_cluster.cluster_number != cluster.cluster_number:
+            distances[other_cluster.cluster_number] = distance_between_coordinates(
+                cluster.get_coordinates(), other_cluster.get_coordinates()
+            )
+    for key, value in sorted(distances.items(), key=lambda item: item[1]):
+        sorted_distances.append(key)
+    return sorted_distances
+
+
+def get_all_kmeans_cluster_distances_dictionary():
+    '''
+
+    :return:
+    '''
+    cluster_distances_list = get_all_kmeans_cluster_distances()
+    cluster_distances_dict = []
+    for c in cluster_distances_list:
+        distance_dict = dict((i,k) for i,k in enumerate(c))
+        cluster_distances_dict.append(distance_dict)
+    return cluster_distances_dict
+
 def find_closest_cluster(cluster_number):
     '''
 
@@ -63,6 +104,23 @@ def find_closest_cluster(cluster_number):
                 closest_cluster = c.cluster_number
     return closest_cluster
 
+def find_closest_clusters_under_threshold(cluster_number):
+    '''
+
+    :param cluster_number:
+    :return:
+    '''
+    closest_clusters = set()
+    sorted_distances = get_sorted_distances_from_cluster(cluster_number)
+    threshold = cluster_size_upper_threshold()
+    if get_cluster_size(cluster_number) > threshold:
+        return sorted_distances
+    for x in sorted_distances:
+        closest_clusters.add(x)
+        if get_cluster_size(x) > threshold:
+            break
+    return sorted_distances
+
 def smallest_cluster_size():
     '''
 
@@ -78,6 +136,13 @@ def smallest_cluster_size():
         if len(cluster.ingredients) < min_size:
             min_size = len(cluster.ingredients)
     return min_size
+
+def get_cluster_size(cluster_number):
+    cluster_request = get_kmeans_cluster(cluster_number)
+    if cluster_request["error"]:
+        print(cluster_request["error"])
+        return sys.maxint
+    return cluster_request["data"].get_size()
 
 def largest_cluster_size():
     '''

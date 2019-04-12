@@ -42,7 +42,7 @@ class Ingredient(db.Model):
 
         :return:
         '''
-        return self.name
+        return self.name.encode('utf-8')
 
     def get_coordinates(self):
         '''
@@ -60,6 +60,7 @@ class Ingredient(db.Model):
         for coordinate in self.pca_coordinates:
             coordinates_list[ord(coordinate.column_name) - 97] = coordinate.value
         return coordinates_list
+
 
 '''
 
@@ -145,6 +146,9 @@ class Kmeans_Cluster(db.Model):
         for ingredient in self.ingredients:
             ingredients_str.append(str(ingredient))
         return ingredients_str
+
+    def get_size(self):
+        return len(self.ingredients)
 
 
 '''

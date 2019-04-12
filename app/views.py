@@ -12,7 +12,12 @@ global yb
 @app.before_request
 def before_request():
     global yb
+    # global recipes
     yb = YumBot()
+    # search = session.get("search")
+    # if len(search) > 0:
+    #     recipes = yb.create_recipes_from_ingredients(search) or []
+    #     recipes += search_recipes_by_ingredient(search)
 
 @app.route('/')
 def index():

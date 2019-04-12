@@ -4,9 +4,9 @@ import os
 from utils import find_distance_between_ingredients, \
     filter_existing_ingredients, find_stats
 from db_accessor import get_ingredients, get_kmeans_clusters
-from kmeans import get_all_kmeans_cluster_distances
+from kmeans import get_all_kmeans_cluster_distances_dictionary
 
-def test_pca(ingredients_list):
+def test_pca(ingredients_list, print_values=False):
     '''
 
     :param ingredients_list:
@@ -18,7 +18,7 @@ def test_pca(ingredients_list):
         for i1 in ingredients_list:
             for i2 in ingredients_list:
                 if i1 != i2:
-                    find_distance_between_ingredients(i1, i2)
+                    find_distance_between_ingredients(i1, i2, print_values)
     else:
         print("Sorry an ingredient isn't in the database")
     return []
@@ -33,7 +33,7 @@ def kmeans_test():
     if clusters_request["error"] != None:
         raise(clusters_request["error"])
     clusters = clusters_request["data"]
-    cluster_distances = get_all_kmeans_cluster_distances()
+    cluster_distances = get_all_kmeans_cluster_distances_dictionary()
     cluster_lengths = [len(cluster.ingredients) for cluster in clusters]
     kmeans_stats = find_stats(cluster_lengths)
     with open(os.getcwd() + '/app/test/kmeans_clusters.txt', 'w') as textfile:
@@ -62,8 +62,8 @@ def kmeans_test():
         for i, entry in enumerate(cluster_distances):
             textfile.write("Distances from Cluster " + str(i) + "\n")
             textfile.write("-------------------------\n")
-            for j, dist in enumerate(entry):
-                textfile.write("Cluster " + str(j) + ": " + str(dist) + "\n")
+            for key, value in sorted(entry.items(), key=lambda item: item[1]):
+                textfile.write("%s: %s \n" % (key, value))
             textfile.write("-------------------------\n")
             textfile.write("\n")
 

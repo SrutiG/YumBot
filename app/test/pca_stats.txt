@@ -1,4 +1,4 @@
-Minimum distance between ingredients: 1.22322844711 (semisweet chocolate chips, corn syrup)
-Maximum distance between ingredients: 38.6310857075 (salt, ground beef)
-Avg distance between ingredients: 10.6082507049
-Total number of ingredients: 717
+Minimum distance between ingredients: 0.464017309552 (tamarind, as required)
+Maximum distance between ingredients: 319.075049003 (salt, dinner yeast rolls)
+Avg distance between ingredients: 15.8880135124
+Total number of ingredients: 3504
