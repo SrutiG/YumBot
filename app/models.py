@@ -76,7 +76,9 @@ class Recipe_Ingredient(db.Model):
     us_unit = db.Column(db.String(64))
     metric_amount = db.Column(db.Integer)
     metric_unit = db.Column(db.String(64))
+    standard_amount_string = db.Column(db.String(128))
     standard_amount = db.Column(db.Integer)
+    standard_unit = db.Column(db.String(64))
 
 '''
 

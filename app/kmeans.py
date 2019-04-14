@@ -119,7 +119,7 @@ def find_closest_clusters_under_threshold(cluster_number):
         closest_clusters.add(x)
         if get_cluster_size(x) > threshold:
             break
-    return sorted_distances
+    return closest_clusters
 
 def smallest_cluster_size():
     '''

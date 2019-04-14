@@ -27,7 +27,11 @@ def add_recipes_to_db(num_recipes):
                 continue
             recipe = models.Recipe(name=r["title"])
             add_general(recipe, r)
-            add_ingredients(r["title"], r["extendedIngredients"])
+            add_ingredients(
+                r["title"],
+                r["extendedIngredients"],
+                r["servings"] if "servings" in r else None
+            )
             add_steps(r["title"], r["analyzedInstructions"][0]["steps"])
             db.session.add(recipe)
             db.session.commit()
@@ -74,7 +78,7 @@ def add_general(recipe_object, recipe_info):
     except Exception as e:
         raise(Exception(str(e) + " [Add General]"))
 
-def add_ingredients(recipe_name, ingredients):
+def add_ingredients(recipe_name, ingredients, servings=None):
     '''
 
     :param recipe_name:
@@ -109,7 +113,15 @@ def add_ingredients(recipe_name, ingredients):
                             recipe_ingredient.metric_amount = i["measures"]["metric"]["amount"]
                         if "unitShort" in i["measures"]["metric"]:
                             recipe_ingredient.metric_unit = i["measures"]["metric"]["unitShort"]
-                # TODO calculate standard amount
+                    if "amount" in i and "unit" in i and servings:
+                        try:
+                            amount_std = int(float(i["amount"])/float(servings))
+                            recipe_ingredient.standard_amount_string = "%d %s"%(amount_std, i["unit"])
+                            recipe_ingredient.standard_amount = amount_std
+                            recipe_ingredient.standard_amount_unit = i["unit"]
+                        except Exception as e:
+                            print("[Error] Error adding standard amount for " + i["name"])
+
                 db.session.add(recipe_ingredient)
     except Exception as e:
         raise(Exception(str(e) + " [Add Ingredients]"))
