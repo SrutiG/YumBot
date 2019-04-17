@@ -18,6 +18,10 @@ class YumBot:
             self.clusters = None
         else:
             self.clusters = get_cluster_request["data"]
+            self.closest_clusters = [None] * len(self.clusters)
+            for c in self.clusters:
+                self.closest_clusters[c.cluster_number] = \
+                    find_closest_clusters_under_threshold(c.cluster_number)
 
 
     def find_random_valid_cluster_ingredients(self):
@@ -99,16 +103,13 @@ class YumBot:
                     if size_cluster_1 > threshold and size_cluster_2 > threshold:
                         return False
                     elif size_cluster_1 > threshold and size_cluster_2 < threshold:
-                        closest_clusters = find_closest_clusters_under_threshold(compare_ing.cluster_number)
-                        if ingredient.cluster_number not in closest_clusters:
+                        if ingredient.cluster_number not in self.closest_clusters[compare_ing.cluster_number]:
                             return False
                     elif size_cluster_1 < threshold and size_cluster_2 > threshold:
-                        closest_clusters = find_closest_clusters_under_threshold(ingredient.cluster_number)
-                        if compare_ing.cluster_number not in closest_clusters:
+                        if compare_ing.cluster_number not in self.closest_clusters[ingredient.cluster_number]:
                             return False
                     else:
-                        closest_clusters = find_closest_clusters_under_threshold(ingredient.cluster_number)
-                        if compare_ing.cluster_number not in closest_clusters:
+                        if compare_ing.cluster_number not in self.closest_clusters[ingredient.cluster_number]:
                             return False
             return True
         except Exception as e:

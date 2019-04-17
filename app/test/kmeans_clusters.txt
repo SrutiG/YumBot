@@ -1,40 +1,40 @@
 Size stats
 -------------------------
-Mean: 31.8
-Median: 3
-St Dev: 95.6426560017
+Mean: 29.4571428571
+Median: 2
+St Dev: 82.7207715778
 Quartile 1: 1
-Quartile 2: 10.0
+Quartile 2: 10.5
 -------------------------
 
 Cluster 0
 -------------------------
-Cluster size: 41
-banana,strawberries,buttermilk,confectioners' sugar,ground ginger,nutmeg,egg whites,egg yolks,whole milk,heavy whipping cream,bananas,chocolate chips,ground cloves,peanut butter,rolled oats,almonds,whole wheat flour,walnuts,white sugar,cocoa powder,light brown sugar,raisins,all purpose flour,dried cranberries,almond extract,coconut,pecans,orange zest,raspberries,chia seeds,coconut flour,ground nutmeg,unsweetened cocoa powder,oats,almond butter,pumpkin puree,apple,blueberries,coconut sugar,almond flour,dark chocolate
+Cluster size: 4
+cinnamon,ground cinnamon,brown sugar,honey
 -------------------------
 
 Cluster 1
 -------------------------
-Cluster size: 1
-olive oil
+Cluster size: 66
+chicken breasts,roma tomatoes,lettuce,sweet potatoes,cheese,panko bread crumbs,sweet onion,cooked bacon,white onion,cheddar cheese,mango,green onion,black beans,sriracha,skinless boneless chicken thighs,chile powder,frozen corn,ground coriander,ketchup,bbq sauce,canned black beans,cayenne,chicken,rice,skinless boneless chicken breast,sharp cheddar cheese,corn,cilantro leaves,monterey jack cheese,salsa,greek yogurt,fish sauce,ground turkey,shredded cheddar cheese,shredded chicken,jalapeno peppers,smoked paprika,white vinegar,fresh cilantro leaves,sweet potato,jalapenos,jalapeno,flour tortillas,corn tortillas,beer,radishes,canned tomato sauce,lime wedges,black olives,shredded cheese,tortilla chips,canned kidney beans,avocados,taco seasoning,yellow bell pepper,lime,ground beef,jalapeno pepper,canned pinto beans,shredded mexican cheese blend,tortillas,refried beans,corn kernels,adobo sauce,enchilada sauce,whole kernel corn
 -------------------------
 
 Cluster 2
 -------------------------
-Cluster size: 39
-baby spinach,olives,spinach,dried parsley,sun-dried tomatoes,pine nuts,panko breadcrumbs,bread crumbs,garlic salt,panko bread crumbs,dried basil,mozzarella cheese,pepperoni,pizza sauce,broccoli,provolone cheese,italian seasoning,sausage,black olives,pasta,shredded mozzarella cheese,spaghetti sauce,artichoke hearts,romano cheese,fontina cheese,fresh mushrooms,spaghetti,marinara sauce,frozen spinach,tomato sauce,basil leaves,part-skim mozzarella cheese,lasagna noodles,ricotta cheese,deli ham,alfredo sauce,salami,kalamata olives,chicken sausage
+Cluster size: 1
+egg
 -------------------------
 
 Cluster 3
 -------------------------
 Cluster size: 1
-vanilla extract
+olive oil
 -------------------------
 
 Cluster 4
 -------------------------
 Cluster size: 1
-unsalted butter
+water
 -------------------------
 
 Cluster 5
@@ -45,1541 +45,1541 @@ salt
 
 Cluster 6
 -------------------------
-Cluster size: 6
-canned black beans,cumin,ground cumin,salsa,sour cream,chili powder
+Cluster size: 1
+garlic cloves
 -------------------------
 
 Cluster 7
 -------------------------
-Cluster size: 2
-baking soda,baking powder
+Cluster size: 5
+ground cumin,oregano,canned tomatoes,cumin,chili powder
 -------------------------
 
 Cluster 8
 -------------------------
-Cluster size: 2
-milk,egg
+Cluster size: 5
+canola oil,red bell pepper,pepper,green onions,sour cream
 -------------------------
 
 Cluster 9
 -------------------------
-Cluster size: 1
-sugar
+Cluster size: 414
+angel hair pasta,chickpeas,cooked brown rice,stock,roast beef,peanut oil,baby potatoes,cremini mushrooms,fresh bay leaves,broccoli florets,cream of chicken soup,extra sharp cheddar cheese,ritz crackers,mustard,white pepper,yukon gold potatoes,croutons,romaine lettuce,dried rosemary,duck fat,herbes de provence,low sodium chicken stock,chicken breast,sage,ranch dressing,dried currants,egg substitute,part-skim ricotta cheese,swiss chard,ground pork,panko,potato,balsamic glaze,broccoli,beef,salad mix,basil pesto,corn starch,canned garbanzo beans,jelly,pasta shells,savoy cabbage,rock salt,bean sprouts,pork,tofu,hot dog buns,pepper jack cheese,english cucumber,mayo,acorn squash,sage leaves,barbecue sauce,half n half cream,fresh herbs,cheddar,pomegranate arils,red pepper powder,plain yogurt,seasoned rice vinegar,white rice,gruyere,leek,spaghetti squash,cider vinegar,yeast,ranch dressing mix,baby arugula,linguine,tomato puree,diced ham,blue cheese crumbles,celery sticks,ground cayenne pepper,shredded cheddar,turkey,red potatoes,ground chicken,ground turmeric,lentils,hamburger buns,low fat mayonnaise,non-fat greek yogurt,white mushrooms,cooked ham,swiss cheese,peppercorns,baby bella mushrooms,roma tomato,mirin,canned great northern beans,canned red kidney beans,turkey sausage,quinoa,salmon,sharp cheddar,dry mustard,wine,peach,rice wine vinegar,rice flour,extra-virgin olive oil,wholegrain mustard,dill,smoked salmon,roasted red pepper,old bay seasoning,baby carrots,biscuits,pork loin,sherry vinegar,sweet paprika,white bread,lemongrass,thai red curry paste,light soy sauce,oyster sauce,shaoxing wine,spring onion,queso fresco,tomatillos,greens,chili sauce,dill weed,lettuce leaves,sub buns,green peas,herbs,sweetened coconut,canned corn,cooked chicken,kidney beans,mixed veggies,oregano leaves,orange bell pepper,frozen spinach,zucchinis,green chiles,raw shrimp,whole cranberry sauce,celery salt,refrigerated crescent rolls,heirloom tomatoes,green olives,salami,ice water,crusty bread,grapeseed oil,fish,cornmeal,gouda cheese,romaine,seasoning,short ribs,pickled jalapenos,skinless boneless chicken breast halves,fresh mozzarella cheese,light butter,low fat ricotta cheese,green cabbage,light mayonnaise,button mushrooms,cooked quinoa,dry bread crumbs,pork loin chops,asiago cheese,fresh mushrooms,wild rice,salad greens,steak,sub rolls,red cabbage,thick-cut bacon,pasta sauce,guacamole,leg of lamb,chive & onion cream cheese spread,lean ground beef,bacon pieces,nutritional yeast,tempeh,pepper sauce,brussels sprouts,slaw dressing,white cheddar cheese,liquid smoke,multi grain bread,penne pasta,red peppers,shredded mozzarella,brown rice,russet potatoes,sausage,tapioca flour,mangoes,tilapia,beets,provolone cheese,baking mix,ears corn,cucumbers,cottage cheese,chicken wings,ground lamb,beetroot,walnut pieces,gruyere cheese,dried sage,lean ground turkey,skim milk,low fat buttermilk,bamboo shoots,jack cheese,red grapes,poppy seeds,cauliflower florets,crackers,deli ham,honey mustard,cooked rice,blue cheese,wonton wrappers,beef broth,pork chops,okra,ham,chili paste,chipotle pepper in adobo,limes,seeds,salmon fillets,chile garlic sauce,rice noodles,baking potatoes,low fat sour cream,coarse sea salt,steaks,asparagus spears,filo pastry,spaghetti,tomato juice,scallion,extra firm tofu,whole wheat bread,stuffing mix,watermelon,havarti cheese,pork tenderloin,bell peppers,corn meal,polenta,elbow macaroni,seasoned salt,phyllo dough,fresh corn,tahini,red chilli,cooked white rice,snow peas,corn flour,beef chuck roast,tabasco sauce,fennel,Frozen Mixed Vegetables,black peppercorns,arrowroot powder,instant yeast,hemp seeds,filo dough,vinegar,taco seasoning mix,rocket,ground mustard,granulated garlic,hard-boiled eggs,black sesame seeds,lemons,chiles,panko breadcrumbs,canned diced tomatoes,green peppers,clams,cabbage,white distilled vinegar,root vegetables,dried dill,peppers,burger buns,seasoning blend,fettuccine,juice of orange,iceberg lettuce,gorgonzola cheese,ginger root,fennel seed,white sandwich bread,white onions,fresh green beans,apricot preserves,pork shoulder,sugar snap peas,canadian bacon,jicama,pear,raw cashews,chipotle,cooked chicken breast,yellow squash,spring onions,arborio rice,part-skim mozzarella cheese,beet,lemon wedges,chipotle powder,radicchio,eggplants,chilies,curry paste,coriander seeds,dry sherry,pita breads,broth,bacon strips,reduced fat shredded cheddar cheese,penne,applewood smoked bacon,andouille sausage,cajun seasoning,courgettes,grapes,flat leaf parsley leaves,roasted cashews,celery seed,condensed cream of chicken soup,champagne vinegar,cooked spaghetti,beef stew meat,hoisin sauce,sriracha sauce,cotija cheese,salmon fillet,garlic salt,yellow mustard,mat beans,canned white beans,dried parsley flakes,condensed cream of mushroom soup,green bell peppers,fire roasted canned tomatoes,onion soup mix,anchovy,red lentils,baby corn,butter lettuce,low fat plain yogurt,watercress,beef brisket,fat free chicken broth,rotisserie chicken,basmati rice,flat leaf parsley,chorizo,purple cabbage,lemon rind,yellow bell peppers,poblano peppers,egg noodles,ancho chile powder,flank steak,corn chips,chili flakes,shiitake mushrooms,tamari,soy pulp,Miso Soybean Paste,yellow cornmeal,avocado oil,parsley flakes,parsnips,thai chili,fresh ginger root,edamame,pasta water,couscous,clam juice,chipotle chiles in adobo,walnut oil,rice wine,taco shells,walnut halves,coconut aminos,agave syrup,whole garlic,lard,fresh tarragon,fresh coriander,jam,white balsamic vinegar,pecorino cheese,brie cheese,whole chicken,saffron,mango chutney,canned whole tomatoes,canned cannellini beans,portobello mushrooms,cooked shredded chicken breast,sea scallops,chicken thighs,plums,colby jack cheese,grainy mustard,coarse kosher salt,cod
 -------------------------
 
 Cluster 10
 -------------------------
 Cluster size: 1
-garlic
--------------------------
-
-Cluster 11
--------------------------
-Cluster size: 3
-parmesan cheese,pepper,garlic cloves
--------------------------
-
-Cluster 12
--------------------------
-Cluster size: 1
-onion
--------------------------
-
-Cluster 13
--------------------------
-Cluster size: 42
-onions,cherry tomatoes,vegetable broth,zucchini,butternut squash,cauliflower,low sodium chicken broth,mushrooms,red wine vinegar,skinless boneless chicken breasts,carrot,peas,potatoes,parmesan,thyme,balsamic vinegar,fresh basil,chicken stock,shallots,capers,fresh thyme,parsley,sea-salt,shallot,bacon,feta cheese,lemon,extra virgin olive oil,Salt & Pepper,bay leaves,fresh basil leaves,basil,shrimp,cucumber,fresh rosemary,white wine vinegar,garlic clove,kale,dried thyme,white wine,bay leaf,dry white wine
--------------------------
-
-Cluster 14
--------------------------
-Cluster size: 5
-almond milk,cinnamon,sea salt,coconut oil,maple syrup
--------------------------
-
-Cluster 15
--------------------------
-Cluster size: 1
-water
--------------------------
-
-Cluster 16
--------------------------
-Cluster size: 295
-old fashioned rolled oats,pomegranate juice,crystallized ginger,unsweetened applesauce,unsweetened chocolate,dark chocolate bar,peppermint extract,shortening,sprinkles,coarse sea salt,chocolate milk,popcorn,caramel,graham cracker crumbs,baking mix,cranberries,cranberry juice,lemon peel,unsweetened coconut milk,creamy peanut butter,flax seed meal,old fashioned oats,pecan,berries,vanilla bean,apple cider,apples,egg white,marshmallows,semisweet chocolate chips,vanilla ice cream,corn syrup,rice krispies cereal,white chocolate chips,graham crackers,milk chocolate chips,allspice,molasses,whole-wheat pastry flour,half n half,brownie mix,butterscotch chips,ground cardamom,cane sugar,guar gum,orange peel,peaches,active yeast,vanilla yogurt,oreos,cream of tartar,dark brown sugar,double cream,plain flour,nut butter,semi sweet chocolate chips,instant yeast,raw honey,stevia,cocoa,coffee,candy coated chocolate pieces,fudge ice cream topping,deep dish pie crust,sweetened condensed milk,whipped cream,applesauce,canned pumpkin,light-brown sugar,cake flour,caramel sauce,salted butter,sweetened coconut,vegetable shortening,almond meal,apple pie spice,jam,whole wheat pastry flour,whipping cream,yellow cake mix,egg yolk,unbleached flour,dulce de leche,table salt,golden brown sugar,self-raising flour,dark rum,spelt flour,low fat buttermilk,triple sec,white sandwich bread,yogurt,chocolate,chocolate syrup,crème de cacao,kahlua,pretzels,pumpkin pie spice,beet,flaxseed meal,semisweet chocolate,coconut rum,maraschino cherries,cinnamon stick,cottage cheese,gelatin,tea,granola,cherries,nonfat greek yogurt,apple pie filling,dry yeast,canned pumpkin puree,dark chocolate chips,old-fashioned oats,unsweetened coconut,gluten-free flour,nonfat milk,hazelnuts,medjool dates,pumpkin seeds,sunflower seeds,dates,bourbon,chocolate sprinkles,nonfat cool whip,skim milk,vanilla pudding mix,vanilla wafers,low fat milk,coconut water,vanilla bean paste,oat flour,pumpkin spice mix,ground allspice,pumpkin,xanthan gum,apricots,golden raisins,brandy,pie crust,potato starch,dutch process cocoa powder,instant coffee granules,grand marnier,pistachios,chocolate chunks,marshmallow cream,silken tofu,nutella,canned pineapple,instant vanilla pudding mix,whipped topping,plums,coconut extract,unsweetened shredded coconut,instant espresso powder,milk chocolate,strong coffee,whole eggs,white flour,white chocolate,bittersweet chocolate,confectioners sugar,espresso powder,oreo cookies,peanut butter cups,salted peanuts,ground flaxseed,pepitas,watermelon,semi-sweet chocolate,angel food cake mix,half n half cream,caramel ice cream topping,full-fat coconut milk,food coloring,whole almonds,stevia extract,coconut cream,bicarbonate of soda,baking bar,steel cut oats,smooth peanut butter,full-fat milk,pears,unbleached all purpose flour,margarine,full fat coconut milk,ground almonds,juice,apple juice,ground flax seed,candy canes,oatmeal,evaporated milk,unsweetened coconut flakes,whiskey,unsweetened cocoa,gluten free flour,blanched almond flour,sweetened shredded coconut,lb cake,golden syrup,oranges,green food coloring,pomegranate seeds,condensed milk,nuts,gala apples,macadamia nuts,instant chocolate pudding mix,dark chocolate candy bars,dark corn syrup,quick cooking oats,eggnog,french bread,cookies,peanut butter chips,truvia,rice flour,tapioca flour,fleur de sel,mascarpone cheese,peach,marshmallow fluff,vanilla protein powder,vanilla pod,white whole wheat flour,chocolate hazelnut spread,bittersweet chocolate chips,red food coloring,hershey kisses,milk powder,tapioca starch,blackberries,walnut pieces,liquid stevia,coconut butter,orange extract,coconut flakes,rum extract,baking cocoa,baking chocolate,dairy free milk,brown rice flour,marshmallow creme,fat-free milk,agave,light muscovado sugar,icing sugar,rhubarb,currants,turbinado sugar,bread flour,flax meal,skim vanilla greek yogurt,pink himalayan salt,cherry juice,fruit,grapeseed oil,caramels,agave syrup,cinnamon sticks,dried cherries,ice cream,raspberry jam,star anise,arrowroot powder,unsweetened apple sauce,instant coffee,gf chocolate cake mix,lemon extract,sugar cookie dough,orange liqueur,strawberry jam,pastry flour,white cake mix,food dye,cinnamon sugar,m&m candies,hemp seeds,self-rising flour,mascarpone,colored sprinkles,almond,cherry pie filling,lemon curd,walnut halves,tart apples,peppermint baking chips,cacao nibs,cacao powder,orange juice concentrate,mint extract
--------------------------
-
-Cluster 17
--------------------------
-Cluster size: 3
-ginger,sesame oil,soy sauce
--------------------------
-
-Cluster 18
--------------------------
-Cluster size: 1
 kosher salt
 -------------------------
 
-Cluster 19
--------------------------
-Cluster size: 21
-chilies,cumin seeds,ginger paste,oil,red chili powder,turmeric powder,cooking oil,mustard seeds,tomato,cumin powder,garam masala,coriander powder,fenugreek seeds,green chilies,hing,fresh coriander leaves,curry leaves,rock salt,cardamom,green chili,to
--------------------------
-
-Cluster 20
+Cluster 11
 -------------------------
 Cluster size: 1
 butter
 -------------------------
 
-Cluster 21
+Cluster 12
+-------------------------
+Cluster size: 46
+fresh parsley,parmesan,balsamic vinegar,extra virgin olive oil,skinless boneless chicken breasts,dijon mustard,shallot,lemon zest,bacon,parsley,cucumber,Salt & Pepper,basil,onions,thyme,hot sauce,fresh thyme,sea-salt,mayonnaise,worcestershire sauce,tomatoes,carrot,apple cider vinegar,juice of lemon,mushrooms,low sodium chicken broth,spinach,tomato,green bell pepper,bay leaf,chicken stock,garlic clove,dried thyme,kale,shallots,tomato paste,red wine vinegar,onion powder,vegetable broth,feta cheese,cherry tomatoes,fresh basil,shrimp,bay leaves,curry powder,zucchini
+-------------------------
+
+Cluster 13
+-------------------------
+Cluster size: 1
+onion
+-------------------------
+
+Cluster 14
+-------------------------
+Cluster size: 1
+garlic
+-------------------------
+
+Cluster 15
+-------------------------
+Cluster size: 2
+unsalted butter,granulated sugar
+-------------------------
+
+Cluster 16
 -------------------------
 Cluster size: 6
-avocado,juice of lime,red onion,fresh cilantro,cilantro,lime juice
+red onion,lime juice,cilantro,juice of lime,fresh cilantro,avocado
 -------------------------
 
-Cluster 22
--------------------------
-Cluster size: 7
-lemon juice,bell pepper,juice of lemon,lemon zest,dijon mustard,mayonnaise,tomatoes
--------------------------
-
-Cluster 23
--------------------------
-Cluster size: 10
-green onions,honey,vegetable oil,fresh ginger,scallions,canola oil,cornstarch,sesame seeds,rice vinegar,low sodium soy sauce
--------------------------
-
-Cluster 24
--------------------------
-Cluster size: 1
-carrots
--------------------------
-
-Cluster 25
--------------------------
-Cluster size: 5
-vanilla,cream cheese,granulated sugar,heavy cream,powdered sugar
--------------------------
-
-Cluster 26
--------------------------
-Cluster size: 10
-green bell pepper,canned tomatoes,tomato paste,chicken broth,yellow onion,fresh parsley,oregano,red pepper flakes,red bell pepper,celery
--------------------------
-
-Cluster 27
--------------------------
-Cluster size: 1
-salt and pepper
--------------------------
-
-Cluster 28
+Cluster 17
 -------------------------
 Cluster size: 1
 eggs
 -------------------------
 
-Cluster 29
--------------------------
-Cluster size: 50
-greek yogurt,pepper jack cheese,smoked paprika,tortilla chips,canned kidney beans,frozen corn,chives,shredded cheddar cheese,grape tomatoes,chiles,skinless boneless chicken breast,chicken breasts,cheddar cheese,enchilada sauce,lean ground beef,onion powder,sharp cheddar cheese,black beans,shredded cheese,plain greek yogurt,sweet onion,ground beef,cooked bacon,taco seasoning,bbq sauce,avocados,ketchup,sweet potatoes,cheese,green onion,yellow bell pepper,canned tomato sauce,flour tortillas,monterey jack cheese,lettuce,taco seasoning mix,apple cider vinegar,white onion,shredded mexican cheese blend,shredded chicken,corn tortillas,jalapeno,hot sauce,jack cheese,jalapenos,roma tomato,romaine lettuce,canned pinto beans,green chiles,guacamole
--------------------------
-
-Cluster 30
+Cluster 18
 -------------------------
 Cluster size: 1
 flour
 -------------------------
 
+Cluster 19
+-------------------------
+Cluster size: 11
+bell pepper,carrots,parmesan cheese,red pepper flakes,paprika,yellow onion,ground pepper,vegetable oil,celery,chicken broth,cayenne pepper
+-------------------------
+
+Cluster 20
+-------------------------
+Cluster size: 15
+fresh coriander leaves,cumin powder,yogurt,oil,chilli powder,coriander powder,cumin seeds,curry leaves,turmeric powder,mustard seeds,red chili powder,green chili,garam masala,green chilies,ginger paste
+-------------------------
+
+Cluster 21
+-------------------------
+Cluster size: 272
+nutella,pecan,salted butter,slivered almonds,caramel sauce,chocolate,full fat coconut milk,roasted peanuts,xanthan gum,coconut milk,brown rice flour,hazelnuts,potato starch,tapioca starch,half n half,vanilla pod,coffee,fat-free milk,ice cubes,chocolate pudding mix,dark chocolate candy bars,gf chocolate cake mix,puff pastry,coconut cream,ice,rum extract,canned pumpkin puree,dark rum,ground allspice,toffee bits,white chocolate chips,butterscotch chips,cake flour,egg white,active yeast,cranberries,nonfat milk,bourbon,cinnamon stick,star anise,tea,raspberry preserves,vodka,low fat milk,mascarpone cheese,crisp rice cereal,m&m candy,semi-sweet chocolate,white chocolate,apple juice,old fashioned oats,puffed rice cereal,wheat germ,marshmallows,smooth peanut butter,angostura bitters,cinnamon sticks,rum,sweetened condensed milk,dairy free milk,ground cardamom,sukrin sweetener,pie crust,quick cooking oats,half and half,double cream,nuts,orange peel,crunchy peanut butter,corn syrup,milk chocolate chips,peanuts,semisweet chocolate,whipping cream,agave nectar,pepitas,applesauce,molasses,oatmeal,cane sugar,ricotta,oreos,cherries,macadamia nuts,gala apples,allspice,instant espresso powder,low fat cream cheese,almond meal,vanilla ice cream,fat free milk,pumpkin,pumpkin pie spice,truvia,lime zest,orange,plain greek yogurt,vanilla protein powder,vanilla yogurt,full-fat coconut milk,evaporated milk,juice,whipped cream,almond extract,tart apples,coconut water,coconut butter,medjool dates,dates,pecan pieces,vanilla beans,dark chocolate,skim vanilla greek yogurt,plain flour,golden raisins,sunflower oil,apple,cashews,dutch process cocoa powder,vegetable shortening,bittersweet chocolate,chocolate chunks,graham crackers,canned coconut milk,caramels,old-fashioned oats,egg yolk,graham cracker crumbs,ground almonds,milk chocolate,condensed milk,golden brown sugar,pears,pomegranate juice,pomegranate seeds,simple syrup,tequila,unsweetened chocolate,sweet cherries,nectarines,baking cocoa,candy coating,food coloring,french bread,peaches,lemon peel,meyer lemon juice,sunflower seeds,rhubarb,whole eggs,ground flaxseed,maraschino cherries,instant coffee,granny smith apples,club soda,pineapple juice,bread flour,shortening,confectioners sugar,angel food cake mix,strawberry,pistachios,pumpkin seeds,stevia extract,whole wheat pastry flour,blanched almond flour,raw honey,canned pumpkin,graham cracker crust,lemonade concentrate,whipped topping,sweetened shredded coconut,unbleached flour,espresso powder,peppermint extract,ice cream,ground flax seed,steel cut oats,gin,grand marnier,icing sugar,sprinkles,self-raising flour,desiccated coconut,table salt,white whole wheat flour,cardamom,gluten-free flour,cherry pie filling,candy canes,blackberries,cognac,raspberry jam,lemon extract,cacao nibs,cacao powder,bittersweet chocolate chips,gelatin,yellow cake mix,pineapple,white cake mix,apricots,dried apricots,cream of tartar,instant vanilla pudding mix,cocoa,whole egg,caramel,pretzels,apple cider,margarine,oreo cookies,light coconut milk,vanilla bean paste,eggnog,espresso,brandy,coconut extract,berries,whiskey,fruit,almond,erythritol,unsweetened coconut,marshmallow fluff,sparkling water,liquid stevia,turbinado sugar,kahlua,green food coloring,sunflower seed butter,coconut flakes,unsweetened coconut milk,ghee,pink himalayan salt,granola,popcorn,chocolate protein powder,vanilla bean,nonfat cool whip,lavender,cookies,dried cherries,strong coffee,instant chocolate pudding mix,chocolate hazelnut spread,frosting,granny smith apple,m&m candies,vanilla frosting,strawberry jam,orange liqueur,oranges,sweetened coconut flakes,dulce de leche,dark chocolate bar,marshmallow creme,ginger ale,maple extract,red food coloring,peanut butter chips,almond bark,brown rice syrup,chocolate ice cream,chocolate syrup,peanut butter cups,baking chocolate,apricot jam,cranberry juice,peanut flour,canned pineapple,cinnamon sugar
+-------------------------
+
+Cluster 22
+-------------------------
+Cluster size: 1
+sugar
+-------------------------
+
+Cluster 23
+-------------------------
+Cluster size: 1
+lemon juice
+-------------------------
+
+Cluster 24
+-------------------------
+Cluster size: 1
+vanilla extract
+-------------------------
+
+Cluster 25
+-------------------------
+Cluster size: 2
+baking soda,baking powder
+-------------------------
+
+Cluster 26
+-------------------------
+Cluster size: 3
+coconut oil,sea salt,maple syrup
+-------------------------
+
+Cluster 27
+-------------------------
+Cluster size: 1
+milk
+-------------------------
+
+Cluster 28
+-------------------------
+Cluster size: 1
+salt and pepper
+-------------------------
+
+Cluster 29
+-------------------------
+Cluster size: 25
+light brown sugar,semisweet chocolate chips,confectioners' sugar,apples,heavy whipping cream,nutmeg,whole milk,buttermilk,pecans,white sugar,whole wheat flour,ground nutmeg,almonds,semi sweet chocolate chips,pumpkin puree,ground cloves,walnuts,orange juice,all purpose flour,ground ginger,raisins,egg yolks,dried cranberries,dark brown sugar,orange zest
+-------------------------
+
+Cluster 30
+-------------------------
+Cluster size: 96
+fontina cheese,goat cheese,romano cheese,white wine,baby spinach,basil leaves,coarse salt,asparagus,red bell peppers,red onions,thyme leaves,fresh dill,fennel seeds,italian sausage,marinara sauce,beef stock,dry red wine,celery stalks,red wine,vegetable stock,bread crumbs,butternut squash,mozzarella cheese,celery stalk,pasta,italian seasoning,roasted red peppers,lemon,mint leaves,green beans,cauliflower,grape tomatoes,baguette,arugula,new potatoes,artichoke hearts,coriander,kalamata olives,turmeric,rosemary,potatoes,cream,fresh basil leaves,peas,plum tomatoes,thyme sprigs,white wine vinegar,fennel bulb,flat-leaf parsley,leeks,parmigiano reggiano,parmigiano reggiano cheese,shredded mozzarella cheese,tomato sauce,dried basil,crème fraîche,pine nuts,fresh mint,bread,pancetta,dry white wine,baby spinach leaves,mint,mozzarella,pizza dough,pizza sauce,harissa,fresh chives,sourdough bread,capers,canned chickpeas,parsley leaves,yellow onions,chives,horseradish,fresh rosemary,sun-dried tomatoes,fresh flat-leaf parsley,feta,eggplant,fresh thyme leaves,fresh mint leaves,fresh mozzarella,prosciutto,pesto,fresh parsley leaves,breadcrumbs,spinach leaves,fresh sage,crushed red pepper,pepperoni,ricotta cheese,olives,dried parsley,fresh peas,pecorino romano cheese
+-------------------------
+
 Cluster 31
 -------------------------
 Cluster size: 2
-brown sugar,ground cinnamon
+black pepper,garlic powder
 -------------------------
 
 Cluster 32
 -------------------------
-Cluster size: 6
-worcestershire sauce,cayenne pepper,ground pepper,black pepper,garlic powder,paprika
+Cluster size: 4
+heavy cream,powdered sugar,cream cheese,vanilla
 -------------------------
 
 Cluster 33
 -------------------------
-Cluster size: 45
-fresh cilantro leaves,lime zest,ground coriander,ground turmeric,curry powder,tequila,fresh mint leaves,skinless boneless chicken thighs,canned coconut milk,roasted peanuts,turmeric,rum,red cabbage,fish sauce,orange juice,pineapple juice,ice,simple syrup,sweet potato,jalapeno pepper,lime wedges,hoisin sauce,rice noodles,coconut milk,vodka,sriracha,tamari,ice cubes,orange,agave nectar,mango,mint,peanuts,thai red curry paste,club soda,fresh mint,cilantro leaves,pineapple,coriander,lime,peanut oil,mint leaves,gin,light coconut milk,lemongrass
+Cluster size: 27
+strawberries,unsweetened cocoa powder,chocolate chips,cocoa powder,banana,oats,unsweetened shredded coconut,coconut sugar,stevia,creamy peanut butter,egg whites,almond flour,blueberries,bananas,coconut,rolled oats,almond milk,peanut butter,coconut flour,unsweetened applesauce,oat flour,chia seeds,raspberries,dark chocolate chips,old fashioned rolled oats,nonfat greek yogurt,almond butter
 -------------------------
 
 Cluster 34
 -------------------------
-Cluster size: 499
-granny smith apples,pork chops,thyme leaves,quinoa,white vinegar,italian salad dressing,lentils,potato chips,hash brown potatoes,leek,rosemary,garlic paste,spinach leaves,asparagus,cauliflower florets,low fat cream cheese,juice of orange,lemons,crème fraîche,gruyere,ice water,yellow onions,bacon rashers,sage,sunflower oil,white bread,corn starch,pork shoulder,gruyere cheese,fresh chives,canned chickpeas,chicken drumsticks,chicken thighs,baby arugula,fresh sage,green olives,baby potatoes,fresh herbs,canned green chiles,coriander seed,couscous,ground chicken,cod fillets,cream,old bay seasoning,green beans,stuffing mix,goat cheese,fettuccine,baby bella mushrooms,gouda cheese,pesto,cornflour,radishes,whole wheat pasta,russet potato,vegetable stock,chicken,red grapes,slivered almonds,beef,light soy sauce,oyster sauce,pork,red pepper powder,spring onions,tofu,wonton wrappers,ginger ale,flat leaf parsley leaves,fresh sage leaves,mat beans,new potatoes,orange bell pepper,pasta shells,fennel seeds,parmigiano reggiano,ricotta,salmon fillets,mustard,mix,chicken breast,ears of corn,mussels,red potatoes,thyme sprigs,nutritional yeast,canned corn,crackers,celery stalks,cooked rice,dried sage,fresh thyme leaves,pepper sauce,seasoning,hummus,multi grain bread,tahini,roasted red peppers,bacon strips,ears corn,beef broth,corn,beef top sirloin steak,broccoli florets,reduced sodium soy sauce,cheese tortellini,croutons,bread,jelly,champagne vinegar,mustard powder,bamboo shoots,cooked brown rice,wine,brussels sprouts,fennel bulb,root vegetables,white rice,cream of chicken soup,swiss chard,feta,fresh dill,orzo,black sesame seeds,eggplant,fresh mozzarella cheese,seasoned bread crumbs,sirloin steak,red pepper,reduced fat cream cheese,brown rice,cabbage,yeast,leeks,ginger root,chilli powder,fresh coriander,red chilli,Spice Rub,cayenne,canned beef broth,cooked chicken breast,dried parsley flakes,canned garbanzo beans,sub buns,corn chips,seasoned salt,chestnuts,coarse salt,red wine,turkey breast,raw cashews,chipotle powder,raw shrimp,pork ribs,cider vinegar,corned beef,napa cabbage,red curry paste,portobello mushrooms,roma tomatoes,arugula,sweet paprika,light mayonnaise,fire roasted canned tomatoes,cashews,pork belly,shiitake mushrooms,cornmeal,mayo,peppers,whole chicken,cucumbers,whole cranberry sauce,red bell peppers,barbecue sauce,rice,baby carrots,crusty bread,dried green lentils,fresh parsley leaves,stock,balsamic glaze,plain nonfat yogurt,beef stock,turnips,chicken pieces,tomatillos,curry paste,fresh mozzarella,pizza dough,coleslaw mix,poppy seeds,yellow mustard,fish,yellow cornmeal,canned mandarin oranges,horseradish,orange marmalade,pork tenderloin,dried dill,english cucumber,pineapple chunks,pancetta,yellow squash,fat free chicken broth,whole wheat tortillas,caesar dressing,ancho chile powder,chile powder,cooked black beans,fat-free chicken broth,sugar snap peas,chili,chicken wings,fresh gingerroot,potato,fresh peas,liquid smoke,pork butt,biscuits,ranch dressing,ground pork,diced ham,teriyaki sauce,aubergine,harissa,0% fat greek yogurt,dill,beef brisket,beer,tomato puree,scallops,whole kernel corn,baguette,clams,tabasco sauce,baby spinach leaves,colby jack cheese,sharp cheddar,sub rolls,light cream cheese,zucchinis,Miso Soybean Paste,salmon,pear,white cheddar cheese,canned white beans,red onions,green cabbage,grapefruit juice,turkey,vinegar,mild cheddar cheese,fresh ginger root,mangoes,salsa verde,bean sprouts,herbs,limes,puff pastry,breadcrumbs,roasted red pepper,shredded mozzarella,crab meat,asiago cheese,meatballs,crimini mushrooms,prosciutto,ground paprika,red lentils,cardamom pods,salad mix,thick-cut bacon,rice wine vinegar,ground mustard,lettuce leaves,mexican cheese,cooked chicken,chive & onion cream cheese spread,jicama,hard-boiled eggs,italian bread,plain yogurt,blue cheese crumbles,blue cheese dressing,elbow macaroni,half and half,russet potatoes,button mushrooms,corn kernels,blue cheese,chili sauce,flat leaf parsley,swiss cheese,cream of mushroom soup,cherry tomato,cotija cheese,salad greens,ranch,canned mushrooms,rigatoni,oil packed sun dried tomatoes,beets,cooked ham,skinless boneless chicken breast halves,vermouth,ghee,dried rosemary,flat-leaf parsley,ground turkey,pork loin,jalapeno peppers,basmati rice,low sodium chicken stock,dry mustard,non-fat greek yogurt,dried marjoram,chicken tenders,black peppercorns,cooked pasta,cloves,pomegranate arils,coconut aminos,caraway seeds,sauerkraut,cooked quinoa,cod,baking potatoes,clear honey,meat,crushed red pepper,chipotle peppers in adobo,fresh corn,chili beans,white pepper,edamame,spaghetti noodles,polenta,white balsamic vinegar,dried onion,sourdough bread,blanched almonds,sherry vinegar,squash,chili paste,hot dog buns,celery seed,tomato juice,cherry,salmon fillet,poultry seasoning,gorgonzola cheese,lemon wedges,cheddar,seasoning blend,tortillas,hamburger buns,penne pasta,ham,dill weed,dried apricots,rotisserie chicken,fresh corn kernels,roasted pork,refried beans,burger buns,egg roll wrappers,cooked bacon strips,chicken breast halves,panko,fresh flat-leaf parsley,seasoned breadcrumbs,dark sesame oil,mirin,scallion,dried porcini mushrooms,avocado oil,whole grain mustard,granulated garlic,yukon gold potatoes,low sodium beef broth,lean ground turkey,pasta sauce,canned diced tomatoes,unseasoned rice vinegar,sambal oelek,seeds,dry bread crumbs,fresh tarragon,ground cayenne pepper,dry sherry,rice wine,tarragon,mozzarella,peppercorns,campari,romaine hearts,cajun seasoning,whole egg,brie cheese,sriracha sauce,wild rice,adobo sauce,low fat mayonnaise,lamb,saffron threads,roasted garlic,long grain rice,flax seeds,sausages,iceberg lettuce,queso fresco,broth,chili flakes,snow peas,smoked salmon,spicy brown mustard,sea scallops,truffle oil,asparagus spears,lump crabmeat,arborio rice,tilapia fillets,parsnips,courgettes,baby corn,whole wheat bread,saffron,coriander seeds,sake,granny smith apple,cremini mushrooms,green bell peppers,green grapes,spaghetti squash,rosemary leaves,flank steak,hot dogs,half & half,eggplants,chorizo,extra firm tofu,chickpeas,plum tomatoes,sherry,slaw dressing,rye bread,bell peppers,sweet onions,italian sausage,chillies,dry red wine,celery stalk,colby monterey jack cheese,yellow summer squash,oregano leaves,red peppers,low-salt chicken broth,green peas,pizza crust,great northern beans,chicken meat,clarified butter,fennel,desiccated coconut,sweet chili sauce,brie,filo dough,fire-roasted tomatoes,grill cheese,creole seasoning,pork loin chops,low fat sour cream,baby bok choy,basil pesto,pinto beans,grapes,caraway seed,tortilla strips,extra-virgin olive oil,greens,canned water chestnuts,italian cheese blend,prunes,artichokes,fennel seed,sticks celery,english muffins,macaroni,collard greens,white miso,duck fat,canned cannellini beans,white distilled vinegar,poblano peppers,pearl barley,sundried tomatoes
+Cluster size: 10
+scallions,cornstarch,ginger,fresh ginger,sesame oil,sesame seeds,soy sauce,cooking oil,rice vinegar,low sodium soy sauce
 -------------------------
 
 
 Distances from Cluster 0
 -------------------------
 0: 0.0 
-16: 10.6493663886 
-34: 13.0259237745 
-33: 13.2070571975 
-2: 14.8239565688 
-29: 15.0307855734 
-13: 17.1511058058 
-19: 20.8193389332 
-23: 28.5778522612 
-22: 32.4935043224 
-26: 32.5739771332 
-14: 33.6450419208 
-6: 36.0887337761 
-25: 36.4000592682 
-32: 37.4919702687 
-21: 43.9134473902 
-31: 51.1589395062 
-17: 53.4054168293 
-11: 58.9480387904 
-24: 63.0023990223 
-8: 64.3998596132 
-7: 79.2441810963 
-27: 84.8699003209 
-4: 97.9785449377 
-18: 116.067964843 
-30: 124.756436712 
-28: 125.702072473 
-3: 129.482328805 
-9: 135.547522049 
-15: 135.863995979 
-12: 142.436802992 
-20: 147.388804585 
-10: 189.685831112 
-1: 226.733686393 
-5: 249.439364007 
+29: 37.1918272596 
+32: 39.6297516904 
+26: 40.0915874579 
+33: 42.0287154203 
+12: 45.9318422653 
+8: 46.7387419632 
+21: 47.3823784614 
+34: 47.5372313383 
+1: 48.146708689 
+19: 48.3208391712 
+30: 48.4165945825 
+9: 48.9765634692 
+2: 50.7563563079 
+20: 51.0458232105 
+16: 52.7194262242 
+25: 56.4998226808 
+7: 57.629054111 
+31: 59.8357725029 
+15: 64.1002880048 
+27: 67.4956401055 
+6: 69.520299632 
+23: 72.2976596914 
+28: 81.9948069779 
+24: 96.6169060243 
+4: 97.9343267928 
+17: 98.4771713578 
+18: 99.5203927931 
+22: 102.076657766 
+10: 108.782134813 
+11: 121.504105765 
+13: 123.028720864 
+14: 170.760470883 
+5: 214.607732392 
+3: 215.930751535 
 -------------------------
 
 Distances from Cluster 1
 -------------------------
 1: 0.0 
-10: 127.447940714 
-12: 164.99243507 
-18: 165.795375932 
-27: 168.87557796 
-11: 182.954152091 
-15: 196.126837537 
-24: 199.913837395 
-22: 202.330454088 
-26: 204.424841696 
-32: 205.651983026 
-21: 207.193336801 
-8: 208.168905852 
-20: 211.919261896 
-6: 213.103572801 
-30: 213.391361038 
-5: 213.50373319 
-23: 215.221654605 
-13: 215.845008156 
-4: 217.115366092 
-17: 217.396163627 
-28: 219.235461053 
-31: 221.164795392 
-14: 221.754878768 
-25: 224.004892312 
-29: 224.159703067 
-2: 224.934189919 
-33: 226.481806891 
-0: 226.733686393 
-9: 226.735414798 
-34: 227.815624837 
-19: 227.940441568 
-16: 229.485046806 
-7: 231.94499728 
-3: 254.66769143 
+9: 6.97582489696 
+30: 7.85773228279 
+21: 8.61494391766 
+12: 12.7347946593 
+33: 14.3290228871 
+29: 14.6229933155 
+20: 18.187365364 
+34: 26.6392125169 
+19: 27.8880230084 
+8: 30.3000727195 
+16: 31.0158389674 
+32: 36.5509069038 
+7: 36.8413030968 
+26: 44.7717176678 
+31: 46.5475369756 
+0: 48.146708689 
+6: 60.8136266219 
+2: 64.778322589 
+23: 78.2110781274 
+27: 78.3461112776 
+28: 79.516157805 
+25: 82.4940731528 
+15: 83.0124672717 
+10: 115.520393769 
+4: 117.002180283 
+18: 122.629352 
+17: 122.706028629 
+13: 122.772243943 
+22: 124.164532411 
+24: 128.040651176 
+11: 142.918836711 
+14: 175.257174653 
+3: 224.228297113 
+5: 242.369352883 
 -------------------------
 
 Distances from Cluster 2
 -------------------------
 2: 0.0 
-34: 7.31950886767 
-16: 8.73203661166 
-29: 9.50904708923 
-33: 11.3682237288 
-13: 12.0283542166 
-0: 14.8239565688 
-19: 18.6441804207 
-26: 27.2707275934 
-23: 30.4880122425 
-22: 32.1073208673 
-6: 34.6442387335 
-32: 34.8590718725 
-21: 42.9979555938 
-14: 43.7660689511 
-25: 45.8534968704 
-17: 53.8030269206 
-11: 54.234431803 
-31: 61.0932006067 
-24: 63.6235953814 
-8: 70.7076039672 
-27: 81.8784610011 
-7: 91.1280118876 
-4: 105.912299271 
-18: 117.626855645 
-30: 131.461344034 
-28: 133.776697574 
-15: 140.141362583 
-12: 140.375261129 
-3: 141.702106428 
-9: 143.694435465 
-20: 153.184822871 
-10: 187.856195355 
-1: 224.934189919 
-5: 255.608113349 
+25: 45.0526575889 
+0: 50.7563563079 
+32: 52.0771262759 
+19: 57.1803843505 
+29: 57.4560946152 
+8: 58.288127415 
+15: 58.6721221281 
+27: 59.2977179493 
+33: 60.634242573 
+12: 60.8499163849 
+26: 61.1580481929 
+31: 61.3522600718 
+34: 62.3316916388 
+1: 64.778322589 
+30: 65.0695680824 
+21: 65.4779709929 
+9: 66.3232612413 
+7: 67.1996125098 
+20: 67.4791801474 
+16: 68.3845717862 
+6: 73.825352934 
+23: 79.0890072313 
+18: 79.1083995971 
+17: 86.1722141443 
+28: 87.487044228 
+24: 91.2853065247 
+22: 94.6896523718 
+4: 97.8905088345 
+10: 102.976966087 
+11: 107.929840088 
+13: 115.651263526 
+14: 164.829916916 
+5: 200.850304398 
+3: 212.388655819 
 -------------------------
 
 Distances from Cluster 3
 -------------------------
 3: 0.0 
-7: 69.3956913937 
-4: 92.1331551756 
-28: 95.857822647 
-25: 102.68956101 
-8: 104.769034782 
-31: 108.076612451 
-9: 111.573030756 
-30: 112.002293342 
-14: 115.282738176 
-0: 129.482328805 
-20: 133.633044286 
-23: 135.385214697 
-22: 137.080378831 
-16: 139.010981549 
-33: 140.134998049 
-13: 140.590043608 
-29: 141.311890735 
-34: 141.646066421 
-2: 141.702106428 
-6: 142.194006279 
-19: 142.235131898 
-32: 142.419963449 
-26: 142.464344798 
-21: 143.574077628 
-17: 146.421593495 
-24: 147.044333656 
-15: 147.52361554 
-11: 148.072827056 
-27: 157.393229656 
-18: 157.946492633 
-12: 191.56194571 
-5: 196.714233942 
-10: 224.89937136 
-1: 254.66769143 
+14: 133.078331222 
+10: 159.248307679 
+13: 168.778077416 
+28: 171.900176272 
+6: 177.762290797 
+23: 188.740323581 
+4: 189.557467632 
+31: 196.687957374 
+7: 201.728882447 
+19: 202.784624133 
+8: 205.181614444 
+5: 205.479749084 
+11: 206.816888218 
+18: 208.941335919 
+16: 209.804680042 
+2: 212.388655819 
+12: 214.350202597 
+0: 215.930751535 
+26: 217.225291354 
+27: 218.684429527 
+17: 218.943968611 
+22: 219.218499019 
+34: 220.206966465 
+15: 220.270379606 
+32: 222.96193428 
+30: 223.732875227 
+1: 224.228297113 
+29: 224.882684098 
+9: 227.623492595 
+20: 227.951296546 
+33: 228.010576047 
+21: 228.816553502 
+25: 231.437450375 
+24: 248.279206935 
 -------------------------
 
 Distances from Cluster 4
 -------------------------
 4: 0.0 
-25: 73.7491762163 
-8: 75.8065138471 
-30: 76.1143345853 
-7: 79.333266837 
-31: 81.963371895 
-3: 92.1331551756 
-28: 92.3192069258 
-14: 97.9664817643 
-0: 97.9785449377 
-22: 98.3305571042 
-23: 100.457656266 
-13: 102.145232299 
-26: 103.39473694 
-32: 103.571315647 
-16: 104.98060376 
-11: 105.140655432 
-29: 105.549588881 
-33: 105.655749958 
-2: 105.912299271 
-34: 106.312447255 
-6: 106.804602899 
-19: 107.553454216 
-9: 108.427153023 
-21: 108.66241999 
-24: 110.436824683 
-18: 111.605905405 
-17: 112.099988632 
-27: 114.774544312 
-20: 121.58357033 
-15: 127.887835189 
-12: 156.083330604 
-10: 188.718526457 
-5: 201.759112352 
-1: 217.115366092 
+23: 96.3713312524 
+2: 97.8905088345 
+0: 97.9343267928 
+19: 102.050406259 
+27: 102.094985349 
+6: 102.6575284 
+31: 102.895386461 
+8: 102.91713712 
+28: 103.09974027 
+15: 103.888387495 
+22: 103.912622202 
+7: 106.274908061 
+32: 106.861002291 
+26: 107.978016931 
+34: 108.627431087 
+16: 109.904366545 
+13: 109.920924636 
+12: 110.715384685 
+29: 113.211145421 
+25: 113.259514527 
+18: 113.748618904 
+17: 115.851045811 
+20: 116.133535421 
+10: 116.710691276 
+33: 116.730277499 
+1: 117.002180283 
+30: 117.912405434 
+21: 119.234843481 
+9: 119.593147958 
+11: 125.345709826 
+24: 131.37621889 
+14: 143.048327102 
+5: 171.633252247 
+3: 189.557467632 
 -------------------------
 
 Distances from Cluster 5
 -------------------------
 5: 0.0 
-30: 176.221696463 
-15: 178.599586649 
-20: 179.784567462 
-9: 181.567614869 
-28: 188.057760813 
-3: 196.714233942 
-10: 199.198151087 
-4: 201.759112352 
-8: 205.142960346 
-12: 205.150281818 
-7: 205.942564122 
-18: 211.389240971 
-1: 213.50373319 
-31: 220.912095845 
-11: 222.222958081 
-27: 222.462064968 
-25: 229.593223693 
-24: 232.657216612 
-32: 235.255882542 
-22: 235.682705172 
-14: 236.62334182 
-21: 239.04183438 
-23: 240.328781774 
-26: 240.408791314 
-6: 242.022099399 
-17: 244.213811191 
-0: 249.439364007 
-13: 249.492520489 
-19: 253.53300397 
-29: 253.896112172 
-33: 255.297356356 
-2: 255.608113349 
-16: 257.24675273 
-34: 257.551715513 
+18: 170.320501606 
+4: 171.633252247 
+17: 176.519239085 
+11: 176.618185709 
+22: 180.879752794 
+14: 192.138193534 
+24: 192.863309713 
+13: 195.012397025 
+15: 198.586703637 
+10: 200.224800671 
+25: 200.666996343 
+2: 200.850304398 
+27: 203.815620971 
+3: 205.479749084 
+23: 208.94922071 
+28: 212.966012146 
+0: 214.607732392 
+6: 217.730913806 
+31: 219.430685412 
+8: 221.44641315 
+19: 224.64555757 
+32: 225.008568509 
+7: 225.75261019 
+26: 226.477881968 
+16: 229.131793555 
+34: 235.744234057 
+12: 235.775222021 
+29: 236.86957684 
+33: 240.750347006 
+20: 241.98348877 
+1: 242.369352883 
+30: 243.874680845 
+21: 245.332190664 
+9: 245.753623718 
 -------------------------
 
 Distances from Cluster 6
 -------------------------
 6: 0.0 
-29: 27.4182754066 
-21: 27.5873740722 
-26: 28.4508780184 
-32: 30.7585544612 
-13: 31.7695620697 
-33: 33.8140595331 
-2: 34.6442387335 
-34: 34.8643336347 
-16: 35.9946940505 
-0: 36.0887337761 
-23: 36.3689344178 
-19: 36.631160924 
-22: 37.5455933187 
-14: 50.8521527418 
-11: 52.7513667133 
-25: 52.9901637883 
-17: 57.9390541125 
-24: 62.4044993418 
-31: 62.757767292 
-8: 72.273038262 
-27: 72.6210343082 
-7: 93.3477726789 
-4: 106.804602899 
-18: 108.551408899 
-12: 125.698373257 
-30: 128.464611016 
-28: 130.302712892 
-15: 131.441435549 
-9: 139.860014002 
-3: 142.194006279 
-20: 147.871868878 
-10: 174.091641234 
-1: 213.103572801 
-5: 242.022099399 
+19: 40.523301514 
+31: 47.6343227601 
+7: 49.4343398531 
+8: 50.087674006 
+12: 51.4535296393 
+34: 56.6957652932 
+16: 56.84179448 
+30: 60.0057472455 
+28: 60.7000921313 
+1: 60.8136266219 
+29: 62.4875056229 
+9: 63.319122988 
+20: 64.3325152558 
+21: 64.6373690844 
+33: 65.2685641974 
+32: 68.3313301671 
+26: 68.6659620313 
+0: 69.520299632 
+23: 72.0600324442 
+2: 73.825352934 
+10: 89.7498186848 
+13: 89.994836112 
+27: 91.2051917059 
+15: 92.134877278 
+25: 99.4885941242 
+4: 102.6575284 
+18: 118.003197131 
+22: 120.573477477 
+17: 123.525870863 
+11: 134.709711101 
+24: 138.803960065 
+14: 141.978163085 
+3: 177.762290797 
+5: 217.730913806 
 -------------------------
 
 Distances from Cluster 7
 -------------------------
 7: 0.0 
-8: 57.1798027827 
-31: 59.4125030596 
-25: 62.4126006443 
-14: 67.139883253 
-3: 69.3956913937 
-0: 79.2441810963 
-4: 79.333266837 
-23: 86.1929435014 
-28: 86.7276640189 
-22: 88.5970933296 
-16: 88.8406945443 
-30: 89.8765109864 
-13: 90.0490416218 
-33: 90.0893647501 
-29: 90.6179668959 
-34: 91.090879228 
-2: 91.1280118876 
-19: 91.8807783689 
-26: 92.5155066333 
-32: 92.5269453093 
-6: 93.3477726789 
-21: 96.3247523507 
-24: 99.3336358924 
-17: 99.6593916179 
-11: 102.792044744 
-9: 106.496225478 
-27: 116.843063102 
-20: 126.740807933 
-18: 127.586912467 
-15: 132.838262906 
-12: 160.271583493 
-10: 199.549278673 
-5: 205.942564122 
-1: 231.94499728 
+8: 29.803236208 
+19: 29.8594381013 
+16: 31.7199332666 
+31: 34.3388889152 
+12: 34.6048729105 
+1: 36.8413030968 
+30: 41.0600982052 
+9: 42.7023441279 
+29: 43.0379429346 
+21: 43.8168104533 
+33: 44.7264301693 
+20: 45.1664323243 
+34: 45.5541360714 
+6: 49.4343398531 
+32: 52.8028154988 
+26: 55.9482148548 
+0: 57.629054111 
+2: 67.1996125098 
+28: 67.7231193952 
+23: 75.2746067487 
+27: 82.4801390944 
+15: 87.9244818172 
+25: 88.4403566866 
+13: 100.059260076 
+10: 100.188892499 
+4: 106.274908061 
+18: 119.740841513 
+17: 121.701715891 
+22: 121.715393266 
+24: 131.866599027 
+11: 137.820011946 
+14: 152.03800547 
+3: 201.728882447 
+5: 225.75261019 
 -------------------------
 
 Distances from Cluster 8
 -------------------------
 8: 0.0 
-25: 47.901217436 
-31: 51.825513647 
-7: 57.1798027827 
-14: 64.1003354797 
-22: 64.134475559 
-0: 64.3998596132 
-23: 66.7460958573 
-32: 66.8277914769 
-26: 67.0423413823 
-13: 68.2770789031 
-11: 69.0123010902 
-29: 70.7002579938 
-2: 70.7076039672 
-16: 71.8384117622 
-33: 72.0890537978 
-6: 72.273038262 
-34: 72.8422178689 
-19: 74.0538666051 
-21: 75.6321257217 
-4: 75.8065138471 
-30: 77.3221521155 
-17: 80.3676689714 
-24: 81.3983879459 
-27: 87.0928710384 
-28: 93.964696648 
-9: 102.036270526 
-20: 102.82067529 
-3: 104.769034782 
-18: 106.755582659 
-15: 112.963608123 
-12: 131.849597853 
-10: 175.817237642 
-5: 205.142960346 
-1: 208.168905852 
+19: 21.088578433 
+12: 26.1786323379 
+7: 29.803236208 
+16: 30.1104321539 
+1: 30.3000727195 
+34: 30.549409707 
+30: 33.8340095513 
+29: 33.8459854571 
+9: 35.222192263 
+21: 36.3203920206 
+33: 36.5663744651 
+31: 37.4871285343 
+20: 40.0056996517 
+32: 42.1624840979 
+0: 46.7387419632 
+26: 49.4705928009 
+6: 50.087674006 
+2: 58.288127415 
+28: 66.6399229172 
+23: 69.3852217569 
+27: 69.9386489981 
+15: 78.3253491287 
+25: 82.3463043166 
+10: 100.430035722 
+13: 102.187771648 
+4: 102.91713712 
+18: 110.449316135 
+17: 112.085897011 
+22: 115.341712867 
+24: 125.510725457 
+11: 129.997926564 
+14: 153.355291376 
+3: 205.181614444 
+5: 221.44641315 
 -------------------------
 
 Distances from Cluster 9
 -------------------------
 9: 0.0 
-8: 102.036270526 
-30: 102.578783422 
-7: 106.496225478 
-4: 108.427153023 
-28: 110.535625055 
-3: 111.573030756 
-15: 113.406232349 
-31: 113.602599086 
-25: 114.192945403 
-20: 118.42049269 
-23: 130.246431738 
-22: 131.139229713 
-17: 133.203983726 
-14: 133.276755654 
-0: 135.547522049 
-11: 136.311235701 
-32: 136.636522511 
-21: 137.786871293 
-26: 137.983662774 
-6: 139.860014002 
-24: 140.200067631 
-13: 140.244797102 
-33: 141.004556411 
-29: 142.677199821 
-16: 142.817101158 
-19: 142.939700374 
-27: 143.083732214 
-2: 143.694435465 
-18: 143.834871677 
-34: 144.18061409 
-12: 168.856007704 
-5: 181.567614869 
-10: 194.004045681 
-1: 226.735414798 
+21: 3.42037987765 
+30: 4.63837230468 
+1: 6.97582489696 
+33: 12.4769971457 
+29: 13.5211250738 
+12: 14.7380040223 
+20: 17.2249589448 
+34: 27.6782055613 
+19: 31.2286440546 
+8: 35.222192263 
+32: 36.8142872168 
+16: 36.8835771732 
+7: 42.7023441279 
+26: 45.6446872364 
+0: 48.9765634692 
+31: 50.3882978375 
+6: 63.319122988 
+2: 66.3232612413 
+23: 79.7725418369 
+27: 80.0792940796 
+28: 82.7210868292 
+25: 83.0493338911 
+15: 83.7041838747 
+10: 118.729509162 
+4: 119.593147958 
+17: 124.395559758 
+18: 124.58008957 
+22: 125.597844023 
+13: 126.812767413 
+24: 128.292514036 
+11: 144.76856835 
+14: 179.340489837 
+3: 227.623492595 
+5: 245.753623718 
 -------------------------
 
 Distances from Cluster 10
 -------------------------
 10: 0.0 
-12: 123.590462609 
-1: 127.447940714 
-27: 135.127467845 
-18: 136.885461648 
-11: 148.624997822 
-24: 153.52983221 
-15: 161.092124674 
-26: 165.663031501 
-32: 166.732549561 
-21: 167.882861263 
-22: 168.105341212 
-17: 168.24288088 
-23: 172.806823555 
-6: 174.091641234 
-8: 175.817237642 
-13: 179.272140974 
-31: 183.15942117 
-30: 183.398252782 
-14: 184.302537229 
-29: 186.43646074 
-25: 187.503286076 
-2: 187.856195355 
-33: 187.978543941 
-20: 188.387517709 
-4: 188.718526457 
-19: 188.945302107 
-0: 189.685831112 
-34: 190.457709569 
-16: 192.244589089 
-9: 194.004045681 
-28: 194.760184687 
-5: 199.198151087 
-7: 199.549278673 
-3: 224.89937136 
+6: 89.7498186848 
+31: 94.5358537473 
+19: 97.0898184736 
+28: 99.5283839409 
+7: 100.188892499 
+8: 100.430035722 
+2: 102.976966087 
+23: 103.979136827 
+16: 104.880836648 
+12: 108.216644923 
+0: 108.782134813 
+15: 109.564237386 
+13: 109.729577494 
+34: 112.526590951 
+32: 113.030251969 
+26: 113.63478673 
+29: 114.647148255 
+1: 115.520393769 
+30: 115.932213834 
+27: 116.431565897 
+4: 116.710691276 
+33: 118.136301572 
+9: 118.729509162 
+20: 118.881070705 
+21: 119.378292149 
+18: 122.698138374 
+14: 124.848717678 
+25: 125.420786525 
+17: 129.934109571 
+22: 130.037136282 
+11: 135.376259093 
+24: 150.449410028 
+3: 159.248307679 
+5: 200.224800671 
 -------------------------
 
 Distances from Cluster 11
 -------------------------
 11: 0.0 
-26: 35.715741455 
-32: 39.8517160887 
-22: 41.1700134001 
-13: 48.4844060001 
-23: 49.6484347898 
-6: 52.7513667133 
-2: 54.234431803 
-21: 54.7347194511 
-27: 55.2545035516 
-29: 55.6243893642 
-33: 57.7656967565 
-34: 58.7621305023 
-0: 58.9480387904 
-19: 59.4419889198 
-24: 59.9245329325 
-16: 60.5260079053 
-17: 62.519252134 
-14: 65.1925433763 
-25: 67.9564769872 
-8: 69.0123010902 
-31: 73.8753747758 
-18: 93.2700094419 
-7: 102.792044744 
-12: 104.484390749 
-4: 105.140655432 
-30: 117.70865892 
-15: 119.228332124 
-28: 127.572609536 
-20: 136.105030316 
-9: 136.311235701 
-3: 148.072827056 
-10: 148.624997822 
-1: 182.954152091 
-5: 222.222958081 
+18: 90.0450381367 
+17: 99.1101794138 
+27: 99.148350621 
+2: 107.929840088 
+15: 112.60308755 
+22: 112.971984809 
+25: 116.238518346 
+24: 120.650100607 
+32: 120.760502364 
+0: 121.504105765 
+4: 125.345709826 
+8: 129.997926564 
+28: 131.220927136 
+19: 131.233382123 
+31: 132.545311859 
+23: 133.261153925 
+6: 134.709711101 
+10: 135.376259093 
+26: 135.727624985 
+29: 136.505138061 
+12: 137.718731387 
+7: 137.820011946 
+13: 139.432662088 
+16: 140.06334162 
+33: 140.534981157 
+34: 141.823706318 
+1: 142.918836711 
+30: 143.183281799 
+21: 143.790267031 
+9: 144.76856835 
+20: 144.785043152 
+14: 176.257783912 
+5: 176.618185709 
+3: 206.816888218 
 -------------------------
 
 Distances from Cluster 12
 -------------------------
 12: 0.0 
-11: 104.484390749 
-27: 106.128332173 
-24: 112.07167968 
-26: 118.59710836 
-32: 121.401588274 
-10: 123.590462609 
-22: 125.25495885 
-6: 125.698373257 
-18: 126.612239763 
-21: 128.550038646 
-15: 131.605085035 
-8: 131.849597853 
-23: 132.055330803 
-13: 133.365001272 
-17: 133.916713473 
-19: 138.372920176 
-29: 138.752753239 
-31: 138.863920342 
-2: 140.375261129 
-14: 140.671266223 
-33: 141.374081493 
-0: 142.436802992 
-34: 142.903438129 
-25: 143.325192266 
-16: 144.552037021 
-30: 155.352672114 
-20: 155.608894333 
-4: 156.083330604 
-7: 160.271583493 
-28: 163.130736414 
-1: 164.99243507 
-9: 168.856007704 
-3: 191.56194571 
-5: 205.150281818 
+30: 11.3996197235 
+1: 12.7347946593 
+9: 14.7380040223 
+21: 16.3015464307 
+29: 17.4421769535 
+19: 18.2662843023 
+33: 19.2223688604 
+20: 21.5534807898 
+34: 25.7465556556 
+8: 26.1786323379 
+16: 31.477470531 
+7: 34.6048729105 
+32: 36.508557931 
+31: 39.5469635026 
+26: 43.117264646 
+0: 45.9318422653 
+6: 51.4535296393 
+2: 60.8499163849 
+28: 69.8584872676 
+23: 70.5985328991 
+27: 76.4491334173 
+15: 80.6589524083 
+25: 81.8389002971 
+10: 108.216644923 
+4: 110.715384685 
+13: 115.179078135 
+18: 118.50781093 
+17: 119.521131704 
+22: 120.321474573 
+24: 127.128823938 
+11: 137.718731387 
+14: 166.638905418 
+3: 214.350202597 
+5: 235.775222021 
 -------------------------
 
 Distances from Cluster 13
 -------------------------
 13: 0.0 
-2: 12.0283542166 
-29: 12.283602206 
-34: 12.8300008053 
-33: 13.4621493732 
-16: 14.8962769716 
-0: 17.1511058058 
-19: 20.3715349627 
-26: 21.1276843505 
-22: 23.970105924 
-23: 25.9475054471 
-32: 29.2081961881 
-6: 31.7695620697 
-21: 38.1780766683 
-14: 42.2918418044 
-25: 45.3513166376 
-11: 48.4844060001 
-17: 49.8482654953 
-24: 54.9885050924 
-31: 58.8836546784 
-8: 68.2770789031 
-27: 74.7332543124 
-7: 90.0490416218 
-4: 102.145232299 
-18: 110.149656709 
-30: 127.72196827 
-28: 130.789080618 
-12: 133.365001272 
-15: 134.420217738 
-9: 140.244797102 
-3: 140.590043608 
-20: 148.592881903 
-10: 179.272140974 
-1: 215.845008156 
-5: 249.492520489 
+28: 87.6905820651 
+6: 89.994836112 
+7: 100.059260076 
+8: 102.187771648 
+19: 103.088473656 
+31: 103.329007837 
+10: 109.729577494 
+4: 109.920924636 
+14: 113.463884097 
+16: 114.58417746 
+12: 115.179078135 
+2: 115.651263526 
+23: 116.380106163 
+34: 119.073089569 
+1: 122.772243943 
+20: 122.836869109 
+0: 123.028720864 
+27: 123.498331986 
+30: 124.302034297 
+29: 125.254296448 
+26: 125.280540587 
+32: 126.281870713 
+9: 126.812767413 
+33: 127.632760302 
+21: 128.058204968 
+15: 135.745733627 
+18: 136.674906178 
+11: 139.432662088 
+25: 142.032611991 
+17: 144.539023665 
+22: 146.847628687 
+3: 168.778077416 
+24: 171.919300895 
+5: 195.012397025 
 -------------------------
 
 Distances from Cluster 14
 -------------------------
 14: 0.0 
-0: 33.6450419208 
-33: 42.2034514989 
-16: 42.231107964 
-13: 42.2918418044 
-29: 43.1789788903 
-23: 43.4673570169 
-34: 43.6276479158 
-2: 43.7660689511 
-22: 45.1278807748 
-19: 45.6498828305 
-25: 48.1109330725 
-31: 48.212835309 
-26: 48.8167395356 
-32: 50.7362627875 
-6: 50.8521527418 
-21: 54.545359367 
-17: 62.4988047534 
-8: 64.1003354797 
-11: 65.1925433763 
-7: 67.139883253 
-24: 68.2767712174 
-27: 85.9090342454 
-4: 97.9664817643 
-18: 112.957530168 
-3: 115.282738176 
-28: 119.713271876 
-30: 123.069653383 
-15: 128.83708939 
-9: 133.276755654 
-12: 140.671266223 
-20: 143.240207576 
-10: 184.302537229 
-1: 221.754878768 
-5: 236.62334182 
+13: 113.463884097 
+10: 124.848717678 
+28: 126.898539931 
+3: 133.078331222 
+6: 141.978163085 
+4: 143.048327102 
+31: 150.096265408 
+7: 152.03800547 
+19: 152.151787511 
+23: 153.160803772 
+8: 153.355291376 
+16: 160.171657638 
+2: 164.829916916 
+34: 165.461835571 
+12: 166.638905418 
+0: 170.760470883 
+26: 170.812857555 
+18: 173.203550199 
+27: 174.229313362 
+1: 175.257174653 
+11: 176.257783912 
+32: 176.303645993 
+30: 176.371836513 
+29: 177.309433255 
+20: 177.635702041 
+22: 178.760830521 
+9: 179.340489837 
+15: 179.605436855 
+33: 179.9004388 
+17: 180.616971507 
+21: 180.619214064 
+25: 187.384256327 
+5: 192.138193534 
+24: 209.267876294 
 -------------------------
 
 Distances from Cluster 15
 -------------------------
 15: 0.0 
-8: 112.963608123 
-9: 113.406232349 
-11: 119.228332124 
-31: 120.389332792 
-24: 121.79109246 
-25: 124.241655897 
-27: 124.909553241 
-23: 125.794599317 
-22: 125.966653883 
-32: 126.580661591 
-26: 127.631477482 
-4: 127.887835189 
-17: 128.038423719 
-21: 128.670085033 
-14: 128.83708939 
-30: 129.324592325 
-18: 130.862568105 
-6: 131.441435549 
-12: 131.605085035 
-7: 132.838262906 
-13: 134.420217738 
-28: 134.516953196 
-0: 135.863995979 
-19: 136.229288492 
-20: 136.772067796 
-33: 138.48501528 
-29: 138.944343857 
-2: 140.141362583 
-16: 141.354760017 
-34: 141.528986788 
-3: 147.52361554 
-10: 161.092124674 
-5: 178.599586649 
-1: 196.126837537 
+32: 56.6755277823 
+25: 56.8343402564 
+2: 58.6721221281 
+0: 64.1002880048 
+27: 70.0106124491 
+29: 72.6834694702 
+18: 74.0402002079 
+24: 75.0605450972 
+8: 78.3253491287 
+33: 78.6460248549 
+26: 78.927032833 
+19: 78.9291601814 
+17: 79.3221402284 
+12: 80.6589524083 
+21: 81.922319517 
+30: 82.8843722757 
+34: 82.9144446465 
+1: 83.0124672717 
+9: 83.7041838747 
+20: 85.0331889499 
+16: 86.4157374806 
+31: 87.4028552207 
+7: 87.9244818172 
+22: 88.7952134458 
+23: 90.0934318956 
+6: 92.134877278 
+28: 101.691291041 
+4: 103.888387495 
+10: 109.564237386 
+11: 112.60308755 
+13: 135.745733627 
+14: 179.605436855 
+5: 198.586703637 
+3: 220.270379606 
 -------------------------
 
 Distances from Cluster 16
 -------------------------
 16: 0.0 
-34: 3.60659189137 
-33: 8.45510871006 
-2: 8.73203661166 
-29: 9.89258435404 
-0: 10.6493663886 
-13: 14.8962769716 
-19: 17.5385142901 
-23: 30.8485396875 
-26: 32.5557758941 
-22: 34.7266385483 
-6: 35.9946940505 
-32: 38.022614102 
-14: 42.231107964 
-25: 43.7534879461 
-21: 44.5116077731 
-17: 54.0693898259 
-31: 59.2695989477 
-11: 60.5260079053 
-24: 64.9894292804 
-8: 71.8384117622 
-27: 86.7166611851 
-7: 88.8406945443 
-4: 104.98060376 
-18: 120.058470227 
-30: 131.918233412 
-28: 133.352472821 
-3: 139.010981549 
-15: 141.354760017 
-9: 142.817101158 
-12: 144.552037021 
-20: 153.838693266 
-10: 192.244589089 
-1: 229.485046806 
-5: 257.24675273 
+8: 30.1104321539 
+1: 31.0158389674 
+12: 31.477470531 
+7: 31.7199332666 
+19: 32.4828804024 
+30: 36.0085594034 
+9: 36.8835771732 
+29: 37.4074143922 
+21: 37.7210168912 
+34: 37.9081081306 
+33: 38.0934529223 
+20: 38.8337787781 
+31: 43.3307672879 
+32: 48.7245153389 
+26: 50.2174169203 
+0: 52.7194262242 
+6: 56.84179448 
+2: 68.3845717862 
+28: 70.6322795833 
+23: 73.1134235993 
+27: 81.6752556585 
+15: 86.4157374806 
+25: 87.1316591992 
+10: 104.880836648 
+4: 109.904366545 
+13: 114.58417746 
+22: 120.253609314 
+18: 120.346965773 
+17: 121.012494052 
+24: 130.242183057 
+11: 140.06334162 
+14: 160.171657638 
+3: 209.804680042 
+5: 229.131793555 
 -------------------------
 
 Distances from Cluster 17
 -------------------------
 17: 0.0 
-23: 29.5608853627 
-33: 49.4262925717 
-13: 49.8482654953 
-26: 51.6903977388 
-29: 52.4952230615 
-22: 52.6578376984 
-34: 53.0025192131 
-0: 53.4054168293 
-2: 53.8030269206 
-19: 53.822976509 
-21: 53.847538365 
-16: 54.0693898259 
-32: 55.622268862 
-6: 57.9390541125 
-24: 58.5904627215 
-14: 62.4988047534 
-11: 62.519252134 
-25: 67.0160831649 
-31: 68.3213683045 
-8: 80.3676689714 
-27: 83.8739213511 
-7: 99.6593916179 
-4: 112.099988632 
-18: 112.955704354 
-15: 128.038423719 
-30: 131.717925802 
-9: 133.203983726 
-12: 133.916713473 
-28: 136.416195021 
-3: 146.421593495 
-20: 153.068842265 
-10: 168.24288088 
-1: 217.396163627 
-5: 244.213811191 
+25: 76.2756932374 
+15: 79.3221402284 
+27: 82.7535969078 
+2: 86.1722141443 
+24: 87.1772569799 
+18: 89.7032294511 
+22: 95.540337049 
+32: 97.2372534107 
+0: 98.4771713578 
+11: 99.1101794138 
+26: 109.045146215 
+8: 112.085897011 
+29: 114.419456535 
+19: 115.267038225 
+4: 115.851045811 
+33: 118.515352783 
+23: 119.198478103 
+12: 119.521131704 
+34: 120.19818938 
+31: 120.827953595 
+16: 121.012494052 
+7: 121.701715891 
+1: 122.706028629 
+21: 122.936313171 
+30: 123.27968968 
+6: 123.525870863 
+9: 124.395559758 
+20: 125.297603835 
+28: 126.090523673 
+10: 129.934109571 
+13: 144.539023665 
+5: 176.519239085 
+14: 180.616971507 
+3: 218.943968611 
 -------------------------
 
 Distances from Cluster 18
 -------------------------
 18: 0.0 
-11: 93.2700094419 
-32: 97.379657414 
-22: 97.9518461058 
-27: 100.038484297 
-26: 101.820639915 
-24: 103.330094337 
-21: 105.188819946 
-23: 106.622992788 
-8: 106.755582659 
-6: 108.551408899 
-13: 110.149656709 
-4: 111.605905405 
-25: 111.690143877 
-31: 112.1380934 
-17: 112.955704354 
-14: 112.957530168 
-29: 115.997926982 
-0: 116.067964843 
-33: 117.085442556 
-2: 117.626855645 
-34: 119.136241088 
-19: 119.320406859 
-16: 120.058470227 
-30: 126.553029913 
-12: 126.612239763 
-7: 127.586912467 
-15: 130.862568105 
-10: 136.885461648 
-28: 137.63388238 
-9: 143.834871677 
-20: 144.207112807 
-3: 157.946492633 
-1: 165.795375932 
-5: 211.389240971 
+15: 74.0402002079 
+2: 79.1083995971 
+25: 82.8129363859 
+27: 85.2275337933 
+17: 89.7032294511 
+11: 90.0450381367 
+22: 95.3611893569 
+32: 99.3168017894 
+0: 99.5203927931 
+24: 100.296004781 
+8: 110.449316135 
+19: 111.907824706 
+4: 113.748618904 
+29: 114.398815712 
+31: 115.157250424 
+23: 116.32196179 
+26: 117.367057305 
+28: 117.983413546 
+6: 118.003197131 
+12: 118.50781093 
+7: 119.740841513 
+16: 120.346965773 
+33: 120.505715871 
+34: 121.701279059 
+1: 122.629352 
+10: 122.698138374 
+30: 123.270911145 
+21: 123.654954988 
+9: 124.58008957 
+20: 125.41596812 
+13: 136.674906178 
+5: 170.320501606 
+14: 173.203550199 
+3: 208.941335919 
 -------------------------
 
 Distances from Cluster 19
 -------------------------
 19: 0.0 
-34: 16.9176069316 
-16: 17.5385142901 
-33: 17.8813397534 
-29: 18.4436521994 
-2: 18.6441804207 
-13: 20.3715349627 
-0: 20.8193389332 
-23: 33.0128469727 
-22: 34.4192336559 
-26: 34.8639018596 
-6: 36.631160924 
-32: 40.0762265825 
-21: 44.2443162198 
-14: 45.6498828305 
-25: 48.6834699946 
-17: 53.822976509 
-11: 59.4419889198 
-31: 62.8336730852 
-24: 63.9689687881 
-8: 74.0538666051 
-27: 85.3961281572 
-7: 91.8807783689 
-4: 107.553454216 
-18: 119.320406859 
-30: 133.315027319 
-28: 134.987981305 
-15: 136.229288492 
-12: 138.372920176 
-3: 142.235131898 
-9: 142.939700374 
-20: 154.783102823 
-10: 188.945302107 
-1: 227.940441568 
-5: 253.53300397 
+12: 18.2662843023 
+8: 21.088578433 
+1: 27.8880230084 
+30: 28.1981175083 
+31: 29.5514669371 
+7: 29.8594381013 
+29: 30.6499855792 
+34: 30.8870434868 
+9: 31.2286440546 
+16: 32.4828804024 
+21: 32.5601709589 
+33: 33.6353951567 
+20: 34.8304101986 
+6: 40.523301514 
+32: 41.3363436091 
+26: 46.7629648412 
+0: 48.3208391712 
+2: 57.1803843505 
+28: 61.8605442875 
+23: 68.0823634866 
+27: 73.0670302761 
+15: 78.9291601814 
+25: 82.7555535547 
+10: 97.0898184736 
+4: 102.050406259 
+13: 103.088473656 
+18: 111.907824706 
+17: 115.267038225 
+22: 116.416365351 
+24: 126.995007301 
+11: 131.233382123 
+14: 152.151787511 
+3: 202.784624133 
+5: 224.64555757 
 -------------------------
 
 Distances from Cluster 20
 -------------------------
 20: 0.0 
-8: 102.82067529 
-28: 104.204374823 
-30: 106.377961966 
-9: 118.42049269 
-4: 121.58357033 
-31: 125.203488142 
-25: 125.785604563 
-7: 126.740807933 
-3: 133.633044286 
-27: 134.737308275 
-11: 136.105030316 
-15: 136.772067796 
-32: 140.89710675 
-22: 141.35317599 
-14: 143.240207576 
-18: 144.207112807 
-26: 144.306903096 
-24: 145.569694016 
-23: 145.594654812 
-0: 147.388804585 
-6: 147.871868878 
-13: 148.592881903 
-21: 148.977633093 
-29: 152.321882009 
-17: 153.068842265 
-2: 153.184822871 
-33: 153.746067036 
-16: 153.838693266 
-34: 154.683200373 
-19: 154.783102823 
-12: 155.608894333 
-5: 179.784567462 
-10: 188.387517709 
-1: 211.919261896 
+9: 17.2249589448 
+30: 17.6250034944 
+21: 17.660124275 
+1: 18.187365364 
+33: 21.2398526796 
+29: 21.4449175934 
+12: 21.5534807898 
+34: 30.8064408487 
+19: 34.8304101986 
+16: 38.8337787781 
+8: 40.0056996517 
+32: 40.1408791209 
+7: 45.1664323243 
+26: 48.0343319916 
+0: 51.0458232105 
+31: 52.301347443 
+6: 64.3325152558 
+2: 67.4791801474 
+23: 78.822391422 
+27: 80.7073621412 
+28: 83.6469591649 
+25: 84.5057978724 
+15: 85.0331889499 
+4: 116.133535421 
+10: 118.881070705 
+13: 122.836869109 
+22: 125.201399755 
+17: 125.297603835 
+18: 125.41596812 
+24: 128.756742379 
+11: 144.785043152 
+14: 177.635702041 
+3: 227.951296546 
+5: 241.98348877 
 -------------------------
 
 Distances from Cluster 21
 -------------------------
 21: 0.0 
-6: 27.5873740722 
-23: 36.0220740545 
-22: 37.4663500013 
-32: 37.5239537956 
-29: 37.6241059376 
-26: 37.7362868732 
-13: 38.1780766683 
-33: 38.8220438733 
-2: 42.9979555938 
-34: 43.2939357882 
-0: 43.9134473902 
-19: 44.2443162198 
-16: 44.5116077731 
-17: 53.847538365 
-14: 54.545359367 
-11: 54.7347194511 
-25: 58.7168465217 
-24: 61.487878802 
-31: 66.7113452114 
-27: 68.602031376 
-8: 75.6321257217 
-7: 96.3247523507 
-18: 105.188819946 
-4: 108.66241999 
-12: 128.550038646 
-15: 128.670085033 
-30: 130.077023207 
-28: 131.497529352 
-9: 137.786871293 
-3: 143.574077628 
-20: 148.977633093 
-10: 167.882861263 
-1: 207.193336801 
-5: 239.04183438 
+9: 3.42037987765 
+30: 6.36469751742 
+1: 8.61494391766 
+33: 10.3639544484 
+29: 11.5854877438 
+12: 16.3015464307 
+20: 17.660124275 
+34: 28.5927463733 
+19: 32.5601709589 
+32: 34.6866333856 
+8: 36.3203920206 
+16: 37.7210168912 
+7: 43.8168104533 
+26: 44.5935258252 
+0: 47.3823784614 
+31: 51.689355145 
+6: 64.6373690844 
+2: 65.4779709929 
+27: 78.9145679285 
+23: 79.7052056888 
+25: 80.9900106865 
+15: 81.922319517 
+28: 83.9725516774 
+4: 119.234843481 
+10: 119.378292149 
+17: 122.936313171 
+18: 123.654954988 
+22: 124.056093861 
+24: 125.705461519 
+13: 128.058204968 
+11: 143.790267031 
+14: 180.619214064 
+3: 228.816553502 
+5: 245.332190664 
 -------------------------
 
 Distances from Cluster 22
 -------------------------
 22: 0.0 
-13: 23.970105924 
-32: 28.1151107422 
-26: 28.162432954 
-23: 30.1324495229 
-29: 30.6470423438 
-2: 32.1073208673 
-33: 32.300753503 
-0: 32.4935043224 
-34: 33.3472590828 
-19: 34.4192336559 
-16: 34.7266385483 
-21: 37.4663500013 
-6: 37.5455933187 
-11: 41.1700134001 
-14: 45.1278807748 
-25: 48.1083916439 
-17: 52.6578376984 
-24: 55.0233773209 
-31: 58.8115183429 
-8: 64.134475559 
-27: 64.8835666283 
-7: 88.5970933296 
-18: 97.9518461058 
-4: 98.3305571042 
-30: 120.405650945 
-28: 123.357133169 
-12: 125.25495885 
-15: 125.966653883 
-9: 131.139229713 
-3: 137.080378831 
-20: 141.35317599 
-10: 168.105341212 
-1: 202.330454088 
-5: 235.682705172 
+15: 88.7952134458 
+2: 94.6896523718 
+18: 95.3611893569 
+17: 95.540337049 
+27: 96.385375004 
+25: 97.678484482 
+32: 100.214382097 
+24: 100.844052775 
+0: 102.076657766 
+4: 103.912622202 
+23: 112.729449182 
+11: 112.971984809 
+8: 115.341712867 
+29: 115.938792431 
+19: 116.416365351 
+34: 117.567997004 
+26: 118.018634233 
+16: 120.253609314 
+12: 120.321474573 
+6: 120.573477477 
+31: 120.883930881 
+33: 121.131092418 
+7: 121.715393266 
+21: 124.056093861 
+1: 124.164532411 
+30: 124.60062159 
+20: 125.201399755 
+9: 125.597844023 
+28: 128.167476447 
+10: 130.037136282 
+13: 146.847628687 
+14: 178.760830521 
+5: 180.879752794 
+3: 219.218499019 
 -------------------------
 
 Distances from Cluster 23
 -------------------------
 23: 0.0 
-13: 25.9475054471 
-33: 26.2847576661 
-29: 28.2402636253 
-0: 28.5778522612 
-17: 29.5608853627 
-34: 30.0527647898 
-22: 30.1324495229 
-26: 30.1729941754 
-2: 30.4880122425 
-16: 30.8485396875 
-19: 33.0128469727 
-32: 33.9636318223 
-21: 36.0220740545 
-6: 36.3689344178 
-14: 43.4673570169 
-25: 46.0399042895 
-11: 49.6484347898 
-24: 50.4692402567 
-31: 53.7979451568 
-8: 66.7460958573 
-27: 75.2173914329 
-7: 86.1929435014 
-4: 100.457656266 
-18: 106.622992788 
-30: 122.486518954 
-28: 125.586084666 
-15: 125.794599317 
-9: 130.246431738 
-12: 132.055330803 
-3: 135.385214697 
-20: 145.594654812 
-10: 172.806823555 
-1: 215.221654605 
-5: 240.328781774 
+19: 68.0823634866 
+8: 69.3852217569 
+31: 69.6419388017 
+12: 70.5985328991 
+6: 72.0600324442 
+0: 72.2976596914 
+16: 73.1134235993 
+7: 75.2746067487 
+29: 75.461055778 
+34: 77.026966873 
+32: 77.0680161681 
+30: 77.4076761486 
+28: 77.4951592386 
+26: 78.2033341923 
+1: 78.2110781274 
+33: 78.6199427357 
+20: 78.822391422 
+2: 79.0890072313 
+21: 79.7052056888 
+9: 79.7725418369 
+15: 90.0934318956 
+27: 93.4190465476 
+25: 96.2672475061 
+4: 96.3713312524 
+10: 103.979136827 
+22: 112.729449182 
+18: 116.32196179 
+13: 116.380106163 
+17: 119.198478103 
+24: 129.745419054 
+11: 133.261153925 
+14: 153.160803772 
+3: 188.740323581 
+5: 208.94922071 
 -------------------------
 
 Distances from Cluster 24
 -------------------------
 24: 0.0 
-26: 46.6369897637 
-23: 50.4692402567 
-13: 54.9885050924 
-22: 55.0233773209 
-32: 56.0190781694 
-17: 58.5904627215 
-11: 59.9245329325 
-21: 61.487878802 
-33: 61.5073423287 
-29: 62.3696395881 
-6: 62.4044993418 
-0: 63.0023990223 
-2: 63.6235953814 
-34: 63.6544041462 
-19: 63.9689687881 
-16: 64.9894292804 
-14: 68.2767712174 
-27: 72.7455996405 
-25: 73.5911408866 
-31: 75.5279073608 
-8: 81.3983879459 
-7: 99.3336358924 
-18: 103.330094337 
-4: 110.436824683 
-12: 112.07167968 
-15: 121.79109246 
-30: 126.064972549 
-28: 134.664677406 
-9: 140.200067631 
-20: 145.569694016 
-3: 147.044333656 
-10: 153.52983221 
-1: 199.913837395 
-5: 232.657216612 
+25: 60.8557831809 
+15: 75.0605450972 
+17: 87.1772569799 
+2: 91.2853065247 
+27: 96.1072058936 
+0: 96.6169060243 
+32: 99.2210960004 
+18: 100.296004781 
+22: 100.844052775 
+26: 107.689838955 
+29: 116.831629017 
+33: 117.874082199 
+11: 120.650100607 
+8: 125.510725457 
+21: 125.705461519 
+19: 126.995007301 
+12: 127.128823938 
+34: 127.368610388 
+1: 128.040651176 
+30: 128.091171113 
+9: 128.292514036 
+20: 128.756742379 
+23: 129.745419054 
+16: 130.242183057 
+4: 131.37621889 
+7: 131.866599027 
+31: 132.952840979 
+6: 138.803960065 
+28: 145.626057497 
+10: 150.449410028 
+13: 171.919300895 
+5: 192.863309713 
+14: 209.267876294 
+3: 248.279206935 
 -------------------------
 
 Distances from Cluster 25
 -------------------------
 25: 0.0 
-0: 36.4000592682 
-31: 41.8678053693 
-16: 43.7534879461 
-33: 45.1121089652 
-13: 45.3513166376 
-29: 45.5121504663 
-2: 45.8534968704 
-34: 45.9983823477 
-23: 46.0399042895 
-8: 47.901217436 
-22: 48.1083916439 
-14: 48.1109330725 
-19: 48.6834699946 
-26: 51.1323358841 
-32: 52.9852056634 
-6: 52.9901637883 
-21: 58.7168465217 
-7: 62.4126006443 
-17: 67.0160831649 
-11: 67.9564769872 
-24: 73.5911408866 
-4: 73.7491762163 
-27: 89.074054782 
-30: 101.487844681 
-3: 102.68956101 
-28: 102.883291008 
-18: 111.690143877 
-9: 114.192945403 
-15: 124.241655897 
-20: 125.785604563 
-12: 143.325192266 
-10: 187.503286076 
-1: 224.004892312 
-5: 229.593223693 
+2: 45.0526575889 
+0: 56.4998226808 
+15: 56.8343402564 
+24: 60.8557831809 
+32: 62.4025570596 
+26: 67.4112802049 
+27: 69.4836194373 
+29: 71.9068971915 
+33: 73.7072759125 
+17: 76.2756932374 
+21: 80.9900106865 
+12: 81.8389002971 
+8: 82.3463043166 
+1: 82.4940731528 
+19: 82.7555535547 
+18: 82.8129363859 
+30: 82.8370255507 
+9: 83.0493338911 
+34: 83.8539948761 
+20: 84.5057978724 
+16: 87.1316591992 
+7: 88.4403566866 
+31: 91.0452954229 
+23: 96.2672475061 
+22: 97.678484482 
+6: 99.4885941242 
+28: 109.93258297 
+4: 113.259514527 
+11: 116.238518346 
+10: 125.420786525 
+13: 142.032611991 
+14: 187.384256327 
+5: 200.666996343 
+3: 231.437450375 
 -------------------------
 
 Distances from Cluster 26
 -------------------------
 26: 0.0 
-13: 21.1276843505 
-32: 24.1621795304 
-29: 26.8120991714 
-2: 27.2707275934 
-22: 28.162432954 
-6: 28.4508780184 
-23: 30.1729941754 
-33: 30.3500151687 
-34: 30.7381944029 
-16: 32.5557758941 
-0: 32.5739771332 
-19: 34.8639018596 
-11: 35.715741455 
-21: 37.7362868732 
-24: 46.6369897637 
-14: 48.8167395356 
-25: 51.1323358841 
-17: 51.6903977388 
-31: 61.4917360867 
-27: 64.0750782143 
-8: 67.0423413823 
-7: 92.5155066333 
-18: 101.820639915 
-4: 103.39473694 
-12: 118.59710836 
-30: 124.315354863 
-15: 127.631477482 
-28: 129.44530353 
-9: 137.983662774 
-3: 142.464344798 
-20: 144.306903096 
-10: 165.663031501 
-1: 204.424841696 
-5: 240.408791314 
+33: 37.4726347615 
+0: 40.0915874579 
+29: 40.3283176971 
+12: 43.117264646 
+21: 44.5935258252 
+1: 44.7717176678 
+30: 45.1475020732 
+9: 45.6446872364 
+19: 46.7629648412 
+32: 46.8825124361 
+34: 47.1906380668 
+20: 48.0343319916 
+8: 49.4705928009 
+16: 50.2174169203 
+7: 55.9482148548 
+31: 57.9556724225 
+2: 61.1580481929 
+25: 67.4112802049 
+6: 68.6659620313 
+23: 78.2033341923 
+27: 78.6707768073 
+15: 78.927032833 
+28: 82.4317041571 
+24: 107.689838955 
+4: 107.978016931 
+17: 109.045146215 
+10: 113.63478673 
+18: 117.367057305 
+22: 118.018634233 
+13: 125.280540587 
+11: 135.727624985 
+14: 170.812857555 
+3: 217.225291354 
+5: 226.477881968 
 -------------------------
 
 Distances from Cluster 27
 -------------------------
 27: 0.0 
-11: 55.2545035516 
-26: 64.0750782143 
-22: 64.8835666283 
-32: 66.4665764384 
-21: 68.602031376 
-6: 72.6210343082 
-24: 72.7455996405 
-13: 74.7332543124 
-23: 75.2173914329 
-29: 80.5705849929 
-2: 81.8784610011 
-17: 83.8739213511 
-33: 84.5494381071 
-0: 84.8699003209 
-34: 85.0968631504 
-19: 85.3961281572 
-14: 85.9090342454 
-16: 86.7166611851 
-8: 87.0928710384 
-25: 89.074054782 
-31: 91.054176328 
-18: 100.038484297 
-12: 106.128332173 
-4: 114.774544312 
-7: 116.843063102 
-30: 121.206721391 
-15: 124.909553241 
-20: 134.737308275 
-10: 135.127467845 
-28: 135.324171579 
-9: 143.083732214 
-3: 157.393229656 
-1: 168.87557796 
-5: 222.462064968 
+32: 57.5175823525 
+2: 59.2977179493 
+0: 67.4956401055 
+25: 69.4836194373 
+8: 69.9386489981 
+15: 70.0106124491 
+29: 72.2700466436 
+19: 73.0670302761 
+33: 75.5417846085 
+12: 76.4491334173 
+1: 78.3461112776 
+26: 78.6707768073 
+21: 78.9145679285 
+30: 79.4020046499 
+9: 80.0792940796 
+34: 80.3256743282 
+20: 80.7073621412 
+16: 81.6752556585 
+31: 81.9631154528 
+7: 82.4801390944 
+17: 82.7535969078 
+18: 85.2275337933 
+6: 91.2051917059 
+23: 93.4190465476 
+24: 96.1072058936 
+22: 96.385375004 
+11: 99.148350621 
+28: 100.332631076 
+4: 102.094985349 
+10: 116.431565897 
+13: 123.498331986 
+14: 174.229313362 
+5: 203.815620971 
+3: 218.684429527 
 -------------------------
 
 Distances from Cluster 28
 -------------------------
 28: 0.0 
-7: 86.7276640189 
-30: 92.2654728775 
-4: 92.3192069258 
-8: 93.964696648 
-3: 95.857822647 
-25: 102.883291008 
-20: 104.204374823 
-31: 105.851855757 
-9: 110.535625055 
-14: 119.713271876 
-22: 123.357133169 
-23: 125.586084666 
-0: 125.702072473 
-32: 126.774007486 
-11: 127.572609536 
-26: 129.44530353 
-6: 130.302712892 
-13: 130.789080618 
-21: 131.497529352 
-29: 133.016503019 
-16: 133.352472821 
-2: 133.776697574 
-33: 133.799840652 
-15: 134.516953196 
-24: 134.664677406 
-34: 134.826492413 
-19: 134.987981305 
-27: 135.324171579 
-17: 136.416195021 
-18: 137.63388238 
-12: 163.130736414 
-5: 188.057760813 
-10: 194.760184687 
-1: 219.235461053 
+6: 60.7000921313 
+19: 61.8605442875 
+31: 63.5398667023 
+8: 66.6399229172 
+7: 67.7231193952 
+12: 69.8584872676 
+16: 70.6322795833 
+23: 77.4951592386 
+34: 79.1573783036 
+1: 79.516157805 
+30: 79.7173546146 
+29: 81.0097073995 
+0: 81.9948069779 
+26: 82.4317041571 
+9: 82.7210868292 
+20: 83.6469591649 
+33: 83.8701510732 
+21: 83.9725516774 
+32: 84.2675064548 
+2: 87.487044228 
+13: 87.6905820651 
+10: 99.5283839409 
+27: 100.332631076 
+15: 101.691291041 
+4: 103.09974027 
+25: 109.93258297 
+18: 117.983413546 
+17: 126.090523673 
+14: 126.898539931 
+22: 128.167476447 
+11: 131.220927136 
+24: 145.626057497 
+3: 171.900176272 
+5: 212.966012146 
 -------------------------
 
 Distances from Cluster 29
 -------------------------
 29: 0.0 
-34: 8.17213813229 
-2: 9.50904708923 
-16: 9.89258435404 
-33: 10.7142097731 
-13: 12.283602206 
-0: 15.0307855734 
-19: 18.4436521994 
-26: 26.8120991714 
-6: 27.4182754066 
-23: 28.2402636253 
-22: 30.6470423438 
-32: 31.6993833658 
-21: 37.6241059376 
-14: 43.1789788903 
-25: 45.5121504663 
-17: 52.4952230615 
-11: 55.6243893642 
-31: 59.8617702858 
-24: 62.3696395881 
-8: 70.7002579938 
-27: 80.5705849929 
-7: 90.6179668959 
-4: 105.549588881 
-18: 115.997926982 
-30: 130.848091789 
-28: 133.016503019 
-12: 138.752753239 
-15: 138.944343857 
-3: 141.311890735 
-9: 142.677199821 
-20: 152.321882009 
-10: 186.43646074 
-1: 224.159703067 
-5: 253.896112172 
+21: 11.5854877438 
+33: 11.6617816844 
+9: 13.5211250738 
+30: 13.5915015764 
+1: 14.6229933155 
+12: 17.4421769535 
+20: 21.4449175934 
+32: 27.9103711284 
+34: 28.655484446 
+19: 30.6499855792 
+8: 33.8459854571 
+0: 37.1918272596 
+16: 37.4074143922 
+26: 40.3283176971 
+7: 43.0379429346 
+31: 49.7667054702 
+2: 57.4560946152 
+6: 62.4875056229 
+25: 71.9068971915 
+27: 72.2700466436 
+15: 72.6834694702 
+23: 75.461055778 
+28: 81.0097073995 
+4: 113.211145421 
+18: 114.398815712 
+17: 114.419456535 
+10: 114.647148255 
+22: 115.938792431 
+24: 116.831629017 
+13: 125.254296448 
+11: 136.505138061 
+14: 177.309433255 
+3: 224.882684098 
+5: 236.86957684 
 -------------------------
 
 Distances from Cluster 30
 -------------------------
 30: 0.0 
-4: 76.1143345853 
-8: 77.3221521155 
-7: 89.8765109864 
-28: 92.2654728775 
-31: 98.8003839741 
-25: 101.487844681 
-9: 102.578783422 
-20: 106.377961966 
-3: 112.002293342 
-11: 117.70865892 
-32: 119.741436791 
-22: 120.405650945 
-27: 121.206721391 
-23: 122.486518954 
-14: 123.069653383 
-26: 124.315354863 
-0: 124.756436712 
-24: 126.064972549 
-18: 126.553029913 
-13: 127.72196827 
-6: 128.464611016 
-15: 129.324592325 
-21: 130.077023207 
-29: 130.848091789 
-2: 131.461344034 
-33: 131.616220018 
-17: 131.717925802 
-16: 131.918233412 
-34: 132.797936146 
-19: 133.315027319 
-12: 155.352672114 
-5: 176.221696463 
-10: 183.398252782 
-1: 213.391361038 
+9: 4.63837230468 
+21: 6.36469751742 
+1: 7.85773228279 
+12: 11.3996197235 
+33: 13.4897511087 
+29: 13.5915015764 
+20: 17.6250034944 
+34: 27.8126114567 
+19: 28.1981175083 
+8: 33.8340095513 
+16: 36.0085594034 
+32: 36.3453136457 
+7: 41.0600982052 
+26: 45.1475020732 
+31: 48.0799002567 
+0: 48.4165945825 
+6: 60.0057472455 
+2: 65.0695680824 
+23: 77.4076761486 
+27: 79.4020046499 
+28: 79.7173546146 
+25: 82.8370255507 
+15: 82.8843722757 
+10: 115.932213834 
+4: 117.912405434 
+18: 123.270911145 
+17: 123.27968968 
+13: 124.302034297 
+22: 124.60062159 
+24: 128.091171113 
+11: 143.183281799 
+14: 176.371836513 
+3: 223.732875227 
+5: 243.874680845 
 -------------------------
 
 Distances from Cluster 31
 -------------------------
 31: 0.0 
-25: 41.8678053693 
-14: 48.212835309 
-0: 51.1589395062 
-8: 51.825513647 
-23: 53.7979451568 
-22: 58.8115183429 
-13: 58.8836546784 
-33: 58.962375971 
-16: 59.2695989477 
-7: 59.4125030596 
-29: 59.8617702858 
-32: 60.6132072828 
-34: 60.8269191887 
-2: 61.0932006067 
-26: 61.4917360867 
-6: 62.757767292 
-19: 62.8336730852 
-21: 66.7113452114 
-17: 68.3213683045 
-11: 73.8753747758 
-24: 75.5279073608 
-4: 81.963371895 
-27: 91.054176328 
-30: 98.8003839741 
-28: 105.851855757 
-3: 108.076612451 
-18: 112.1380934 
-9: 113.602599086 
-15: 120.389332792 
-20: 125.203488142 
-12: 138.863920342 
-10: 183.15942117 
-5: 220.912095845 
-1: 221.164795392 
+19: 29.5514669371 
+7: 34.3388889152 
+8: 37.4871285343 
+12: 39.5469635026 
+16: 43.3307672879 
+1: 46.5475369756 
+6: 47.6343227601 
+30: 48.0799002567 
+29: 49.7667054702 
+9: 50.3882978375 
+34: 50.6383159648 
+21: 51.689355145 
+33: 52.2359973686 
+20: 52.301347443 
+32: 56.3111647275 
+26: 57.9556724225 
+0: 59.8357725029 
+2: 61.3522600718 
+28: 63.5398667023 
+23: 69.6419388017 
+27: 81.9631154528 
+15: 87.4028552207 
+25: 91.0452954229 
+10: 94.5358537473 
+4: 102.895386461 
+13: 103.329007837 
+18: 115.157250424 
+17: 120.827953595 
+22: 120.883930881 
+11: 132.545311859 
+24: 132.952840979 
+14: 150.096265408 
+3: 196.687957374 
+5: 219.430685412 
 -------------------------
 
 Distances from Cluster 32
 -------------------------
 32: 0.0 
-26: 24.1621795304 
-22: 28.1151107422 
-13: 29.2081961881 
-6: 30.7585544612 
-29: 31.6993833658 
-23: 33.9636318223 
-2: 34.8590718725 
-33: 35.6885654713 
-34: 36.4271581643 
-0: 37.4919702687 
-21: 37.5239537956 
-16: 38.022614102 
-11: 39.8517160887 
-19: 40.0762265825 
-14: 50.7362627875 
-25: 52.9852056634 
-17: 55.622268862 
-24: 56.0190781694 
-31: 60.6132072828 
-27: 66.4665764384 
-8: 66.8277914769 
-7: 92.5269453093 
-18: 97.379657414 
-4: 103.571315647 
-30: 119.741436791 
-12: 121.401588274 
-15: 126.580661591 
-28: 126.774007486 
-9: 136.636522511 
-20: 140.89710675 
-3: 142.419963449 
-10: 166.732549561 
-1: 205.651983026 
-5: 235.255882542 
+29: 27.9103711284 
+33: 31.6070470464 
+21: 34.6866333856 
+30: 36.3453136457 
+12: 36.508557931 
+1: 36.5509069038 
+9: 36.8142872168 
+0: 39.6297516904 
+20: 40.1408791209 
+19: 41.3363436091 
+8: 42.1624840979 
+34: 43.413703351 
+26: 46.8825124361 
+16: 48.7245153389 
+2: 52.0771262759 
+7: 52.8028154988 
+31: 56.3111647275 
+15: 56.6755277823 
+27: 57.5175823525 
+25: 62.4025570596 
+6: 68.3313301671 
+23: 77.0680161681 
+28: 84.2675064548 
+17: 97.2372534107 
+24: 99.2210960004 
+18: 99.3168017894 
+22: 100.214382097 
+4: 106.861002291 
+10: 113.030251969 
+11: 120.760502364 
+13: 126.281870713 
+14: 176.303645993 
+3: 222.96193428 
+5: 225.008568509 
 -------------------------
 
 Distances from Cluster 33
 -------------------------
 33: 0.0 
-34: 7.8714671231 
-16: 8.45510871006 
-29: 10.7142097731 
-2: 11.3682237288 
-0: 13.2070571975 
-13: 13.4621493732 
-19: 17.8813397534 
-23: 26.2847576661 
-26: 30.3500151687 
-22: 32.300753503 
-6: 33.8140595331 
-32: 35.6885654713 
-21: 38.8220438733 
-14: 42.2034514989 
-25: 45.1121089652 
-17: 49.4262925717 
-11: 57.7656967565 
-31: 58.962375971 
-24: 61.5073423287 
-8: 72.0890537978 
-27: 84.5494381071 
-7: 90.0893647501 
-4: 105.655749958 
-18: 117.085442556 
-30: 131.616220018 
-28: 133.799840652 
-15: 138.48501528 
-3: 140.134998049 
-9: 141.004556411 
-12: 141.374081493 
-20: 153.746067036 
-10: 187.978543941 
-1: 226.481806891 
-5: 255.297356356 
+21: 10.3639544484 
+29: 11.6617816844 
+9: 12.4769971457 
+30: 13.4897511087 
+1: 14.3290228871 
+12: 19.2223688604 
+20: 21.2398526796 
+34: 29.8017707608 
+32: 31.6070470464 
+19: 33.6353951567 
+8: 36.5663744651 
+26: 37.4726347615 
+16: 38.0934529223 
+0: 42.0287154203 
+7: 44.7264301693 
+31: 52.2359973686 
+2: 60.634242573 
+6: 65.2685641974 
+25: 73.7072759125 
+27: 75.5417846085 
+23: 78.6199427357 
+15: 78.6460248549 
+28: 83.8701510732 
+4: 116.730277499 
+24: 117.874082199 
+10: 118.136301572 
+17: 118.515352783 
+18: 120.505715871 
+22: 121.131092418 
+13: 127.632760302 
+11: 140.534981157 
+14: 179.9004388 
+3: 228.010576047 
+5: 240.750347006 
 -------------------------
 
 Distances from Cluster 34
 -------------------------
 34: 0.0 
-16: 3.60659189137 
-2: 7.31950886767 
-33: 7.8714671231 
-29: 8.17213813229 
-13: 12.8300008053 
-0: 13.0259237745 
-19: 16.9176069316 
-23: 30.0527647898 
-26: 30.7381944029 
-22: 33.3472590828 
-6: 34.8643336347 
-32: 36.4271581643 
-21: 43.2939357882 
-14: 43.6276479158 
-25: 45.9983823477 
-17: 53.0025192131 
-11: 58.7621305023 
-31: 60.8269191887 
-24: 63.6544041462 
-8: 72.8422178689 
-27: 85.0968631504 
-7: 91.090879228 
-4: 106.312447255 
-18: 119.136241088 
-30: 132.797936146 
-28: 134.826492413 
-15: 141.528986788 
-3: 141.646066421 
-12: 142.903438129 
-9: 144.18061409 
-20: 154.683200373 
-10: 190.457709569 
-1: 227.815624837 
-5: 257.551715513 
+12: 25.7465556556 
+1: 26.6392125169 
+9: 27.6782055613 
+30: 27.8126114567 
+21: 28.5927463733 
+29: 28.655484446 
+33: 29.8017707608 
+8: 30.549409707 
+20: 30.8064408487 
+19: 30.8870434868 
+16: 37.9081081306 
+32: 43.413703351 
+7: 45.5541360714 
+26: 47.1906380668 
+0: 47.5372313383 
+31: 50.6383159648 
+6: 56.6957652932 
+2: 62.3316916388 
+23: 77.026966873 
+28: 79.1573783036 
+27: 80.3256743282 
+15: 82.9144446465 
+25: 83.8539948761 
+4: 108.627431087 
+10: 112.526590951 
+22: 117.567997004 
+13: 119.073089569 
+17: 120.19818938 
+18: 121.701279059 
+24: 127.368610388 
+11: 141.823706318 
+14: 165.461835571 
+3: 220.206966465 
+5: 235.744234057 
 -------------------------
 

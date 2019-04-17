@@ -39,8 +39,8 @@ if __name__ == "__main__":
                              'add_calc: add recipes to database, calculate pca coordinates and kmeans coordinates. Use numrecipes to set number of recipes to add. \n'
                              'remove_calc: remove recipes from database. calculate pca coordinates and kmeans coordinates. Use numrecipes to set number of recipes to remove. \n'
                              'clear: wipe all data from the db including matrix, pca, kmeans, recipes, and ingredients. \n')
-    parser.add_argument('--components', default=10, type=int, help='number of pca components. default is 10.')
-    parser.add_argument('--clusters', default=10, type=int, help='number of kmeans clusters. default is 10.')
+    parser.add_argument('--components', default=24, type=int, help='number of pca components. default is 10.')
+    parser.add_argument('--clusters', default=35, type=int, help='number of kmeans clusters. default is 10.')
     args = parser.parse_args()
     if args.numrecipes < 0:
         raise(Exception("[Error] Must enter a positive number of recipes"))

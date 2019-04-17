@@ -152,6 +152,9 @@ class Kmeans_Cluster(db.Model):
     def get_size(self):
         return len(self.ingredients)
 
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 
 '''
 A coordinate for the center of the Kmeans cluster

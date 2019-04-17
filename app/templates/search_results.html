@@ -1,10 +1,15 @@
 <div class="search-results">
     {% if random_search and search|length == 0 %}
-        <div class="welcome text-center col-md-8 col-md-offset-2">
-            <h2>Welcome!</h2>
-            <p class="extra-thin-text">YumBot is an intelligent bot who would be honored to serve as your personal assistant chef.
-            YumBot can create unique recipes based on ingredients available in your fridge. In addition to
-            recipes created by YumBot, we offer recipes using the Spoonacular API drawn from various sources.</p>
+        <div class="welcome col-md-10 text-center col-md-offset-1">
+            <div class="col-welcome-text">
+                <div class="col-welcome-text-wrapper">
+                    <img class="yumbot-logo" src="{{ url_for('static', filename='images/yumbot_aqua_logo.png') }}">
+                    <h2 class="welcome-text">Welcome!</h2>
+                    <p class="extra-thin-text">I am YumBot, an intelligent bot who would be honored to serve as your personal assistant chef.
+                        I can create unique recipes based on ingredients available in your fridge. In addition to
+                        recipes I create, this website offers recipes using the Spoonacular API drawn from various sources.</p>
+                </div>
+            </div>
         </div>
         <h2 class="col-md-12">Random Recipes</h2>
 

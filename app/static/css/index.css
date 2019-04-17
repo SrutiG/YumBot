@@ -46,9 +46,20 @@ body {
     padding: 3px 15px 0 15px;
 }
 
+.yumbot-nav-logo {
+    height: calc(var(--topbar_height));
+    width: auto;
+    display: inline-block;
+    transform: translateY(-3px);
+    margin-left: 10px;
+    float: right;
+}
+
 .topbar-header {
     margin: 0;
     color: var(--primary_light);
+    display: inline-block;
+
 }
 
 /*===================================search===================================*/
@@ -266,3 +277,30 @@ body {
     color: var(--accent);
     font-family: var(--yumbot_font);
 }
+
+.col-welcome {
+    height: 200px;
+    display: inline-block;
+    padding: 0;
+}
+
+.yumbot-logo {
+    height: 100px;
+    width: auto;
+}
+
+.col-welcome-text {
+    display: table;
+    height: 100%;
+}
+
+.col-welcome-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.welcome-text {
+    margin-top: 5px;
+}
+
+
