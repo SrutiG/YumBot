@@ -4,7 +4,12 @@
 A web application providing customized recipes created by the YumBot
 
 ## How to run
-First ensure that you have Python version 2.6+ installed on your machine. To confirm,
+
+First, get a Spoonacular API key by visiting [this](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/pricing) site. Select the basic plan. Then, in the Rapid API dashboard, click "Add New App" on the left navigation bar. Name the application "YumBot".  YumBot should not show up in your "My Apps" section on the left navigation bar. Then, select YumBot and in the dropdown menu, click on "Security". You should be able to see your API key. Copy this key and set it as an environment variable on your machine by typing this command in a terminal window
+
+    export SPOONACULAR_API_KEY=<your-key>
+
+Then, ensure that you have Python version 2.6+ installed on your machine. To confirm,
 open a terminal and run the following command to ensure that python is installed and it is the correct version.
 
     python --version
