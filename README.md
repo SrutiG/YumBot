@@ -74,6 +74,19 @@ Create new endpoints for the application in the file **app/views.py**
 Currently there is a **layout.html** file in **app/templates** which contains the topbar, headers, and links to the css and js files in **app/static/css/index.css** and **app/static/js/index.js**.
 Create new templates which extend **layout.html**.
 
+### Modify Algorithms
+Co-occurrence matrix: **app/cooccur.py**
+K-Means: **app/kmeans.py**
+PCA: **app/pca.py**
+
+### Edit YumBot logic
+The YumBot class is located in **app/yumbot.py**. It is used to check if ingredients are compatible and create new recipes.
+
+### Add to the Database Schema
+The database schema is located in **app/models.py**. After making changes to this schema, make sure you create new migrations by running the command
+
+    ./db_migrate.py
+
 ### Change the host and port
 By default, this application runs on **127.0.0.1:8095**. Change the default host and port in **run.py** or run it on a different host and port using the --host and --port flags. For example,
 
