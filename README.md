@@ -2,6 +2,7 @@
 
 ## Description
 A web application providing customized recipes created by the YumBot
+Read more about this project [here](https://docs.google.com/document/d/1x_4bRY8qcoh4hPAhN5VDa-l6KPJxKHUQWMXChlhZKCk/edit?usp=sharing)
 
 ## How to run
 
