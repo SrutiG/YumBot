@@ -2,6 +2,7 @@
 Title
 -----
 models.py
+
 Description
 -----------
 Database schema
@@ -9,7 +10,7 @@ Database schema
 from app import db
 
 '''
-
+Recipe class contains basic recipe information
 '''
 class Recipe(db.Model):
     __tablename__ = 'recipe'
@@ -27,7 +28,7 @@ class Recipe(db.Model):
     steps = db.relationship("Recipe_Step", cascade="all", backref="recipe", passive_updates=False)
 
 '''
-
+Ingredient class contains basic ingredient information
 '''
 class Ingredient(db.Model):
     __tablename__ = 'ingredient'
@@ -39,22 +40,24 @@ class Ingredient(db.Model):
 
     def __str__(self):
         '''
-
-        :return:
+        get the utf-8 encoding of the recipe name
+        :return: recipe name in utf-8 encoding
         '''
         return self.name.encode('utf-8')
 
     def get_coordinates(self):
         '''
-
-        :return:
+        get a tuple containing the pca coordinate
+        for this ingredient
+        :return: tuple pca coordinate
         '''
         return tuple(self.get_coordinates_list())
 
     def get_coordinates_list(self):
         '''
-
-        :return:
+        get a list containing the pca coordinate
+        for this ingredient
+        :return: list pca coordinate
         '''
         coordinates_list = [None] * len(self.pca_coordinates)
         for coordinate in self.pca_coordinates:
@@ -63,7 +66,11 @@ class Ingredient(db.Model):
 
 
 '''
+Relationship table for recipes and ingredients
+n-n because a recipe can have multiple ingredients
+and an ingredient can exist in multiple recipes
 
+contains amount info for the ingredient in the recipe
 '''
 class Recipe_Ingredient(db.Model):
     __tablename__ = 'recipe_ingredient'
@@ -81,7 +88,9 @@ class Recipe_Ingredient(db.Model):
     standard_unit = db.Column(db.String(64))
 
 '''
-
+Step for a specific recipe
+1-n because a recipe has multiple steps but
+each step belongs to just one recipe
 '''
 class Recipe_Step(db.Model):
     __tablename__ = 'recipe_step'
@@ -91,7 +100,10 @@ class Recipe_Step(db.Model):
     ingredients = db.relationship("Recipe_Step_Ingredient", cascade="all", backref="recipe_step", passive_updates=False)
 
 '''
-
+Ingredients used in recipe step
+n-n because an many ingredients can be
+used in a recipe step and one ingredient
+can be in many recipe steps
 '''
 class Recipe_Step_Ingredient(db.Model):
     __tablename__= 'recipe_step_ingredient'
@@ -108,6 +120,9 @@ class Recipe_Step_Ingredient(db.Model):
 
 '''
 Co-occurrence matrix for ingredients
+contains the two ingredients and the count
+which is the number of recipes in which
+the ingredients are found together
 '''
 class Co_Occur_Matrix(db.Model):
     __tablename__= 'co_occur_matrix'
@@ -135,24 +150,47 @@ class Kmeans_Cluster(db.Model):
     coordinates = db.relationship("Kmeans_Cluster_Coordinate", cascade="all", backref="kmeans_cluster", passive_updates=False)
 
     def get_coordinates(self):
+        '''
+        get cluster center coordinate as a tuple
+        :return: tuple cluster coordinate
+        '''
         return tuple(self.get_coordinates_list())
 
     def get_coordinates_list(self):
+        '''
+        get cluster center coordinate as a list
+        :return: list cluster coordinate
+        '''
         coordinates = [None] * len(self.coordinates)
         for coord in self.coordinates:
             coordinates[ord(coord.column_name) - 97] = coord.value
         return coordinates
 
     def get_ingredient_strings(self):
+        '''
+        get all ingredients contained in the cluster
+        as strings
+        :return: list of ingredient strings
+        '''
         ingredients_str = []
         for ingredient in self.ingredients:
             ingredients_str.append(str(ingredient))
         return ingredients_str
 
     def get_size(self):
+        '''
+        get the number of ingredients in the cluster
+        which is the size of the cluster
+        :return: cluster size
+        '''
         return len(self.ingredients)
 
     def as_dict(self):
+        '''
+        return a dictionary representation of the cluster
+        # TODO: include ingredient strings
+        :return: dictionary representation of cluster
+        '''
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 

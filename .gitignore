@@ -4,5 +4,6 @@
 out
 gen
 app/app.db
+app/app.db-journal
 app/db_repository
 *.DS_Store
