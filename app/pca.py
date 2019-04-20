@@ -1,5 +1,11 @@
 '''
+Title
+-----
+pca.py
 
+Description
+-----------
+Principal Component Analysis calculations
 '''
 from cooccur import create_matrix
 from sklearn.preprocessing import StandardScaler
@@ -11,9 +17,10 @@ from db_accessor import delete_pca_data, add_pca_coordinate
 
 def implement_pca_on_matrix(components=4):
     '''
-
-    :param components:
-    :return:
+    Run PCA algorithm on the co-occurrence matrix
+    to get coordinates for each ingredient
+    :param components: number of PCA components
+    :return: the array of PCA coordinates
     '''
     if components > 25:
         raise(Exception('[Error] must reduce to less than 25 components'))
@@ -37,9 +44,8 @@ def implement_pca_on_matrix(components=4):
 
 def add_pca_coordinates_to_db(components=4):
     '''
-
-    :param components:
-    :return:
+    Add PCA coordinates to the database
+    :param components: number of PCA components
     '''
     try:
         delete_pca_data()

@@ -1,5 +1,11 @@
 '''
+Title
+-----
+spoonacular_api.py
 
+Description
+-----------
+Access methods for the Spoonacular API
 '''
 import requests
 import os
@@ -12,10 +18,10 @@ headers = {"X-RapidAPI-Host":api_host,"X-RapidAPI-key":api_key}
 
 def find_random_recipes(numRecipes, formatted=True):
     '''
-
-    :param numRecipes:
-    :param formatted:
-    :return:
+    Get random recipes
+    :param numRecipes: number of random recipes to get
+    :param formatted: format in application default recipe format
+    :return: array of recipe objects
     '''
     new_recipes = []
     url = api_url + "/recipes/random?number=" + str(numRecipes) + require_instructions
@@ -33,9 +39,9 @@ def find_random_recipes(numRecipes, formatted=True):
 
 def search_recipes_by_ingredient(ingredient_list):
     '''
-
-    :param ingredient_list:
-    :return:
+    find recipes containing certain ingredients
+    :param ingredient_list: a list of ingredient names
+    :return: list of recipe objects
     '''
     new_recipes = []
     num_recipes = "4"
@@ -62,9 +68,9 @@ def search_recipes_by_ingredient(ingredient_list):
 
 def get_recipe_information(id):
     '''
-
-    :param id:
-    :return:
+    get Spoonacular API recipe information by recipe ID
+    :param id: the Spoonacular API recipe ID
+    :return: recipe object
     '''
     url = api_url + "/recipes/" + str(id) + "/information"
     recipe = ""
@@ -78,9 +84,10 @@ def get_recipe_information(id):
 
 def format_spoonacular_recipe(recipe):
     '''
-
-    :param recipe:
-    :return:
+    Spoonacular API recipe formatted in general recipe
+    format used throughout application
+    :param recipe: original recipe from API
+    :return: recipe object (formatted)
     '''
     new_recipe = {"ingredients":[], "steps":[]}
     new_recipe["name"] = recipe["title"]
