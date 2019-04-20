@@ -1,6 +1,6 @@
 from app import db, models
 
-# ================== GETTERS ==================
+# ================== GET ==================
 
 def get_ingredients():
     try:
@@ -42,7 +42,7 @@ def get_kmeans_cluster(cluster_number):
         print("[Error] Error getting kmeans cluster")
         return {"error":e, "message": "[Error] error getting kmeans cluster"}
 
-# ================== SETTERS ==================
+# ================== UPDATE ==================
 
 def set_ingredient_cluster(ingredient_name, cluster):
     try:
