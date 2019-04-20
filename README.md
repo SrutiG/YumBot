@@ -65,14 +65,14 @@ These are the available arguments
 | components    | int    | 24            | any integer between 0 and 24                                       | number of PCA components                                                                                                                                                                                                                                                                                                                   |
 | clusters      | int    | 35            | any positive integer                                               | number of k-means clusters 
    
-## Making Changes
+## Other files
 
 ### Add new endpoints
-Create new endpoints for your application or API in the file **app/views.py**
+Create new endpoints for the application in the file **app/views.py**
 
 ### Edit HTML Templates
-Currently there is a **layout.html** file in **app/templates** which contains basic headers and links to the basic css and js files in **app/static/css/index.css** and **app/static/js/index.js**.
-Create new templates which extend **layout.html** following the format of **app/templates/index.html**
+Currently there is a **layout.html** file in **app/templates** which contains the topbar, headers, and links to the css and js files in **app/static/css/index.css** and **app/static/js/index.js**.
+Create new templates which extend **layout.html**.
 
 ### Change the host and port
 By default, this application runs on **127.0.0.1:8095**. Change the default host and port in **run.py** or run it on a different host and port using the --host and --port flags. For example,
