@@ -13,6 +13,8 @@
     --search_height: 130px;
     --topbar_height: 40px;
     --yumbot_font: 'Pacifico', cursive;
+    --search_results_height: calc(100vh - var(--search_height) - var(--topbar_height));
+    --welcome_height: calc(var(--search_results_height) - var(--recipe_height) - 100px);
 }
 
 /*===================================general===================================*/
@@ -146,7 +148,7 @@ body {
 /*===================================search-results===================================*/
 
 .search-results {
-    height: calc(100vh - var(--search_height) - var(--topbar_height));
+    height: var(--search_results_height);
     padding: 10px;
     width: 100%;
     overflow-y: scroll;
@@ -279,19 +281,18 @@ body {
 }
 
 .col-welcome {
-    height: 200px;
     display: inline-block;
     padding: 0;
 }
 
 .yumbot-logo {
-    height: 100px;
+    height: calc(var(--welcome_height)*0.5);
     width: auto;
 }
 
 .col-welcome-text {
     display: table;
-    height: 100%;
+    height: var(--welcome_height);
 }
 
 .col-welcome-text-wrapper {
