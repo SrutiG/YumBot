@@ -1,5 +1,11 @@
 '''
+Title
+-----
+kmeans.py
 
+Description
+-----------
+K-Means clustering calculations
 '''
 from db_accessor import get_ingredients, \
     get_ingredient, set_ingredient_cluster, \
@@ -14,8 +20,9 @@ import sys
 
 def get_all_kmeans_cluster_distances():
     '''
-
-    :return:
+    get the distances from each k-means cluster to the other
+    :return: list of cluster distances with indices
+    corresponding to cluster number
     '''
     kmeans_clusters_request = get_kmeans_clusters()
     if kmeans_clusters_request["error"]:
@@ -34,9 +41,10 @@ def get_all_kmeans_cluster_distances():
 
 def get_sorted_distances_from_cluster(cluster_number):
     '''
-
-    :param cluster_number:
-    :return:
+    get clusters in order of least-greatest distance from
+    a certain cluster
+    :param cluster_number: the reference cluster
+    :return: list of clusters ordered by distance
     '''
     kmeans_clusters_request = get_kmeans_clusters()
     if kmeans_clusters_request["error"]:
@@ -63,8 +71,8 @@ def get_sorted_distances_from_cluster(cluster_number):
 
 def get_all_kmeans_cluster_distances_dictionary():
     '''
-
-    :return:
+    A dictionary representation of all cluster distances
+    :return: dictionary distances from each cluster to another
     '''
     cluster_distances_list = get_all_kmeans_cluster_distances()
     cluster_distances_dict = []
@@ -75,9 +83,9 @@ def get_all_kmeans_cluster_distances_dictionary():
 
 def find_closest_cluster(cluster_number):
     '''
-
-    :param cluster_number:
-    :return:
+    Find the closest cluster to a specific cluster
+    :param cluster_number: reference cluster
+    :return: number of closest cluster
     '''
     cluster_request = get_kmeans_cluster(cluster_number)
     clusters_request = get_kmeans_clusters()
@@ -106,9 +114,10 @@ def find_closest_cluster(cluster_number):
 
 def find_closest_clusters_under_threshold(cluster_number):
     '''
-
-    :param cluster_number:
-    :return:
+    TODO: rename to find_compatible_clusters_under_threshold
+    Find the set of clusters compatible to the specific cluster
+    :param cluster_number: the reference cluster
+    :return: set of compatible clusters
     '''
     closest_clusters = set()
     sorted_distances = get_sorted_distances_from_cluster(cluster_number)
@@ -123,8 +132,8 @@ def find_closest_clusters_under_threshold(cluster_number):
 
 def smallest_cluster_size():
     '''
-
-    :return:
+    Find the size of the smallest cluster
+    :return: size of smallest cluster
     '''
     clusters_request = get_kmeans_clusters()
     min_size = sys.maxint
@@ -138,6 +147,11 @@ def smallest_cluster_size():
     return min_size
 
 def get_cluster_size(cluster_number):
+    '''
+    Get the size of a specific cluster
+    :param cluster_number: cluster number
+    :return: size of cluster
+    '''
     cluster_request = get_kmeans_cluster(cluster_number)
     if cluster_request["error"]:
         print(cluster_request["error"])
@@ -146,8 +160,8 @@ def get_cluster_size(cluster_number):
 
 def largest_cluster_size():
     '''
-
-    :return:
+    Get the largest cluster size
+    :return: size of largest cluster
     '''
     clusters_request = get_kmeans_clusters()
     max_size = 0
@@ -162,8 +176,9 @@ def largest_cluster_size():
 
 def cluster_size_upper_threshold():
     '''
-
-    :return:
+    get the size threshold for compatible clusters
+    calculations
+    :return: size threshold
     '''
     clusters_request = get_kmeans_clusters()
     if clusters_request["error"]:
@@ -177,9 +192,9 @@ def cluster_size_upper_threshold():
 
 def create_kmeans_clusters(clusters=10):
     '''
-
-    :param clusters:
-    :return:
+    Create kmeans clusters from PCA coordinates
+    and add them to the database
+    :param clusters: number of clusters
     '''
     try:
         # ingredients: all ingredients in the database
