@@ -11,7 +11,6 @@ handling requests to server
 from app import app
 from flask import render_template, redirect, session, request, jsonify, url_for
 from spoonacular_api import *
-from pca import create_distance_matrix
 from yumbot import YumBot
 
 global yb
