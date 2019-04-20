@@ -3,6 +3,8 @@
 ## Description
 A web application providing customized recipes created by the YumBot
 
+Read more about this project [here](https://docs.google.com/document/d/1x_4bRY8qcoh4hPAhN5VDa-l6KPJxKHUQWMXChlhZKCk/edit?usp=sharing)
+
 ## How to run
 
 First, get a Spoonacular API key by visiting [this](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/pricing) site. Select the basic plan. Then, in the Rapid API dashboard, click "Add New App" on the left navigation bar. Name the application "YumBot".  YumBot should not show up in your "My Apps" section on the left navigation bar. Then, select YumBot and in the dropdown menu, click on "Security". You should be able to see your API key. Copy this key and set it as an environment variable on your machine by typing this command in a terminal window
@@ -65,14 +67,27 @@ These are the available arguments
 | components    | int    | 24            | any integer between 0 and 24                                       | number of PCA components                                                                                                                                                                                                                                                                                                                   |
 | clusters      | int    | 35            | any positive integer                                               | number of k-means clusters 
    
-## Making Changes
+## Other files
 
 ### Add new endpoints
-Create new endpoints for your application or API in the file **app/views.py**
+Create new endpoints for the application in the file **app/views.py**
 
 ### Edit HTML Templates
-Currently there is a **layout.html** file in **app/templates** which contains basic headers and links to the basic css and js files in **app/static/css/index.css** and **app/static/js/index.js**.
-Create new templates which extend **layout.html** following the format of **app/templates/index.html**
+Currently there is a **layout.html** file in **app/templates** which contains the topbar, headers, and links to the css and js files in **app/static/css/index.css** and **app/static/js/index.js**.
+Create new templates which extend **layout.html**.
+
+### Modify Algorithms
+Co-occurrence matrix: **app/cooccur.py**
+K-Means: **app/kmeans.py**
+PCA: **app/pca.py**
+
+### Edit YumBot logic
+The YumBot class is located in **app/yumbot.py**. It is used to check if ingredients are compatible and create new recipes.
+
+### Add to the Database Schema
+The database schema is located in **app/models.py**. After making changes to this schema, make sure you create new migrations by running the command
+
+    ./db_migrate.py
 
 ### Change the host and port
 By default, this application runs on **127.0.0.1:8095**. Change the default host and port in **run.py** or run it on a different host and port using the --host and --port flags. For example,
