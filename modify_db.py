@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7
 '''
-
+Add/remove recipes to the database and run PCA and/or k-means
 '''
 from app import db_populate
 from app import cooccur
@@ -12,8 +12,11 @@ import argparse
 
 def add_recipes_to_db_bulk(num_recipes):
     '''
-
-    :param num_recipes:
+    Since the spoonacular API doesn't return more than
+    100 recipes per request, call db_populate function
+    for 100 recipes at a time until it adds num_recipes
+    recipes to the database
+    :param num_recipes: the number of recipes to add
     :return:
     '''
     loop_ind = int(math.ceil(num_recipes/100))
@@ -23,9 +26,6 @@ def add_recipes_to_db_bulk(num_recipes):
         recipes_to_add -= 100
 
 if __name__ == "__main__":
-    '''
-    
-    '''
     parser = argparse.ArgumentParser(description='Add or remove recipes from the database. Set the number of recipes to add/remove from the database')
     parser.add_argument('--numrecipes', default=10, type=int,
                         help='Num recipes to add or remove. Default is 10')

@@ -1,8 +1,22 @@
+'''
+Title
+-----
+db_accessor.py
+
+Description
+-----------
+Interact with the database
+'''
 from app import db, models
 
-# ================== GETTERS ==================
+# ================== GET ==================
 
 def get_ingredients():
+    '''
+    get all ingredients in the database
+    :return: object containing ingredient list if successful
+    or error if not successful
+    '''
     try:
         return {"data":models.Ingredient.query.all(),
                 "error":None,
@@ -13,6 +27,12 @@ def get_ingredients():
         return {"error":e, "message":"[Error] error getting ingredients"}
 
 def get_ingredient(ingredient_name):
+    '''
+    get a specific ingredient object by name
+    :param ingredient_name: name of ingredient
+    :return: object containing ingredient data if successful
+    or error if not successful
+    '''
     try:
         return {"data":models.Ingredient.query.get(ingredient_name),
                 "error":None,
@@ -23,6 +43,11 @@ def get_ingredient(ingredient_name):
         return {"error":e, "message":"[Error] error getting ingredient"}
 
 def get_kmeans_clusters():
+    '''
+    Get all kmeans clusters in database
+    :return: object containing kmeans clusters if successful
+    or error if not successful
+    '''
     try:
         return {"data": models.Kmeans_Cluster.query.all(),
                 "error":None,
@@ -33,6 +58,12 @@ def get_kmeans_clusters():
         return {"error":e, "message": "[Error] error getting kmeans clusters"}
 
 def get_kmeans_cluster(cluster_number):
+    '''
+    Get a kmeans cluster by the cluster number
+    :param cluster_number: kmeans cluster number
+    :return: object containing kmeans cluster if successful
+    or error if not successful
+    '''
     try:
         return {"data": models.Kmeans_Cluster.query.get(cluster_number),
                 "error":None,
@@ -42,9 +73,15 @@ def get_kmeans_cluster(cluster_number):
         print("[Error] Error getting kmeans cluster")
         return {"error":e, "message": "[Error] error getting kmeans cluster"}
 
-# ================== SETTERS ==================
+# ================== UPDATE ==================
 
 def set_ingredient_cluster(ingredient_name, cluster):
+    '''
+    Set the cluster number for a particular ingredient
+    :param ingredient_name: ingredient name
+    :param cluster: kmeans cluster number
+    :return: object containing error if not successful
+    '''
     try:
         ingredient = get_ingredient(ingredient_name)
         if ingredient["error"] != None:
@@ -64,6 +101,13 @@ def set_ingredient_cluster(ingredient_name, cluster):
 # ================== ADD ==================
 
 def add_pca_coordinate(ingredient_name, column_name, value):
+    '''
+    Add a pca coordinate for an ingredient
+    :param ingredient_name: ingredient name
+    :param column_name: column name [a-z]
+    :param value: coordinate value
+    :return: object containing error if not successful
+    '''
     try:
         new_coordinate = models.PCA_Coordinate(
             ingredient_name=ingredient_name,
@@ -81,6 +125,11 @@ def add_pca_coordinate(ingredient_name, column_name, value):
                 "message": "error adding pca coordinate"}
 
 def add_kmeans_cluster(number):
+    '''
+    Add a new kmeans cluster
+    :param number: cluster number
+    :return: object containing error if not successful
+    '''
     try:
         new_cluster = models.Kmeans_Cluster(cluster_number=number)
         db.session.add(new_cluster)
@@ -94,6 +143,13 @@ def add_kmeans_cluster(number):
                 "message": "error adding kmeans cluster"}
 
 def add_kmeans_cluster_coordinate(cluster_number, column_name, value):
+    '''
+    Add a coordinate for a kmeans cluster
+    :param cluster_number: kmeans cluster number
+    :param column_name: column name [a-z]
+    :param value: coordinate value
+    :return: object containing error if not successful
+    '''
     try:
         new_cluster_coord = models.Kmeans_Cluster_Coordinate(
             cluster_number=cluster_number,
@@ -113,6 +169,10 @@ def add_kmeans_cluster_coordinate(cluster_number, column_name, value):
 # ================== DELETE ==================
 
 def delete_pca_data():
+    '''
+    Delete all PCA data from database
+    :return: object containing error if not successful
+    '''
     try:
         pca_coord = models.PCA_Coordinate.query.all()
         for coord in pca_coord:
@@ -127,6 +187,10 @@ def delete_pca_data():
                 "message":"There was an error while wiping pca data"}
 
 def delete_kmeans_clusters():
+    '''
+    Delete all kmeans clusters from database
+    :return: object containing error if not successful
+    '''
     try:
         kmeans_clusters = models.Kmeans_Cluster.query.all()
         for cluster in kmeans_clusters:

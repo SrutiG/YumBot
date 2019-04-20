@@ -1,5 +1,11 @@
 '''
+Title
+-----
+db_populate.py
 
+Description
+-----------
+Populate the database with recipes
 '''
 from spoonacular_api import find_random_recipes
 from app import db, models
@@ -9,9 +15,11 @@ from db_accessor import delete_pca_data, delete_kmeans_clusters
 
 def add_recipes_to_db(num_recipes):
     '''
-
-    :param num_recipes:
-    :return:
+    Add new recipes to the database.
+    Find recipes using the spoonacular API
+    and iterate through them to add useful
+    properties to the database
+    :param num_recipes: number of recipes to add
     '''
     recipes = find_random_recipes(num_recipes, False)
     successful_adds = 0
@@ -51,10 +59,9 @@ def add_recipes_to_db(num_recipes):
 
 def add_general(recipe_object, recipe_info):
     '''
-
-    :param recipe_object:
-    :param recipe_info:
-    :return:
+    Add general recipe information to the database
+    :param recipe_object: a sqlalchemy Recipe object
+    :param recipe_info: Spoonacular API recipe object
     '''
     try:
         if "sourceName" in recipe_info:
@@ -80,10 +87,9 @@ def add_general(recipe_object, recipe_info):
 
 def add_ingredients(recipe_name, ingredients, servings=None):
     '''
-
-    :param recipe_name:
-    :param ingredients:
-    :return:
+    add ingredient information to the database
+    :param recipe_name: recipe name
+    :param ingredients: spoonacular API list of ingredients
     '''
     try:
         for i in ingredients:
@@ -128,10 +134,9 @@ def add_ingredients(recipe_name, ingredients, servings=None):
 
 def add_steps(recipe_name, steps):
     '''
-
-    :param recipe_name:
-    :param steps:
-    :return:
+    Add recipe steps to the database
+    :param recipe_name: recipe name
+    :param steps: spoonacular API list of recipe steps
     '''
     try:
         for s in steps:
@@ -152,10 +157,11 @@ def add_steps(recipe_name, steps):
 
 def clear_db(max_count=None, save_comp=True):
     '''
-
-    :param max_count:
-    :param save_comp:
-    :return:
+    remove a certain number of recipes from
+    the database
+    saving pca and kmeans data is optional
+    :param max_count: number of recipes to remove
+    :param save_comp: save pca and kmeans data
     '''
     if max_count != None and type(max_count) != int:
         raise(Exception("[Error] Max count must be an integer or None"))

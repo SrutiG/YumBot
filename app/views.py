@@ -1,6 +1,13 @@
 '''
+Title
+-----
+views.py
 
+Description
+-----------
+handling requests to server
 '''
+
 from app import app
 from flask import render_template, redirect, session, request, jsonify, url_for
 from spoonacular_api import *
@@ -11,6 +18,13 @@ global yb
 
 @app.before_request
 def before_request():
+    '''
+    TODO: after serializing YumBot clusters,
+    TODO: modify this method to before_first_request
+
+    create a global YumBot object
+    :return:
+    '''
     global yb
     # global recipes
     yb = YumBot()
@@ -22,8 +36,12 @@ def before_request():
 @app.route('/')
 def index():
     '''
-
-    :return:
+    return the index.html template
+    with search and recipes object based
+    on what is stored in the session
+    TODO: figure out how to bypass session storage
+    TODO: since many recipes are long
+    :return: index.html rendered template
     '''
     global yb
     if not session.get("search"):
@@ -45,9 +63,11 @@ def index():
 @app.route('/search/<search_value>')
 def search(search_value=None):
     '''
-
-    :param search_value:
-    :return:
+    search for a specific ingredient
+    and update the search list in the session.
+    find recipes matching the search
+    :param search_value: string ingredient name
+    :return: redirect to index
     '''
     global yb
     search = session.get("search")
@@ -64,9 +84,12 @@ def search(search_value=None):
 @app.route('/remove_search/<search_value>')
 def remove_search(search_value):
     '''
-
-    :param search_value:
-    :return:
+    remove a specific ingredient
+    from the search if it is contained
+    in the search list. Update the recipes
+    based on the new search
+    :param search_value: string ingredient name
+    :return: redirect to index
     '''
     global yb
     search = session.get("search")
@@ -83,8 +106,9 @@ def remove_search(search_value):
 @app.route('/clear_search')
 def clear_search():
     '''
-
-    :return:
+    clear all values from the search and
+    reset the recipes list
+    :return: redirect to index
     '''
     session["search"] = []
     session["recipes"] = []

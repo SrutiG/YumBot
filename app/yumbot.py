@@ -1,5 +1,11 @@
 '''
+Title
+-----
+yumbot.py
 
+Description
+-----------
+Yumbot recipe bot algorithms to create recipes
 '''
 import random
 from db_accessor import get_kmeans_clusters, get_ingredient
@@ -11,6 +17,12 @@ from kmeans import cluster_size_upper_threshold, find_closest_cluster,\
 class YumBot:
 
     def __init__(self):
+        '''
+        Get clusters and compatible clusters
+        for each cluster at initialization
+        TODO: this doesn't serve the purpose until
+        TODO: clusters are properly serialized
+        '''
         get_cluster_request = get_kmeans_clusters()
         if get_cluster_request["error"] != None:
             print(get_cluster_request["error"])
@@ -26,8 +38,9 @@ class YumBot:
 
     def find_random_valid_cluster_ingredients(self):
         '''
-
-        :return:
+        find a list of ingredients by first choosing
+        a random cluster
+        :return: list of ingredients
         '''
         clusters = self.clusters
         count = 0
@@ -37,13 +50,16 @@ class YumBot:
             ingredients += self.clusters[cluster].ingredients
             count += 1
             cluster = find_closest_cluster(cluster)
-        return clusters[cluster].ingredients
+        return ingredients
 
 
     def get_random_recipe(self):
         '''
-
-        :return:
+        create a random yumbot recipe by finding
+        a list of ingredients from a random cluster
+        then using a random number of ingredients from the list.
+        create the recipe in the application recipe format
+        :return: recipe object
         '''
         recipe = get_recipe_format()
         recipe_name = []
@@ -74,9 +90,10 @@ class YumBot:
 
     def get_ingredient_throw_error(self, ingredient_name):
         '''
-
-        :param ingredient_name:
-        :return:
+        an easier way to get an ingredient without
+        having to redo the error handling every time
+        :param ingredient_name: ingredient name
+        :return: ingredient object
         '''
         ingredient_request = get_ingredient(ingredient_name)
         if ingredient_request["error"]:
@@ -85,10 +102,12 @@ class YumBot:
 
     def are_ingredients_compatible(self, ingredient_name, ingredient_list):
         '''
-
-        :param ingredient_name:
-        :param ingredient_list:
-        :return:
+        check if a list of ingredients are compatible to a reference ingredient
+        by first checking if they are in the same cluster, then checking if they are in
+        compatible clusters
+        :param ingredient_name: the reference ingredient
+        :param ingredient_list: ingredients to compare to reference
+        :return: boolean ingredient compatibility
         '''
         try:
             ingredient = self.get_ingredient_throw_error(ingredient_name)
@@ -118,9 +137,13 @@ class YumBot:
 
     def create_recipes_from_ingredients(self, ingredients_list):
         '''
-
-        :param ingredients_list:
-        :return:
+        create recipes from a list of ingredients (probably ingredients
+        searched by a web application client)
+        first check if the ingredients exist and if they have pca coordinates.
+        then check which ingredients are compatible.
+        Create recipes in the application recipe format.
+        :param ingredients_list: list of ingredient names
+        :return: array of recipe objects
         '''
         try:
             ingredients_list = filter_existing_ingredients(ingredients_list)
@@ -148,9 +171,9 @@ class YumBot:
 
     def hash_recipe_name(self, ingredients_list):
         '''
-
-        :param ingredients_list:
-        :return:
+        create a hash for the recipe name (to avoid duplicates)
+        :param ingredients_list: list of ingredient names
+        :return: hash value
         '''
         hash_value = 0
         for i in ingredients_list:
@@ -163,7 +186,7 @@ class YumBot:
         '''
         Return the amount of the ingredient to put in the recipe
         TODO: implement this properly instead of just returning a random amount
-        :param ingredient_name:
+        :param ingredient_name: ingredient name
         :return: the amount of the ingredient as a string
         '''
         try:
@@ -178,9 +201,10 @@ class YumBot:
 
     def create_recipe_from_ingredients(self, compatible_ingredients_list):
         '''
-
-        :param compatible_ingredients_list:
-        :return:
+        Create a recipe in the application recipe format
+        from a list of ingredients
+        :param compatible_ingredients_list: list of ingredient names
+        :return: recipe object
         '''
         recipe = get_recipe_format()
         for ingredient in compatible_ingredients_list:
