@@ -1,6 +1,19 @@
+'''
+Title
+-----
+cooccur.py
+
+Description
+-----------
+create and update co-occurrence matrix
+'''
 from app import db, models
 
 def generate_new_matrix():
+    '''
+    Generate a new co-occurrence matrix
+    based on all recipe ingredients in the database
+    '''
     entries = models.Co_Occur_Matrix.query.all()
     for entry in entries:
         db.session.delete(entry)
@@ -20,6 +33,11 @@ def generate_new_matrix():
     db.session.commit()
 
 def add_ingredient_to_matrix(ingredient_name):
+    '''
+    Update the cooccurrence matrix with a new ingredient
+    create empty entries
+    :param ingredient_name: ingredient name
+    '''
     try:
         has_ingredient = models.Co_Occur_Matrix.query.get((ingredient_name,ingredient_name))
         if not has_ingredient:
@@ -46,6 +64,11 @@ def add_ingredient_to_matrix(ingredient_name):
         db.session.rollback()
 
 def add_recipe_ingredients_to_matrix(ingredients):
+    '''
+    update co-occurrence matrix with new values
+    for recipe ingredients
+    :param ingredients: list of ingredients (spoonacular API version)
+    '''
     try:
         for i in ingredients:
             add_ingredient_to_matrix(i["name"])
@@ -61,6 +84,10 @@ def add_recipe_ingredients_to_matrix(ingredients):
         db.session.rollback()
 
 def create_matrix():
+    '''
+    create a 2d array representation of the co-occurrence matrix
+    :return: the 2d matrix and the keys (ingredient names)
+    '''
     keys = []
     matrix = []
     ingredients = models.Ingredient.query.all()
