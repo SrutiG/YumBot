@@ -4,3 +4,5 @@
 out
 gen
 app/app.db
+app/db_repository
+*.DS_Store
