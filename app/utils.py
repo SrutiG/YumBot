@@ -1,5 +1,11 @@
 '''
+Title
+-----
+utils.py
 
+Description
+-----------
+Helper functions and universal data
 '''
 import math
 from db_accessor import get_ingredients, get_ingredient
@@ -8,9 +14,11 @@ import random
 
 def find_stats(lst):
     '''
-
-    :param lst:
-    :return:
+    find important statistical data
+    for a set of numbers
+    :param lst: an array of floats or integers
+    :return: a dictionary containing mean, median,
+    stdev, first, and second quartile.
     '''
     lst.sort()
     return {
@@ -23,10 +31,13 @@ def find_stats(lst):
 
 def distance_between_coordinates(coord1, coord2):
     '''
-
-    :param coord1:
-    :param coord2:
-    :return:
+    find the difference between two coordinates
+    in any dimension
+    :param coord1: the first coordinate as either a tuple or list
+    of floats or integers
+    :param coord2: the second coordinate as either a tuple or list
+    of floats or integers
+    :return: distance a float
     '''
     if len(coord1) != len(coord2):
         raise(Exception("coordinates should be same length"))
@@ -38,10 +49,12 @@ def distance_between_coordinates(coord1, coord2):
 
 def find_distance_between_ingredients(ingredient_1, ingredient_2, print_values=False):
     '''
-
-    :param ingredient_1:
-    :param ingredient_2:
-    :return:
+    find the distance between two ingredients
+    :param ingredient_1: the first ingredient name
+    :param ingredient_2: the second ingredient name
+    :param print_values: whether or not to print the distance
+    between the ingredients
+    :return: distance between ingredients as a float
     '''
     get_ingredient1_request = get_ingredient(ingredient_1)
     if get_ingredient1_request["error"] != None:
@@ -60,9 +73,11 @@ def find_distance_between_ingredients(ingredient_1, ingredient_2, print_values=F
 
 def filter_existing_ingredients(ingredients_list):
     '''
-
-    :param ingredients_list:
-    :return:
+    from a list of ingredient names, filter out the ones
+    which either don't exist in the database at all, or
+    don't have PCA coordinates.
+    :param ingredients_list: a list of ingredient names
+    :return: a new list of filtered ingredient names
     '''
     new_ingredients_list = []
     for ingredient in ingredients_list:
@@ -76,22 +91,11 @@ def filter_existing_ingredients(ingredients_list):
             new_ingredients_list.append(ingredient)
     return new_ingredients_list
 
-def create_distance_matrix(ingredients_list):
-    '''
-
-    :param ingredients_list:
-    :return:
-    '''
-    ingredients_list = filter_existing_ingredients(ingredients_list)
-    print(ingredients_list)
-    if len(ingredients_list) > 1:
-        find_distance_between_ingredients(ingredients_list[0], ingredients_list[1])
-    return []
-
 def get_alphabet_columns():
     '''
-
-    :return:
+    Get every letter of the alphabet in a list
+    to be used as columns for coordinates
+    :return: lowercase alphabet as list
     '''
     return ['a','b','c','d','e','f',
      'g','h','i','j','k','l',
@@ -101,8 +105,8 @@ def get_alphabet_columns():
 
 def get_recipe_format():
     '''
-
-    :return:
+    Get the general recipe format for all recipes
+    :return: a dictionary recipe object
     '''
     # NOTE: optional columns: prep_time, servings, image, ingredients, images
     return {
@@ -116,8 +120,9 @@ def get_recipe_format():
 
 def get_random_string():
     '''
-
-    :return:
+    generate a random string from lowercase alphabet
+     of length 20
+    :return: random string
     '''
     values = get_alphabet_columns()
     random_string = ""
